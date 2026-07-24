@@ -1,0 +1,27 @@
+{
+  "rawCount": 958,
+  "uniqueCount": 875,
+  "beisenCount": 69,
+  "sprintPackCount": 14,
+  "sprintQuestionCount": 69,
+  "modules": {
+    "图形推理": 27,
+    "思维策略": 15,
+    "数字推理": 327,
+    "数学运算": 389,
+    "数量关系": 18,
+    "综合": 28,
+    "言语理解": 23,
+    "资料分析": 48
+  },
+  "sources": {
+    "beisen": 69,
+    "mock1": 35,
+    "mock2": 31,
+    "plan-w3": 9,
+    "plan-w2": 14,
+    "docx-sz": 327,
+    "docx-sl": 389,
+    "plan-w1": 1
+  }
+}

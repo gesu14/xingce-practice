@@ -1,0 +1,303 @@
+[
+  {
+    "id": "sprint-01",
+    "title": "图形推理·位置规律",
+    "module": "图形推理",
+    "estMinutes": 8,
+    "tipIds": [
+      "tip-tx-shuliang",
+      "tip-tx-weizhi"
+    ],
+    "questionIds": [
+      "beisen-043",
+      "beisen-058",
+      "beisen-059"
+    ],
+    "mustRemember": [
+      "相同元素看平移旋转",
+      "记录方向与步数",
+      "翻转别和旋转混淆"
+    ]
+  },
+  {
+    "id": "sprint-02",
+    "title": "图形推理·图形综合",
+    "module": "图形推理",
+    "estMinutes": 8,
+    "tipIds": [
+      "tip-tx-shuliang",
+      "tip-tx-weizhi"
+    ],
+    "questionIds": [
+      "beisen-041",
+      "beisen-052",
+      "beisen-057",
+      "beisen-060"
+    ],
+    "mustRemember": [
+      "先看元素是否相同",
+      "相同走位置，凌乱走数量，相似走样式",
+      "实在不行看属性"
+    ]
+  },
+  {
+    "id": "sprint-03",
+    "title": "图形推理·数量规律",
+    "module": "图形推理",
+    "estMinutes": 14,
+    "tipIds": [
+      "tip-tx-shuliang",
+      "tip-tx-weizhi"
+    ],
+    "questionIds": [
+      "beisen-042",
+      "beisen-044",
+      "beisen-045",
+      "beisen-046",
+      "beisen-047",
+      "beisen-053",
+      "beisen-054"
+    ],
+    "mustRemember": [
+      "元素乱 → 数点线面素",
+      "注意一笔画与奇点",
+      "九宫格先看行/列运算"
+    ]
+  },
+  {
+    "id": "sprint-04",
+    "title": "言语理解·主旨概括",
+    "module": "言语理解",
+    "estMinutes": 14,
+    "tipIds": [
+      "tip-yy-zhuti",
+      "tip-yy-tiankong"
+    ],
+    "questionIds": [
+      "beisen-001",
+      "beisen-003",
+      "beisen-005",
+      "beisen-006",
+      "beisen-008",
+      "beisen-012",
+      "beisen-020"
+    ],
+    "mustRemember": [
+      "先找论述对象，再看作者想强调什么",
+      "双主语选项也要双覆盖",
+      "例子、背景不是主旨"
+    ]
+  },
+  {
+    "id": "sprint-05",
+    "title": "言语理解·细节推断",
+    "module": "言语理解",
+    "estMinutes": 8,
+    "tipIds": [
+      "tip-yy-zhuti",
+      "tip-yy-tiankong"
+    ],
+    "questionIds": [
+      "beisen-004",
+      "beisen-009"
+    ],
+    "mustRemember": [
+      "忠于原文，不脑补因果",
+      "绝对化表述优先排除",
+      "问‘无法推出’时找无中生有项"
+    ]
+  },
+  {
+    "id": "sprint-06",
+    "title": "言语理解·言语综合（1）",
+    "module": "言语理解",
+    "estMinutes": 12,
+    "tipIds": [
+      "tip-yy-zhuti",
+      "tip-yy-tiankong"
+    ],
+    "questionIds": [
+      "beisen-002",
+      "beisen-007",
+      "beisen-010",
+      "beisen-011",
+      "beisen-015",
+      "beisen-016"
+    ],
+    "mustRemember": [
+      "先判断题型再下笔",
+      "选项对比差异点",
+      "不确定时回原文定位"
+    ]
+  },
+  {
+    "id": "sprint-07",
+    "title": "言语理解·言语综合（2）",
+    "module": "言语理解",
+    "estMinutes": 8,
+    "tipIds": [
+      "tip-yy-zhuti",
+      "tip-yy-tiankong"
+    ],
+    "questionIds": [
+      "beisen-017",
+      "beisen-018",
+      "beisen-019"
+    ],
+    "mustRemember": [
+      "先判断题型再下笔",
+      "选项对比差异点",
+      "不确定时回原文定位"
+    ]
+  },
+  {
+    "id": "sprint-08",
+    "title": "言语理解·逻辑填空",
+    "module": "言语理解",
+    "estMinutes": 8,
+    "tipIds": [
+      "tip-yy-zhuti",
+      "tip-yy-tiankong"
+    ],
+    "questionIds": [
+      "beisen-013",
+      "beisen-014"
+    ],
+    "mustRemember": [
+      "先定性题型再做题",
+      "对照解析沉淀套路",
+      "错题当天再过一遍"
+    ]
+  },
+  {
+    "id": "sprint-09",
+    "title": "资料分析·资料计算（1）",
+    "module": "资料分析",
+    "estMinutes": 12,
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "questionIds": [
+      "beisen-061",
+      "beisen-062",
+      "beisen-064",
+      "beisen-066",
+      "beisen-067",
+      "beisen-071"
+    ],
+    "mustRemember": [
+      "先看清单位、时间和问法",
+      "增长率=(现期-基期)/基期",
+      "能口算先估算再精算"
+    ]
+  },
+  {
+    "id": "sprint-10",
+    "title": "资料分析·资料计算（2）",
+    "module": "资料分析",
+    "estMinutes": 12,
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "questionIds": [
+      "beisen-072",
+      "beisen-073",
+      "beisen-074",
+      "beisen-075",
+      "beisen-076",
+      "beisen-077"
+    ],
+    "mustRemember": [
+      "先看清单位、时间和问法",
+      "增长率=(现期-基期)/基期",
+      "能口算先估算再精算"
+    ]
+  },
+  {
+    "id": "sprint-11",
+    "title": "资料分析·资料计算（3）",
+    "module": "资料分析",
+    "estMinutes": 12,
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "questionIds": [
+      "beisen-078",
+      "beisen-079",
+      "beisen-080",
+      "beisen-081",
+      "beisen-082",
+      "beisen-083"
+    ],
+    "mustRemember": [
+      "先看清单位、时间和问法",
+      "增长率=(现期-基期)/基期",
+      "能口算先估算再精算"
+    ]
+  },
+  {
+    "id": "sprint-12",
+    "title": "资料分析·资料计算（4）",
+    "module": "资料分析",
+    "estMinutes": 12,
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "questionIds": [
+      "beisen-084",
+      "beisen-085",
+      "beisen-086",
+      "beisen-087",
+      "beisen-088",
+      "beisen-089"
+    ],
+    "mustRemember": [
+      "先看清单位、时间和问法",
+      "增长率=(现期-基期)/基期",
+      "能口算先估算再精算"
+    ]
+  },
+  {
+    "id": "sprint-13",
+    "title": "资料分析·资料计算（5）",
+    "module": "资料分析",
+    "estMinutes": 12,
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "questionIds": [
+      "beisen-090",
+      "beisen-091",
+      "beisen-092",
+      "beisen-093",
+      "beisen-094",
+      "beisen-095"
+    ],
+    "mustRemember": [
+      "先看清单位、时间和问法",
+      "增长率=(现期-基期)/基期",
+      "能口算先估算再精算"
+    ]
+  },
+  {
+    "id": "sprint-14",
+    "title": "资料分析·资料计算（6）",
+    "module": "资料分析",
+    "estMinutes": 10,
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "questionIds": [
+      "beisen-096",
+      "beisen-097",
+      "beisen-098",
+      "beisen-099",
+      "beisen-100"
+    ],
+    "mustRemember": [
+      "先看清单位、时间和问法",
+      "增长率=(现期-基期)/基期",
+      "能口算先估算再精算"
+    ]
+  }
+]
