@@ -10,12 +10,16 @@ export function HomePage() {
   const [modules, setModules] = useState<[string, number][]>([]);
 
   useEffect(() => {
-    Promise.all([getMeta(), getQuestions(), getSprintPacks()]).then(([m, qs]) => {
-      setMeta(m);
-      const counts = new Map<string, number>();
-      qs.forEach((q) => counts.set(q.module, (counts.get(q.module) || 0) + 1));
-      setModules([...counts.entries()].sort((a, b) => b[1] - a[1]));
-    });
+    Promise.all([getMeta(), getQuestions(), getSprintPacks()])
+      .then(([m, qs]) => {
+        setMeta(m);
+        const counts = new Map<string, number>();
+        qs.forEach((q) => counts.set(q.module, (counts.get(q.module) || 0) + 1));
+        setModules([...counts.entries()].sort((a, b) => b[1] - a[1]));
+      })
+      .catch((err) => {
+        console.error('Failed to load question bank', err);
+      });
     setProgress(loadProgress());
   }, []);
 

@@ -1,4 +1,5 @@
 import type { Meta, Question, SprintPack, Tip } from '../types';
+import { assetUrl } from './assetUrl';
 
 let cache: {
   questions?: Question[];
@@ -8,14 +9,25 @@ let cache: {
 } = {};
 
 async function loadJson<T>(path: string): Promise<T> {
-  const res = await fetch(path);
+  const res = await fetch(assetUrl(path));
   if (!res.ok) throw new Error(`Failed to load ${path}`);
   return res.json();
 }
 
+function withAssetPaths(questions: Question[]): Question[] {
+  return questions.map((q) =>
+    q.stemImage
+      ? {
+          ...q,
+          stemImage: assetUrl(q.stemImage),
+        }
+      : q,
+  );
+}
+
 export async function getQuestions(): Promise<Question[]> {
   if (!cache.questions) {
-    cache.questions = await loadJson<Question[]>('/data/questions.json');
+    cache.questions = withAssetPaths(await loadJson<Question[]>('/data/questions.json'));
   }
   return cache.questions;
 }
