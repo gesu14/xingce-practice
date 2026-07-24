@@ -171,7 +171,22 @@ export function QuizPlayer({
 
         {q.stemImage ? (
           <div className="stem-image-wrap">
-            <img className="stem-image" src={q.stemImage} alt="题目配图" />
+            <img
+              className="stem-image"
+              src={q.stemImage}
+              alt="题目配图"
+              onError={(e) => {
+                const el = e.currentTarget;
+                el.style.display = 'none';
+                const wrap = el.parentElement;
+                if (wrap && !wrap.querySelector('.warn')) {
+                  const p = document.createElement('p');
+                  p.className = 'warn';
+                  p.textContent = '配图加载失败，请强制刷新页面后重试。';
+                  wrap.appendChild(p);
+                }
+              }}
+            />
           </div>
         ) : null}
 

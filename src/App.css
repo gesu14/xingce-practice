@@ -395,32 +395,24 @@
   background: rgba(192, 53, 43, 0.08);
 }
 
+/* stem-image layout */
 .stem-image-wrap {
   margin: 0 0 1rem;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--line);
   background: #f7fafc;
+  text-align: center;
 }
 
 .stem-image {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
   height: auto;
-}
-
-.stem-image-wrap {
-  margin: 0 0 1rem;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: #f7fafc;
-}
-
-.stem-image {
-  display: block;
-  width: 100%;
-  height: auto;
+  max-height: min(75vh, 920px);
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .warn {

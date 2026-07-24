@@ -23,7 +23,11 @@ MODULE_RE = re.compile(
     r"类比推理|定义判断)[：:\s]*",
     re.M,
 )
-OPT_RE = re.compile(r"(?:^|\n)\s*([A-E])[\.．、\)]\s*", re.M)
+# Allow "D ." / "D．" / "C 损失" / mid-line "A.xx B.xx" (common in PDF extracts)
+OPT_RE = re.compile(
+    r"(?:^|[\n\s])([A-E])(?:\s*[\.．、\)]\s*|\s+)(?=[\u4e00-\u9fff0-9A-Za-z（(])",
+    re.M,
+)
 
 MODULE_ALIAS = {
     "材料分析": "资料分析",
@@ -104,7 +108,8 @@ def parse_ref_answer(text: str, source: str, source_label: str) -> list[dict[str
         stem, options = split_options(body)
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
         expl = text[m.end() : end]
-        expl = re.split(r"(?:^|\n)\s*\d{1,3}[\.、．]\s+", expl, maxsplit=1)[0].strip()
+        # PDF often has "68.下表" / "63.NEO" with no space after the dot
+        expl = re.split(r"(?:^|\n)\s*\d{1,3}[\.、．]\s*", expl, maxsplit=1)[0].strip()
         module = module_at(text, prev_end + qn.start())
         needs_image = bool(
             re.search(r"第一个|第二个|第三个|第四个|图形|下图|？处", body)
@@ -147,7 +152,7 @@ def parse_bracket_answer(text: str, source: str, source_label: str) -> list[dict
         stem, options = split_options(body)
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
         expl = text[m.end() : end]
-        expl = re.split(r"(?:^|\n)\s*\d{1,3}[\.、．]", expl, maxsplit=1)[0].strip()
+        expl = re.split(r"(?:^|\n)\s*\d{1,3}[\.、．]\s*", expl, maxsplit=1)[0].strip()
         module = module_at(text, prev_end + qn.start(), default="综合")
         # Heuristic for mocks without section headers
         if module == "综合":
@@ -254,6 +259,7 @@ def parse_docx_bank(text: str, source: str, source_label: str, module: str) -> l
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
         expl = text[m.end() : end]
         expl = re.split(r"答案[：:]\s*[A-E]", expl, maxsplit=1)[0].strip()
+        expl = re.split(r"(?:^|\n)\s*\d{1,3}[\.、．]\s*", expl, maxsplit=1)[0].strip()
         expl = re.sub(r"^【解析】\s*", "", expl).strip()
         stem = clean_docx_stem(stem)
         if len(options) < 2 or len(stem) < 3:

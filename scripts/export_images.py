@@ -150,6 +150,194 @@ def find_end_on_page(page: fitz.Page, num: int, after_y: float) -> float | None:
     return min(cands) if cands else None
 
 
+def figure_bottom_for_question(
+    page: fitz.Page, y0: float, soft_end: float | None, hard_limit: float | None
+) -> float | None:
+    """Bottom of real figures that belong to this question.
+
+    解析版常见「左文右图」：左侧「参考答案」很靠上，右侧选项图仍继续往下。
+    soft_end 是答案/下一题的文字锚点；hard_limit 是下一题题号（不可越过）。
+    """
+    limit = hard_limit if hard_limit is not None else page.rect.y1 - 16
+    # Search a bit past soft_end so right-column figures after 参考答案 are found
+    search_to = limit
+    bottoms: list[float] = []
+    for bb in real_images_in_band(page, max(page.rect.y0 + 16, y0 - 40), search_to):
+        by0, by1 = bb[1], bb[3]
+        if by0 >= limit - 4:
+            continue
+        # Skip leftovers of the previous question (entirely above title)
+        if by1 < y0 - 12:
+            continue
+        # Skip figures that start well after the early soft end *and* after any
+        # body text — those usually belong to the next question on the page.
+        if soft_end is not None and by0 > soft_end + 40 and by0 > y0 + 220:
+            continue
+        bottoms.append(min(by1 + 4, limit - 2))
+    return max(bottoms) if bottoms else None
+
+
+def scrub_answer_text(
+    page: fitz.Page,
+    img: "Image.Image",
+    clip: fitz.Rect,
+    scale: float,
+) -> "Image.Image":
+    """White-out 参考答案 / 解析 blocks so practice clips don't leak keys."""
+    from PIL import ImageDraw
+
+    draw = ImageDraw.Draw(img)
+    for b in page.get_text("blocks"):
+        if b[6] != 0:
+            continue
+        text = (b[4] or "").strip()
+        if not text:
+            continue
+        if not (
+            ANSWER_RE.search(text)
+            or re.match(r"^解析\s*[：:]", text)
+            or text.startswith("解析：")
+            or text.startswith("解析:")
+        ):
+            continue
+        bx0, by0, bx1, by1 = b[:4]
+        if by1 < clip.y0 or by0 > clip.y1 or bx1 < clip.x0 or bx0 > clip.x1:
+            continue
+        # Map page coords → pixmap pixels; pad a little for descenders
+        px0 = max(0, int((max(bx0, clip.x0) - clip.x0) * scale) - 2)
+        py0 = max(0, int((max(by0, clip.y0) - clip.y0) * scale) - 2)
+        px1 = min(img.width, int((min(bx1, clip.x1) - clip.x0) * scale) + 4)
+        py1 = min(img.height, int((min(by1, clip.y1) - clip.y0) * scale) + 6)
+        if px1 > px0 and py1 > py0:
+            draw.rectangle([px0, py0, px1, py1], fill=(255, 255, 255))
+    return img
+
+
+def extract_narrow_option_images(
+    doc: fitz.Document, page: fitz.Page, y0: float, y1: float
+) -> list["Image.Image"]:
+    """Pull raw embedded bitmaps for skinny option columns (higher res than page paint)."""
+    from PIL import Image
+
+    out: list[tuple[float, "Image.Image"]] = []
+    for info in page.get_images(full=True):
+        xref = info[0]
+        try:
+            rects = page.get_image_rects(xref)
+        except Exception:
+            continue
+        for rect in rects:
+            if rect.y1 < y0 - 8 or rect.y0 > y1 + 8:
+                continue
+            if is_watermark_image(page, (rect.x0, rect.y0, rect.x1, rect.y1)):
+                continue
+            # Option strips in this PDF are often ~40–90pt wide and tall
+            if rect.width > 140 or rect.height < 80:
+                continue
+            try:
+                pix = fitz.Pixmap(doc, xref)
+            except Exception:
+                continue
+            if pix.n > 4:
+                continue
+            if pix.n == 4:
+                pix = fitz.Pixmap(fitz.csRGB, pix)
+            elif pix.n == 1:
+                pix = fitz.Pixmap(fitz.csRGB, pix)
+            if pix.width < 20 or pix.height < 40:
+                continue
+            img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+            out.append((rect.y0, img))
+    out.sort(key=lambda t: t[0])
+    return [im for _, im in out]
+
+
+def ink_width(img: "Image.Image", thr: int = 200) -> int:
+    rgb = img.convert("RGB")
+    w, h = rgb.size
+    px = rgb.load()
+    xs: list[int] = []
+    step = 2 if max(w, h) > 900 else 1
+    for y in range(0, h, step):
+        for x in range(0, w, step):
+            r, g, b = px[x, y]
+            if r < thr or g < thr or b < thr:
+                xs.append(x)
+    if not xs:
+        return 0
+    return max(xs) - min(xs) + 1
+
+
+def prefer_option_strip_canvas(
+    doc: fitz.Document,
+    bands: list[tuple[int, float, float]],
+    fallback: "Image.Image",
+) -> "Image.Image":
+    """If the page clip is mostly empty with a skinny strip, use the raw strip instead."""
+    from PIL import Image
+
+    if ink_width(fallback) >= 260:
+        return fallback
+
+    strips: list[Image.Image] = []
+    for pi, a, b in bands:
+        strips.extend(extract_narrow_option_images(doc, doc[pi], a, b))
+    if not strips:
+        return fallback
+
+    # Stack strips; usually one
+    width = max(im.width for im in strips)
+    height = sum(im.height for im in strips) + 12 * (len(strips) - 1)
+    canvas = Image.new("RGB", (width, height), (255, 255, 255))
+    y = 0
+    for im in strips:
+        canvas.paste(im, ((width - im.width) // 2, y))
+        y += im.height + 12
+    return canvas
+
+
+def trim_whitespace(img: "Image.Image", pad: int = 16, thr: int = 210) -> "Image.Image":
+    """Crop near-white margins so narrow option strips aren't lost in empty canvas.
+
+    Threshold is ink-oriented (not watermark-gray) so light TogoCareer overlays
+    don't keep the full page width.
+    """
+    from PIL import Image
+
+    def upscale_if_narrow(cropped: "Image.Image") -> "Image.Image":
+        if cropped.width >= 420:
+            return cropped
+        factor = min(4.0, 720 / max(cropped.width, 1))
+        return cropped.resize(
+            (max(1, int(cropped.width * factor)), max(1, int(cropped.height * factor))),
+            Image.Resampling.LANCZOS,
+        )
+
+    rgb = img.convert("RGB")
+    w, h = rgb.size
+    px = rgb.load()
+    xs: list[int] = []
+    ys: list[int] = []
+    # Subsample for speed on tall clips
+    step = 2 if max(w, h) > 900 else 1
+    for y in range(0, h, step):
+        for x in range(0, w, step):
+            r, g, b = px[x, y]
+            if r < thr or g < thr or b < thr:
+                xs.append(x)
+                ys.append(y)
+    if not xs:
+        return upscale_if_narrow(img)
+    x0 = max(0, min(xs) - pad)
+    y0 = max(0, min(ys) - pad)
+    x1 = min(w, max(xs) + pad + 1)
+    y1 = min(h, max(ys) + pad + 1)
+    if x1 - x0 < 40 or y1 - y0 < 40:
+        return upscale_if_narrow(img)
+    cropped = img.crop((x0, y0, x1, y1))
+    return upscale_if_narrow(cropped)
+
+
 def render_band(page: fitz.Page, y0: float, y1: float, scale: float) -> "Image.Image":
     from PIL import Image
     import io
@@ -162,7 +350,8 @@ def render_band(page: fitz.Page, y0: float, y1: float, scale: float) -> "Image.I
         bottom = min(page.rect.y1 - 16, top + 40)
     clip = fitz.Rect(x0, top, x1, bottom)
     pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale), clip=clip, alpha=False)
-    return Image.open(io.BytesIO(pix.tobytes("png"))).convert("RGB")
+    img = Image.open(io.BytesIO(pix.tobytes("png"))).convert("RGB")
+    return scrub_answer_text(page, img, clip, scale)
 
 
 def clip_question(doc: fitz.Document, num: int, out_path: Path, scale: float = 2.0) -> bool:
@@ -197,7 +386,16 @@ def clip_question(doc: fitz.Document, num: int, out_path: Path, scale: float = 2
     for pi in range(start_i, max_page + 1):
         page = doc[pi]
         after = y0 if pi == start_i else page.rect.y0 + 20
-        end_y = find_end_on_page(page, num, after + (5 if pi == start_i else 0))
+        ans_y = find_answer_y(page, after + (5 if pi == start_i else 0))
+        nxt_y = find_next_question_y(page, num, after + (5 if pi == start_i else 0))
+        soft_end = min([c for c in (ans_y, nxt_y) if c is not None], default=None)
+        hard_limit = nxt_y
+        fig_bottom = figure_bottom_for_question(page, after if pi != start_i else y0, soft_end, hard_limit)
+
+        # Prefer covering figures even when 参考答案 appears early (two-column layout).
+        end_y = soft_end
+        if fig_bottom is not None:
+            end_y = max(end_y, fig_bottom) if end_y is not None else fig_bottom
 
         if pi == start_i:
             # Include figures placed just above the title (common in this PDF)
@@ -212,7 +410,7 @@ def clip_question(doc: fitz.Document, num: int, out_path: Path, scale: float = 2
                 found_end = True
                 break
         else:
-            # Continuation page: from top until answer/next question
+            # Continuation page: from top until answer/next question / figures
             y1 = end_y if end_y is not None else page.rect.height - 24
             bands.append((pi, page.rect.y0 + 20, y1 - 2 if end_y else page.rect.height - 24))
             if end_y is not None:
@@ -270,7 +468,10 @@ def clip_question(doc: fitz.Document, num: int, out_path: Path, scale: float = 2
         canvas.paste(im, (0, y))
         y += im.height
 
+    canvas = prefer_option_strip_canvas(doc, bands, canvas)
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    canvas = trim_whitespace(canvas)
     canvas.save(out_path, format="PNG", optimize=True)
     return True
 
@@ -296,8 +497,8 @@ def main() -> None:
         if num is None:
             failed.append((q["id"], "bad id"))
             continue
-        rel = f"/images/{key}/{q['id']}.png"
-        out = ROOT / "public" / rel.lstrip("/")
+        rel = f"/images/{key}/{q['id']}.png?v=5"
+        out = ROOT / "public" / rel.split("?")[0].lstrip("/")
         ok = clip_question(open_docs[key], num, out)
         if ok:
             q["stemImage"] = rel

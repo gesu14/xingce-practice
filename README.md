@@ -14,6 +14,12 @@ npm run dev
 
 打开终端提示的地址（通常 http://localhost:5173 ）。
 
+深链请用 Hash 形式（本站用 HashRouter，适配 GitHub Pages）：
+
+`http://localhost:5173/#/quiz?mode=sprint&pack=sprint-01`
+
+不要用 `/quiz?…` 这种浏览器路由写法；若误开，应用会自动改写成上面的 `#/…` 形式。
+
 ## 发布到 GitHub Pages
 
 仓库名建议：`xingce-practice`  

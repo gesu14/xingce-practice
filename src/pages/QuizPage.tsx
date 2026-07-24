@@ -32,12 +32,22 @@ export function QuizPage() {
         if (existing?.questionIds?.length && existing.packId === packId) {
           ids = existing.questionIds;
         } else {
+          const pack = packs.find((p) => p.id === packId);
+          const packIds = pack?.questionIds || [];
           const fromStorage: string[] = JSON.parse(sessionStorage.getItem('xingce-sprint') || '[]');
-          if (fromStorage.length) {
+          // sessionStorage is shared across packs — only reuse when it matches this pack
+          if (
+            fromStorage.length &&
+            packIds.length &&
+            fromStorage.length === packIds.length &&
+            fromStorage.every((id, idx) => id === packIds[idx])
+          ) {
             ids = fromStorage;
           } else {
-            const pack = packs.find((p) => p.id === packId);
-            ids = pack?.questionIds || [];
+            ids = packIds;
+            if (packIds.length) {
+              sessionStorage.setItem('xingce-sprint', JSON.stringify(packIds));
+            }
           }
         }
       } else if (existing?.questionIds?.length && existing.mode === 'practice') {
