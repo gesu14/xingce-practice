@@ -43,6 +43,7 @@ export type Meta = {
   rawCount: number;
   uniqueCount: number;
   beisenCount: number;
+  pddCount?: number;
   sprintPackCount: number;
   sprintQuestionCount: number;
   modules: Record<string, number>;

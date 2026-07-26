@@ -1,27 +1,34 @@
 {
-  "rawCount": 958,
-  "uniqueCount": 875,
-  "beisenCount": 69,
+  "rawCount": 1989,
+  "uniqueCount": 1891,
+  "beisenCount": 70,
+  "pddCount": 1027,
   "sprintPackCount": 14,
-  "sprintQuestionCount": 69,
+  "sprintQuestionCount": 70,
   "modules": {
-    "图形推理": 27,
+    "图形推理": 249,
     "思维策略": 15,
-    "数字推理": 327,
-    "数学运算": 389,
-    "数量关系": 18,
+    "数字推理": 323,
+    "数学运算": 380,
+    "数量关系": 23,
+    "资料分析": 323,
     "综合": 28,
-    "言语理解": 23,
-    "资料分析": 48
+    "言语理解": 550
   },
   "sources": {
-    "beisen": 69,
+    "beisen": 70,
     "mock1": 35,
     "mock2": 31,
+    "pdd": 1027,
+    "plan-w2": 15,
     "plan-w3": 9,
-    "plan-w2": 14,
-    "docx-sz": 327,
-    "docx-sl": 389,
+    "docx-sz": 323,
+    "docx-sl": 380,
     "plan-w1": 1
+  },
+  "qa": {
+    "stemGlue": 0,
+    "explGlue": 0,
+    "samples": []
   }
 }

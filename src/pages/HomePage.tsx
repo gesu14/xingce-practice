@@ -32,8 +32,8 @@ export function HomePage() {
         <p className="brand">行测刷题</p>
         <h1>按模块练，用解析学，冲刺靠北森小库</h1>
         <p className="lede">
-          本地题库约 {meta?.uniqueCount ?? '—'} 道；抱佛脚冲刺包 {meta?.sprintPackCount ?? '—'} 个（北森{' '}
-          {meta?.beisenCount ?? '—'} 道）。
+          本地题库约 {meta?.uniqueCount ?? '—'} 道；拼多多26年真题 {meta?.pddCount ?? '—'} 道；北森冲刺{' '}
+          {meta?.beisenCount ?? '—'} 道 / {meta?.sprintPackCount ?? '—'} 包。
         </p>
       </header>
 
@@ -42,6 +42,11 @@ export function HomePage() {
           <span className="entry-kicker">短期冲刺</span>
           <strong>临时抱佛脚</strong>
           <span>北森精选 · 要点 → 刷题 → 通关</span>
+        </Link>
+        <Link className="entry pdd" to="/practice?source=pdd">
+          <span className="entry-kicker">企业真题</span>
+          <strong>拼多多26年真题</strong>
+          <span>言语 / 资料数量 / 图形 · {meta?.pddCount ?? '—'} 道</span>
         </Link>
         <Link className="entry" to="/practice">
           <span className="entry-kicker">系统练习</span>

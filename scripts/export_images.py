@@ -13,23 +13,27 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "public" / "data" / "questions.json"
 IMG_ROOT = ROOT / "public" / "images"
 
+# Prefer 学生版 for crops (no 解析/答案干扰); fall back to 解析版.
+_PLAN = Path("/Users/gesu/Desktop/26秋招/行测题目/行测学习计划（30天）")
+_PDD = Path("/Users/gesu/Desktop/26秋招/行测题目/拼多多在线测评题库")
 SOURCE_PDFS = {
     "beisen": Path("/Users/gesu/Desktop/26秋招/行测题目/TogoCareer北森题库（解析版）.pdf"),
-    "plan-w1": Path(
-        "/Users/gesu/Desktop/26秋招/行测题目/行测学习计划（30天）/行测学习计划（第一周）解析版.pdf"
-    ),
-    "plan-w2": Path(
-        "/Users/gesu/Desktop/26秋招/行测题目/行测学习计划（30天）/行测学习计划（第二周）解析版.pdf"
-    ),
-    "plan-w3": Path(
-        "/Users/gesu/Desktop/26秋招/行测题目/行测学习计划（30天）/行测学习计划（第三周）解析版.pdf"
-    ),
-    "mock1": Path(
-        "/Users/gesu/Desktop/26秋招/行测题目/行测学习计划（30天）/行测学习计划（第四周）模拟卷1-解析版.pdf"
-    ),
-    "mock2": Path(
-        "/Users/gesu/Desktop/26秋招/行测题目/行测学习计划（30天）/行测学习计划（第四周）模拟卷2-解析版.pdf"
-    ),
+    "plan-w1": _PLAN / "行测学习计划（第一周）学生版.pdf",
+    "plan-w2": _PLAN / "行测学习计划（第二周）学生版.pdf",
+    "plan-w3": _PLAN / "行测学习计划（第三周）学生版.pdf",
+    "mock1": _PLAN / "行测学习计划（第四周）模拟卷1-学生版.pdf",
+    "mock2": _PLAN / "行测学习计划（第四周）模拟卷2-学生版.pdf",
+    "pdd-yy": _PDD / "拼多多言语26新题整理可以搜.pdf",
+    "pdd-sx": _PDD / "拼多多数学26新题整理可以搜.pdf",
+    "pdd-tx": _PDD / "拼多多图推26新题整理.pdf",
+}
+SOURCE_PDF_FALLBACKS = {
+    "plan-w1": _PLAN / "行测学习计划（第一周）解析版.pdf",
+    "plan-w2": _PLAN / "行测学习计划（第二周）解析版.pdf",
+    "plan-w3": _PLAN / "行测学习计划（第三周）解析版.pdf",
+    "mock1": _PLAN / "行测学习计划（第四周）模拟卷1-解析版.pdf",
+    "mock2": _PLAN / "行测学习计划（第四周）模拟卷2-解析版.pdf",
+    "beisen": Path("/Users/gesu/Desktop/26秋招/行测题目/TogoCareer北森题库.pdf"),
 }
 
 ANSWER_RE = re.compile(r"参考答案|正确答案|【解析】")
@@ -39,9 +43,19 @@ QSTART_RE = re.compile(r"^(\d{1,3})[\.、．]")
 def needs_figure(q: dict) -> bool:
     if q.get("needsImage"):
         return True
-    if q.get("module") in {"图形推理", "资料分析"}:
-        return True
     stem = q.get("stem") or ""
+    expl = q.get("explanation") or ""
+    # 类比/定义等文字题即使误标成图形推理也不截图
+    if re.search(r"∶|根据上述定义|最能削弱|最能加强|以下哪项", stem):
+        return False
+    if q.get("module") == "图形推理":
+        return True
+    if q.get("module") == "资料分析":
+        # 资料分析常依赖材料图表；无图关键词的纯计算题可跳过
+        return bool(
+            re.search(r"根据(以上|下列|下图|下表|资料|材料)|图示|图表|统计图|材料", stem + expl)
+            or q.get("needsImage")
+        )
     return bool(re.search(r"第一个|第二个|空缺图形|下图|？处|根据图形", stem))
 
 
@@ -371,12 +385,20 @@ def clip_question(doc: fitz.Document, num: int, out_path: Path, scale: float = 2
     if quality < 50:
         return False
 
-    # If a shared "材料/资料" header sits above the question, include it
+    # If a shared "材料/资料" header sits above the question, include it.
+    # 资料分析材料可能在题号上方较远处，多向上扫一段。
     page0 = doc[start_i]
+    material_y = None
     for w in page0.get_text("words"):
-        if re.search(r"材料分析|资料分析|根据下表|根据下列资料", w[4]) and w[1] < y0 and w[1] >= y0 - 120:
-            y0 = min(y0, w[1] - 4)
-            break
+        if re.search(r"材料分析|资料分析|根据下表|根据下列资料|根据以下资料|根据上述资料|所给资料", w[4]) and w[1] < y0:
+            if w[1] >= y0 - 420:
+                material_y = w[1] - 4 if material_y is None else min(material_y, w[1] - 4)
+    if material_y is not None:
+        y0 = min(y0, material_y)
+    # Also pull in large images/tables sitting above the question on the same page
+    for bb in real_images_in_band(page0, max(page0.rect.y0 + 16, y0 - 380), y0 + 8):
+        if bb[3] >= y0 - 80:
+            y0 = min(y0, bb[1] - 4)
 
     # Walk forward up to 2 pages to find answer / collect figure bands
     bands: list[tuple[int, float, float]] = []
@@ -476,30 +498,63 @@ def clip_question(doc: fitz.Document, num: int, out_path: Path, scale: float = 2
     return True
 
 
+def resolve_pdf_key(q: dict) -> str | None:
+    """Map question to SOURCE_PDFS key (拼多多用 id 前缀区分多本 PDF)。"""
+    key = q.get("sourceKey") or ""
+    if key in SOURCE_PDFS:
+        return key
+    qid = q.get("id") or ""
+    if key == "pdd":
+        for prefix in ("pdd-yy", "pdd-sx", "pdd-tx"):
+            if qid.startswith(prefix + "-"):
+                return prefix
+    return None
+
+
 def main() -> None:
     questions = json.loads(DATA.read_text(encoding="utf-8"))
     open_docs: dict[str, fitz.Document] = {}
     exported = 0
     failed = []
 
-    targets = [q for q in questions if needs_figure(q) and q.get("sourceKey") in SOURCE_PDFS]
+    targets = []
+    for q in questions:
+        if not needs_figure(q):
+            continue
+        pdf_key = resolve_pdf_key(q)
+        if pdf_key is None:
+            continue
+        targets.append((q, pdf_key))
     print(f"targets={len(targets)}")
 
-    for q in targets:
-        key = q["sourceKey"]
-        pdf = SOURCE_PDFS[key]
-        if not pdf.exists():
-            failed.append((q["id"], "missing pdf"))
+    for q, key in targets:
+        # 导入阶段已裁好的拼多多图推，不要覆盖
+        if q.get("stemImage") and (ROOT / "public" / q["stemImage"].split("?")[0].lstrip("/")).exists():
             continue
+        pdf = SOURCE_PDFS.get(key)
+        if pdf is None or not pdf.exists():
+            fb = SOURCE_PDF_FALLBACKS.get(key)
+            if fb is not None and fb.exists():
+                pdf = fb
+            else:
+                failed.append((q["id"], "missing pdf"))
+                continue
         if key not in open_docs:
             open_docs[key] = fitz.open(pdf)
         num = qnum_from_id(q["id"])
         if num is None:
             failed.append((q["id"], "bad id"))
             continue
-        rel = f"/images/{key}/{q['id']}.png?v=5"
+        rel = f"/images/{key}/{q['id']}.png?v=6"
         out = ROOT / "public" / rel.split("?")[0].lstrip("/")
         ok = clip_question(open_docs[key], num, out)
+        if not ok and key in SOURCE_PDF_FALLBACKS:
+            fb = SOURCE_PDF_FALLBACKS[key]
+            if fb.exists():
+                fb_key = f"{key}__fb"
+                if fb_key not in open_docs:
+                    open_docs[fb_key] = fitz.open(fb)
+                ok = clip_question(open_docs[fb_key], num, out)
         if ok:
             q["stemImage"] = rel
             q["needsImage"] = False

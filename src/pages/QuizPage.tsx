@@ -10,6 +10,7 @@ export function QuizPage() {
   const [params] = useSearchParams();
   const mode = params.get('mode') || 'practice';
   const packId = params.get('pack') || '';
+  const source = params.get('source') || '';
   const navigate = useNavigate();
   const [questions, setQuestions] = useState<Question[]>([]);
   const [tips, setTips] = useState<Tip[]>([]);
@@ -17,7 +18,7 @@ export function QuizPage() {
   const [ready, setReady] = useState(false);
   const [initialIndex, setInitialIndex] = useState(0);
 
-  const key = sessionKey(mode, packId);
+  const key = sessionKey(mode, packId || source || 'default');
 
   useEffect(() => {
     Promise.all([getQuestions(), getTips(), getSprintPacks()]).then(([qs, ts, packs]) => {
@@ -74,15 +75,25 @@ export function QuizPage() {
       }
       setReady(true);
     });
-  }, [mode, packId, key]);
+  }, [mode, packId, source, key]);
 
   const title = useMemo(() => {
     if (mode === 'wrong') return '错题重练';
     if (mode === 'sprint') return '冲刺刷题';
+    if (source === 'pdd') return '拼多多26年真题';
     return '模块练习';
-  }, [mode]);
+  }, [mode, source]);
 
-  const backTo = mode === 'sprint' ? (packId ? `/sprint/${packId}` : '/sprint') : mode === 'wrong' ? '/wrong' : '/practice';
+  const backTo =
+    mode === 'sprint'
+      ? packId
+        ? `/sprint/${packId}`
+        : '/sprint'
+      : mode === 'wrong'
+        ? '/wrong'
+        : source
+          ? `/practice?source=${encodeURIComponent(source)}`
+          : '/practice';
 
   if (!ready) return <div className="page">加载中…</div>;
 
@@ -96,7 +107,7 @@ export function QuizPage() {
         onProgress={setProgress}
         title={title}
         backTo={backTo}
-        sessionMeta={{ key, mode, packId: packId || undefined }}
+        sessionMeta={{ key, mode, packId: packId || source || undefined }}
         initialIndex={initialIndex}
         onFinished={() => {
           clearSession(key);

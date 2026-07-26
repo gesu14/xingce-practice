@@ -1,42 +1,89 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { getQuestions, shuffle } from '../lib/data';
+import { loadProgress } from '../lib/progress';
 import { clearSession, loadSession, sessionKey } from '../lib/session';
-import type { Question } from '../types';
+import type { ProgressStore, Question } from '../types';
+
+const SOURCE_LABELS: Record<string, string> = {
+  pdd: '拼多多26年真题',
+};
 
 export function PracticePage() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [progress, setProgress] = useState<ProgressStore>(loadProgress());
+  const source = params.get('source') || '';
   const initialModule = params.get('module') || '全部';
   const [module, setModule] = useState(initialModule);
   const [count, setCount] = useState(20);
   const [onlyText, setOnlyText] = useState(false);
   const [onlyImaged, setOnlyImaged] = useState(false);
-  const practiceKey = sessionKey('practice');
+  const practiceKey = sessionKey('practice', source || 'default');
   const existing = loadSession(practiceKey);
+  const sourceLabel = SOURCE_LABELS[source] || '';
 
   useEffect(() => {
     getQuestions().then(setQuestions);
+    setProgress(loadProgress());
   }, []);
 
   useEffect(() => {
     setModule(initialModule);
   }, [initialModule]);
 
-  const modules = useMemo(() => {
-    const set = new Set(questions.map((q) => q.module));
-    return ['全部', ...[...set].sort()];
-  }, [questions]);
+  const pool = useMemo(() => {
+    if (!source) return questions;
+    return questions.filter((q) => q.sourceKey === source);
+  }, [questions, source]);
+
+  const moduleStats = useMemo(() => {
+    const map = new Map<string, { total: number; done: number; correct: number }>();
+    for (const q of pool) {
+      const cur = map.get(q.module) || { total: 0, done: 0, correct: 0 };
+      cur.total += 1;
+      const ans = progress.answered[q.id];
+      if (ans) {
+        cur.done += 1;
+        if (ans.correct) cur.correct += 1;
+      }
+      map.set(q.module, cur);
+    }
+    return [...map.entries()]
+      .map(([name, s]) => ({ name, ...s }))
+      .sort((a, b) => b.total - a.total);
+  }, [pool, progress]);
+
+  const allStats = useMemo(() => {
+    const total = pool.length;
+    let done = 0;
+    let correct = 0;
+    for (const q of pool) {
+      const ans = progress.answered[q.id];
+      if (ans) {
+        done += 1;
+        if (ans.correct) correct += 1;
+      }
+    }
+    return { total, done, correct };
+  }, [pool, progress]);
+
+  const modules = useMemo(() => ['全部', ...moduleStats.map((m) => m.name)], [moduleStats]);
 
   const filtered = useMemo(() => {
-    return questions.filter((q) => {
+    return pool.filter((q) => {
       if (module !== '全部' && q.module !== module) return false;
       if (onlyText && (q.needsImage || q.stemImage)) return false;
       if (onlyImaged && !q.stemImage) return false;
       return true;
     });
-  }, [questions, module, onlyText, onlyImaged]);
+  }, [pool, module, onlyText, onlyImaged]);
+
+  const selectedStats = useMemo(() => {
+    if (module === '全部') return allStats;
+    return moduleStats.find((m) => m.name === module) || { total: 0, done: 0, correct: 0 };
+  }, [module, allStats, moduleStats]);
 
   function start(fresh = true) {
     if (fresh) {
@@ -46,7 +93,7 @@ export function PracticePage() {
     } else if (existing?.questionIds?.length) {
       sessionStorage.setItem('xingce-session', JSON.stringify(existing.questionIds));
     }
-    navigate('/quiz?mode=practice');
+    navigate(source ? `/quiz?mode=practice&source=${encodeURIComponent(source)}` : '/quiz?mode=practice');
   }
 
   return (
@@ -54,8 +101,12 @@ export function PracticePage() {
       <Link to="/" className="muted">
         ← 首页
       </Link>
-      <h1>按模块刷题</h1>
-      <p className="lede">当前筛选 {filtered.length} 道可选</p>
+      <h1>{sourceLabel || '按模块刷题'}</h1>
+      <p className="lede">
+        {sourceLabel ? '只练拼多多 26 年新题整理（言语 / 资料数量 / 图形）。' : null}
+        当前筛选 {filtered.length} 道可选；本范围已完成 {selectedStats.done}/{selectedStats.total}
+        {selectedStats.done ? `（对 ${selectedStats.correct}）` : ''}。
+      </p>
 
       {existing?.questionIds?.length ? (
         <div className="banner ok">
@@ -66,15 +117,49 @@ export function PracticePage() {
         </div>
       ) : null}
 
+      <section className="panel">
+        <h2>模块进度</h2>
+        <div className="module-progress-list">
+          <button
+            type="button"
+            className={`module-progress-item${module === '全部' ? ' active' : ''}`}
+            onClick={() => setModule('全部')}
+          >
+            <span className="module-progress-name">全部</span>
+            <span className="module-progress-meta">
+              已完成 {allStats.done}/{allStats.total}
+            </span>
+          </button>
+          {moduleStats.map((m) => (
+            <button
+              key={m.name}
+              type="button"
+              className={`module-progress-item${module === m.name ? ' active' : ''}`}
+              onClick={() => setModule(m.name)}
+            >
+              <span className="module-progress-name">{m.name}</span>
+              <span className="module-progress-meta">
+                已完成 {m.done}/{m.total}
+                {m.done ? ` · 对 ${m.correct}` : ''}
+              </span>
+            </button>
+          ))}
+        </div>
+      </section>
+
       <div className="panel form-panel">
         <label>
           模块
           <select value={module} onChange={(e) => setModule(e.target.value)}>
-            {modules.map((m) => (
-              <option key={m} value={m}>
-                {m}
-              </option>
-            ))}
+            {modules.map((m) => {
+              const s = m === '全部' ? allStats : moduleStats.find((x) => x.name === m);
+              const label = s ? `${m}（${s.done}/${s.total}）` : m;
+              return (
+                <option key={m} value={m}>
+                  {label}
+                </option>
+              );
+            })}
           </select>
         </label>
 
