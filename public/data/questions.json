@@ -709,8 +709,9 @@
     ],
     "answer": "B",
     "explanation": "顺时针旋转90°",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-001.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -745,7 +746,7 @@
     "explanation": "求同法则，前两个图形都有圆，图三是圆；后面的三个图形，前两个都有三角形，因\n此第三个图形是三角形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-002.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-002.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -780,7 +781,7 @@
     "explanation": "每一组图形分别是两百两黑",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-003.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-003.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -815,7 +816,7 @@
     "explanation": "把线条分为上下移动和左右移动，横线从下往上一定1 个单位，竖线从左向右移动1\n个单位（移到最右边就再回到最左边）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-004.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-004.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -850,7 +851,7 @@
     "explanation": "图形1+2=3，第一排图形取最外层图形，第二排的图形为第一排外层图形里面的图形，\n第三排图形是第一排外层+第二排里面的图形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-005.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-005.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -885,7 +886,7 @@
     "explanation": "箭头依次左移一格，方向全部相反（第一个移到最后，全部箭头换方向）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-006.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-006.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -924,7 +925,7 @@
     "explanation": "从最底层开始，两两相加，六边形内重合的线条消除，剩余的\n线条组成上一行的图形。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-007.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-007.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -959,7 +960,7 @@
     "explanation": "数面的数量，BCD 都是4 面",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-008.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-008.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -994,7 +995,7 @@
     "explanation": "竖排依次旋转90°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-009.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-009.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1029,7 +1030,7 @@
     "explanation": "图一和图二叠加得出图三（往中心叠加）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-010.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-010.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1062,8 +1063,9 @@
     ],
     "answer": "D",
     "explanation": "",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-011.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1098,7 +1100,7 @@
     "explanation": "前3 个图，图一加图二，重复的地方不显示，留下不重复的部分，就是图三。后三个图\n也是一样的道理。图一加图二，重复的地方不显示，留下不重复的部分。图一图二两个阴影\n部分未重复，都留下来。图一图二六边形和六边形中的两条线都重复了，不显示。最后只剩\n下两个阴影组成的图形。只有选项D 符合，所以答案选D。（消同存异）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-012.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-012.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1133,7 +1135,7 @@
     "explanation": "第一图中，图一减去图二的一半等干图三;第二图中图一减去图二的一半等于D（第二\n个图形移到第一个图形的一半位置）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-013.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-013.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1168,7 +1170,7 @@
     "explanation": "C 相邻两个图形大小不一，其他图形都有相邻相同的情况",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-014.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-014.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1203,7 +1205,7 @@
     "explanation": "每一行顺时针旋转90°后，再找轴对称；点数：图一+图三=图二",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-015.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-015.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1236,8 +1238,9 @@
     ],
     "answer": "B",
     "explanation": "图形拆解法，将原图拆解",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-016.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1270,8 +1273,9 @@
     ],
     "answer": "B",
     "explanation": "",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-017.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1306,7 +1310,7 @@
     "explanation": "1,4\n；3,5 ；6,7",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-018.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-018.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1341,7 +1345,7 @@
     "explanation": "从b 面看，只有一层是没有中间隔断的，由此推算是C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-019.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-019.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1376,7 +1380,7 @@
     "explanation": "长宽高分别是2,3,4",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-020.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-020.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1411,7 +1415,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-021.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-021.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1446,7 +1450,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-022.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-022.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1481,7 +1485,7 @@
     "explanation": "补成立方体需要8 块，排除法找到8 块的即可",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-023.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-023.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1516,7 +1520,7 @@
     "explanation": "（重点看两个三角形的方向）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-024.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-024.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1551,7 +1555,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-025.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-025.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1586,7 +1590,7 @@
     "explanation": "重点观察右上角的这个图形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-026.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-026.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1621,7 +1625,7 @@
     "explanation": "左右两个图案，图形调换，颜色调换，由于中间是倒三角，调换后再上下调换，由此得\n到C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-027.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-027.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1654,8 +1658,9 @@
     ],
     "answer": "D",
     "explanation": "相同的消去，不同的留下",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-028.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1690,7 +1695,7 @@
     "explanation": "箭头依次顺时针旋转90°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-029.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-029.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1723,8 +1728,9 @@
     ],
     "answer": "A",
     "explanation": "2,3,4 黑球总数一致",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-030.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1759,7 +1765,7 @@
     "explanation": "图形均是封闭图形，且图形之间相邻",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-031.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-031.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1794,7 +1800,7 @@
     "explanation": "1+3,4+6,5+7 是一个整三角形，剩下2 和8 也是一个三角\n形，由此得出D",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-032.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-032.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1829,7 +1835,7 @@
     "explanation": "三个图上都有+号，x 号，黑圆，白圆但是位置不相同。先来看+号的位置，图一到图二\n+号顺时针走了3 个格，图二到图三顺时针+号走了4 个格，所以图四应该是在图三的基础上\n顺时针走5 个格。再来看x 号的位置，图一到图二x 顺时针走了1 个格，图二到图三x 顺时\n针走了1 个格，所以图四应该是在图三的基础上顺时针走1 个格。看黑圆的位置，图一到图\n二顺时针走了6 个格，图二到图三顺时针走了5 个格，所以图四应该是在图三的基础上顺时\n针走了4 个格。看白圆的位置，图一到图二顺时针走了2 个格，图二到图三顺时针走了2\n个格，所以图四应该是在图三的基础上顺时针走2 个格。只有选项A 符合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-033.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-033.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1864,7 +1870,7 @@
     "explanation": "从第一行来看，第一个图加第二图等于第三个图的位置，但是两个黑色的正方形重合不\n显示，灰色正方形和黑色正方形重合显示黑色正方形，灰色正方形加空白显示灰色正方形，\n黑色正方形加灰色正方形显示黑色正方形。第二行，第三行也是一样的道理。第三行第三个\n图，从左到右应该是黑色正方形，灰色正方形，灰色正方形，灰色正方形。只有选项A 符\n合，所以选A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-034.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-034.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1899,7 +1905,7 @@
     "explanation": "（参考）左边的图形是由圆形，方块，三角组成，笔画由三到一。右边应该也是\n由圆形、方块、三角组成，笔画由三到一。所以最后一个应该是三角形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-035.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-035.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1934,7 +1940,7 @@
     "explanation": "大正方形内外侧的小正方形数量相等",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-036.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-036.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -1969,7 +1975,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-037.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-037.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2004,7 +2010,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-038.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-038.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2039,7 +2045,7 @@
     "explanation": "总的正方体有27 块，按照数量进行排除",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-039.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-039.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2074,7 +2080,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-040.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-040.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2109,7 +2115,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-041.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-041.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2144,7 +2150,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-042.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-042.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2179,7 +2185,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-043.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-043.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2214,7 +2220,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-044.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-044.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2249,7 +2255,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-045.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-045.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2284,7 +2290,7 @@
     "explanation": "本题考的叠加，由图1 到图2 到图3 中增加的图形边数相同",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-046.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-046.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2319,7 +2325,7 @@
     "explanation": "每间隔3 个图形出现一次黑圆，三角形顺序是两正一倒",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-047.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-047.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2352,8 +2358,9 @@
     ],
     "answer": "A",
     "explanation": "其他都是轴对称图形",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-048.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2388,7 +2395,7 @@
     "explanation": "第一个图形:由2 个相同的图形组成，外面一个大的，中间还有一个一模一样小的。第\n二个图形:由2 个相同的图形组成，外面一个的大，右下角还有一个一模一样小的。第三个\n图形:由2 个相同的图形组成，外面一个大的，中间还有一个一模一样小的。第四个图形:由\n3 个相同的图形组成。第五个图形:由3 个相同的图形组成。所以前三个图形都是由2 个图形\n组成的。后3 个图形都是由3 个图形组成。只有D 符合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-049.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-049.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2423,7 +2430,7 @@
     "explanation": "只有A 黑色块数、面积和白色块数、面积相等",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-050.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-050.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2458,7 +2465,7 @@
     "explanation": "横线与图形的交点数是有规律的，图一：642；图二：420",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-051.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-051.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2493,7 +2500,7 @@
     "explanation": "第一二行第一个图加第二个图是第三个图，第三行也是一样道理，第一个图加第二个图\n得到第三个图。只有B 符合，所以答案选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-052.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-052.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2528,7 +2535,7 @@
     "explanation": "上图“>”依次向右移动一格，由此选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-053.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-053.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2563,7 +2570,7 @@
     "explanation": "左右两侧的横条数量，B 是唯一一个左右横条数量相等的图形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-054.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-054.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2598,7 +2605,7 @@
     "explanation": "由前三个图可知规律，第二个图和第三个图重合，重复的线条去掉，就得到了第一个图。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-055.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-055.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2633,7 +2640,7 @@
     "explanation": "第一行，图一加图二，重合的地方留下，不重合的地方去掉，得到图三。第二行也是同\n样道理，图一加图二重合的地方留下，不重合的地方去掉，得到图三。所以第三行也是图一\n加图二重合的地方留下，不重合的地方去掉，只有选项D 符合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-056.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-056.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2668,7 +2675,7 @@
     "explanation": "A,C,D 圆球数都是双数，B 是单数",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-057.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-057.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2703,7 +2710,7 @@
     "explanation": "图形左右两端依次相向移动一格，故选C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-058.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-058.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2738,7 +2745,7 @@
     "explanation": "题中第一排1 图两个黑球加2 图两个白球得出3 图，第二排1 图一个白球加2 图一个黑\n球得出3 图:由此可知，1 图和2 图相加得出3 图目数量相同，颜色相同，故选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-059.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-059.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2773,7 +2780,7 @@
     "explanation": "圆形每次顺时针旋转45°，其余三个图形每次顺时针旋转90°，排除CD。四角处的图\n形数量如果是3，那么图中就会有一个黑色图案，四角处的图形数量是2，那么图中就会有\n两个黑色图案。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-060.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-060.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2806,8 +2813,9 @@
     ],
     "answer": "C",
     "explanation": "AB 黑球都比白球多一个",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-061.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2842,7 +2850,7 @@
     "explanation": "题中的图都是由正方形和正方形内的不同线条组成。从第一行看，图一加图二是图三，\n重复的线条不显示，留下不重复的线条。第二三行也是同样道理。只有选项D 符合，所以\n答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-062.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-062.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2877,7 +2885,7 @@
     "explanation": "三个图上都有+号，x 号，黑圆，白圆但是位置不相同。先来看+号的位置，图一到图二\n+号顺时针走了3 个格，图二到图三顺时针+号走了4 个格，所以图四应该是在图三的基础上\n顺时针走5 个格。再来看x 号的位置，图一到图二顺时针走了1 个格，图二到图三x 顺时针\n走了1 个格，所以图四应该是在图三的基础上顺时针走1 个格。看黑圆的位置，图一到图二\n顺时针走了6 个格，图二到图三顺时针走了5 个格，所以图四应该是在图三的基础上顺时针\n走了4 个格。看白圆的位置，图一到图二顺时针走了2 个格，图二到图三顺时针走了2 个格，\n所以图四应该是在图三的基础上顺时针走2 个格。只有选项A 符\n合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-063.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-063.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2912,7 +2920,7 @@
     "explanation": "第一行都是一笔写成的线条，第二行都是两笔写成的线条，第三行都是三笔写成的线条，\n选择选项中是三笔写成的选项，只要A 是三笔写成的，所以答案选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-064.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-064.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2945,8 +2953,9 @@
     ],
     "answer": "A",
     "explanation": "对角线，三角形",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-065.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -2981,7 +2990,7 @@
     "explanation": "图中每个图形都是由3 层图形组成。我们看前三个图，图一(最里面是第一层)第一层放\n到第三层就是图二，图二第一层放到第三层是图三，所以规律是上一个图形的第一层放到第\n二层是下一个图形。所以问号处的图形应该是第一层是菱形，第二层是三角形，第三层是梯\n形。只有C 符合，所以答案选C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-066.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-066.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3016,7 +3025,7 @@
     "explanation": "图中图形都是由一个正方形黑白阴影，白圆和黑圆组成。从黑白阴影来看，前4 个图形\n阴影位置依次是右下左上，所以下一个图阴影应该在正方形的右面。从黑圆来看，前4 个图\n形黑圆位置依次是左上右下左上右下，所以下一个图黑圆应该在正方形的左上角。从白圆来\n看，前4 个图形白圆位置依次是左下左上右上右下，所以下一个图白圆应该在正方形的左下\n角。只有B 符合，所以答案选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-067.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-067.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3051,7 +3060,7 @@
     "explanation": "图中的图形都是五边和五边形中间的线条和黑白圆组成。五边形没有变化，只有五边形\n内部的线条和黑白圆变化。我看来看第一行，图一加图二是图三重复的部分不显示，留下\n不重复的部分。第二行第三行也是一样的道理。只有A 符合，所以答案选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-068.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-068.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3086,7 +3095,7 @@
     "explanation": "前3 个图，图一加图二，重复的地方不显示，留下不重复的部分，就是图三。后三个图\n也是一样的道理。图一加图二，重复的地方不显示，留下不重复的部分。图一图二两个阴影\n部分未重复，都留下来，图一图二六边形和六边形中的两条线都重复了，不显示，最后只剩\n下两个阴影组成的图形。只有选项D 符合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-069.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-069.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3121,7 +3130,7 @@
     "explanation": "三个图上都有+号，x 号，黑圆，白圆但是位置不相同。先来看+号的位置，图一到图二+\n号顺时针走了3 个格，图二到图三顺时针+号走了4 个格，所以图四应该是在图三的基础上\n顺时针走5 个格。再来看x 号的位置，图一到图二顺时针走了1 个格，图二到图三x 顺时针\n走了1 个格，所以图四应该是在图三的基础上顺时针走1 个格。看黑圆的位置，图一到图二\n顺时针走了6 个格，图二到图三顺时针走了\n\n5 个格，所以图四应该是在图三的基础上顺时针走了4 个格。看白圆的位置，图一到图二顺\n时针走了2 个格，图二到图三顺时针走了2 个格，所以图四应该是在图三的基础上顺时针走\n2 个格。只有选项A 符合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-070.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-070.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3156,7 +3165,7 @@
     "explanation": "左侧相同位置的前两个图形黑白块叠加得到第三个图形中相同位罟的方块颜色，白+白=\n黑，白+黑=白，黑+黑=黑",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-071.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-071.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3191,7 +3200,7 @@
     "explanation": "除了A 之外，其他的都是外圈两个图形相同",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-072.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-072.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3224,8 +3233,9 @@
     ],
     "answer": "A",
     "explanation": "从第四个图形开始循环",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-073.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3260,7 +3270,7 @@
     "explanation": "黑色三角形到最后旋转180°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-074.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-074.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3295,7 +3305,7 @@
     "explanation": "图中图形都是由一个正方形黑白阴影，白圆和黑圆组成。从黑白阴影来看，前4 个图形\n阴影位置依次是右下左上，所以下一个图阴影应该在正方形的右面。从黑圆来看，前4 个图\n形黑圆位置依次是左上右下左上右下，所以下一个图黑圆应该在正方形的左上角。从白圆来\n看，前4 个图形白圆位置依次是左下左上右上右下，所以下一个图白圆应该在正方形的左下\n角。只有B 符合，所以答案选B",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-075.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-075.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3330,7 +3340,7 @@
     "explanation": "由题可\n知图7 加图8 是图4，图9 加图10 是图6，图8 加图9 是图5，图4 加图5 是图2，图5 加\n图6 是图3 但重合的地方不显示，留下不重合的地方。所以图二加图三是图一。只有D 符\n合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-076.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-076.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3365,7 +3375,7 @@
     "explanation": "题中126 是笑脸，45 是哭脸，由图可知，笑脸眼睛是眼睛是向右看，哭脸眼睛向左看，\n图2 笑脸眼睛向左看，错误。选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-077.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-077.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3398,8 +3408,9 @@
     ],
     "answer": "A",
     "explanation": "每一列消同存异",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-078.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3434,7 +3445,7 @@
     "explanation": "外圆贴着最长边，只有A 外圆贴的是小边",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-079.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-079.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3469,7 +3480,7 @@
     "explanation": "图中的图形都是一个正方形带有上下左右4 个箭头。我们从箭头和正方形入手。第一个\n图是上面黑箭头，左上角黑三角形。第二个图是左面黑箭头，右上角黑三角形。第三个图是\n\n下面黑箭头，右下角黑三角形。第四个图是右面黑箭头，左下角黑三角形。第五个图和第一\n个图一样，第六个图和第二个图一样。所以前4 个图是一个规律，不断重复，问号处的图形\n应该是规律的第一个图。只有C 符合，所以答案选C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-080.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-080.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3502,8 +3513,9 @@
     ],
     "answer": "B",
     "explanation": "固定方向对称轴",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-081.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3538,7 +3550,7 @@
     "explanation": "BCD 的三角形顶点都和黑色正方形交，但A 黑色正方形和三角形的直角边交",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-082.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-082.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3573,7 +3585,7 @@
     "explanation": "黑+黑=黑，白+白=白，黑+白=白",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-083.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-083.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3606,8 +3618,9 @@
     ],
     "answer": "A",
     "explanation": "中心对称原则",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-084.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3640,8 +3653,9 @@
     ],
     "answer": "A",
     "explanation": "A 是对称图形",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-085.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3676,7 +3690,7 @@
     "explanation": "灰色图案交替出现，且出现呈现一定规律",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-086.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-086.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3711,7 +3725,7 @@
     "explanation": "每行所有总图形元素相同",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-087.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-087.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3744,8 +3758,9 @@
     ],
     "answer": "A",
     "explanation": "中心对称",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-088.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3780,7 +3795,7 @@
     "explanation": "左下角的黑色三角形保持不动，另一个黑色三角形依次顺时针翻转一个单位。两个小圆\n形也依次顺时针旋转一个单位。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-089.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-089.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3815,7 +3830,7 @@
     "explanation": "第一行和第二行，前两个图，圆点的位置合起来，是第三个图的位置。而且两个白色圆\n点重合，变成黑色圆点。可知第三行下一个图，最底下两个位置是白色圆点，只有B 符合。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-090.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-090.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3850,7 +3865,7 @@
     "explanation": "逆时针，相隔的补充为完整的三角形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-091.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-091.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3883,8 +3898,9 @@
     ],
     "answer": "A",
     "explanation": "",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-092.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3919,7 +3935,7 @@
     "explanation": "逆时针螺旋++（看每一层的符号规律，都是++--xx 一÷÷，所以黑框最外层依次缺--\n÷÷x，所以选C）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-093.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-093.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3952,8 +3968,9 @@
     ],
     "answer": "D",
     "explanation": "数图形内小三角形的个数",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-094.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -3988,7 +4005,7 @@
     "explanation": "看前三个图，图一图二都有倒三角形，图三是倒三角形。所以规律是图三是图一图二都\n有的图形。只有选项B 图一图二都有，所以答案选B",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-095.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-095.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4023,7 +4040,7 @@
     "explanation": "笑脸顺时针走两步，哭脸走一步",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-096.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-096.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4056,8 +4073,9 @@
     ],
     "answer": "D",
     "explanation": "黑+黑=白，黑+白=黑",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-097.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4092,7 +4110,7 @@
     "explanation": "前三个图形，图一上面黑色图形，下面白色图形。图二左面黑色图形，右面黑色图形。\n\n图三上面白色图形，下面黑色图形。后三个图形，图一上面黑色图形，下面白色图形。图二\n左面黑色图形，右面黑色图形。所以问号处的图形应该是上面白色图形，下面黑色图形。只\n有C 符合，所以答案选C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-098.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-098.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4127,7 +4145,7 @@
     "explanation": "图形规律为：二等分、三等分、四等分",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-099.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-099.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4160,8 +4178,9 @@
     ],
     "answer": "B",
     "explanation": "左右两侧横条数量相等",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-100.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4196,7 +4215,7 @@
     "explanation": "下线逆时针90°旋转，右线顺时针45°走",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-101.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-101.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4231,7 +4250,7 @@
     "explanation": "BCD 选项中的三角形其中两个顶点接触外边的正方形框，A 项是三个顶点都接触。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-102.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-102.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4266,7 +4285,7 @@
     "explanation": "看前三个图形，图一到图二，白色图形逆时针旋转90°，黑色小正方形沿白色图形的长边\n走一格。图二到图三也是一样道理。所以规律是白色图形每次逆时针旋转90°黑色小正方形\n每次沿白色图形的长边走一格。只有D 符合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-103.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-103.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4301,7 +4320,7 @@
     "explanation": "图一图二合起来，留下重合的线条。所得的图形再旋转90°。得到图三。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-104.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-104.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4336,7 +4355,7 @@
     "explanation": "上图中图形2.34 里面小图是实心且在外图中心，图形1 不符合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-105.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-105.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4371,7 +4390,7 @@
     "explanation": "叠加，黑+黑=白，黑+白=白，白+白=白",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-106.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-106.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4404,8 +4423,9 @@
     ],
     "answer": "B",
     "explanation": "三个图形相同",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-107.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4440,7 +4460,7 @@
     "explanation": "ABCE 项中间图形的边数均比小圆球的数量多，D 项是相等。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-108.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-108.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4475,7 +4495,7 @@
     "explanation": "外圈顺时针旋转90°，内圈逆时针旋转90°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-109.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-109.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4510,7 +4530,7 @@
     "explanation": "看圆圈数量和边的数量，逐一减少",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-110.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-110.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4545,7 +4565,7 @@
     "explanation": "旋转180°后，第三张图是第二张的对称图形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-111.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-111.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4580,7 +4600,7 @@
     "explanation": "黑色部分面积占比，其他都是三分之一",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-112.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-112.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4615,7 +4635,7 @@
     "explanation": "所有图形都只有一条对称轴",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-113.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-113.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4650,7 +4670,7 @@
     "explanation": "白色图形下对应竖线为奇数（531；246 的规律查找）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-114.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-114.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4685,7 +4705,7 @@
     "explanation": "图一中的左侧(或右侧)图形向右(或向左)移动，得到图二，继续移动得到图三",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-115.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-115.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4720,7 +4740,7 @@
     "explanation": "我们竖着来看，第一二列图一加图二加图三是一个完整的正方形，第三列也是同样道理，\n图一加图二加图三是一个完整的正方形。只有D 符合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-116.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-116.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4759,7 +4779,7 @@
     "explanation": "每一行两大一小星星，一黑",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-117.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-117.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4794,7 +4814,7 @@
     "explanation": "在第一图的两线交点处加图形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-118.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-118.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4829,7 +4849,7 @@
     "explanation": "第一行，图一加图二重合的地方留下，不重合的地方去掉，得到图三。第二行也是同样\n道理，图一加图二，重合的地方留下，不重合的地方去掉，得到图三。所以第三行也是图一\n加图二，重合的地方留下，不重合的地方去掉，只有选项D 符合，所以答案选D",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-119.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-119.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4864,7 +4884,7 @@
     "explanation": "从第一行来看，第一个图加第二图等于第三个图的位置，但是两个黑色的正方形重合不\n显示，灰色正方形和黑色正方形重合显示黑色正方形，灰色正方形加空白显示灰色正方形，\n黑色正方形加灰色正方形显示里色正方形。第二行，第三行也是一样的道理，第三行第三个\n图，从左到右应该是里色正方形，灰色正方形，灰色正方形，灰色正方形。只有选项A 符\n合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-120.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-120.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4897,8 +4917,9 @@
     ],
     "answer": "D",
     "explanation": "最外圈和最里圈一样",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-121.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4931,8 +4952,9 @@
     ],
     "answer": "C",
     "explanation": "C 项对称",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-122.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -4967,7 +4989,7 @@
     "explanation": "前三个图，图一和图二合起来，逆时针旋转90°等于第三个图。所以后三个图应该也是，\n图一合图二合起来，逆时针旋转90°等于第三个图。只有选项D 符合，所以选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-123.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-123.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5002,7 +5024,7 @@
     "explanation": "每一列的横不变，竖的向上增加",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-124.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-124.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5037,7 +5059,7 @@
     "explanation": "上面6-4-2-0，递减2；下面5-4-3-2，递减1",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-125.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-125.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5072,7 +5094,7 @@
     "explanation": "前三个图形，图一图二都有圆，图三是圆。图一图二是两个图形，图三是一个图形。后\n三个图形应该也是一样的道理，图一图二都有三角形，所以图三是三角形，图一图二是两个\n图形，图三是一个图形。只有选项C 符合，所以选C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-126.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-126.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5107,7 +5129,7 @@
     "explanation": "题中图形都是圆和4 根指针组成(三角指针，白圆指针，正方形指针，黑圆指针)。从三角\n指针看:图一到图四三角指针依次顺时针转了180°、180°、180°。从白圆指针看:图一到图四\n白圆指针依次顺时针旋转了90°90°、90°。从正方形指针看:图一到图四正方形指针依次顺时\n针旋转了45°45°、45°。从黑圆指针看:图一到图四依次顺时针旋转了135°、135°135°。所以\n问号处图形，三角指针在图四的基础上顺时针旋转180°，白圆指针在图四的基础上顺时针\n旋转90°，正方形指针在图四的基础上顺时针旋转45°，黑圆指针在图四的基础上顺时针旋\n转135°。只有上图第四项符合，所以答案选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-127.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-127.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5142,7 +5164,7 @@
     "explanation": "前三个图，图一加图二重合的地方不要，留下不重合的线条，得到图三。后三个图也是\n一样的道理，图一加图二，重合的地方不要，留下不重合的线条。最后只剩下左边一条线，\n只有选项B 符合，所以选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-128.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-128.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5175,8 +5197,9 @@
     ],
     "answer": "A",
     "explanation": "交点数依次递减2",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-129.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5211,7 +5234,7 @@
     "explanation": "第一个图顺时针旋转90°，再和图二叠加得出图三",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-130.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-130.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5246,7 +5269,7 @@
     "explanation": "第一个图形到第二个图形C 移动了两次，第二个图形到第三个图形C 移动了一次，所以\n第三个图形到第四个图形C 应该移动两次。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-131.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-131.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5281,7 +5304,7 @@
     "explanation": "图1,2,4 顶点相接（相接与点，C 相接与边），所以选C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-132.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-132.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5316,7 +5339,7 @@
     "explanation": "前三个图，图一加图二等于第三个图。后三个图也是同样的道理，图一加图二等于下一\n个图。只有选项B 符合，所以答案选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-133.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-133.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5351,7 +5374,7 @@
     "explanation": "正方形上下挪一格，三角形左右挪一格",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-134.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-134.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5386,7 +5409,7 @@
     "explanation": "三个图上都有+号，x 号，黑圆，白圆但是位置不相同。先来看+号的位置，图一到图二+\n\n号顺时针走了3 个格，图二到图三顺时针+号走了4 个格，所以图四应该是在图三的基础上\n顺时针走5 个格。再来看*号的位置，图一到图二x 顺时针走了1 个格，图二到图三x 顺时\n针走了1 个格，所以图四应该是在图三的基础上顺时针走1 个格。看黑圆的位置，图一到图\n二顺时针走了6 个格，图二到图三顺时针走了5 个格，所以图四应该是在图三的基础上顺时\n针走了4 个格。看白圆的位置，图一到图二顺时针走了2 个格，图二到图三顺时针走了2\n个格，所以图四应该是在图三的基础上顺时针走2 个格。只有选项A 符合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-135.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-135.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5421,7 +5444,7 @@
     "explanation": "黑+黑=空白圈, 空白圈+黑=无, 无+白=白,无+黑=黑",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-136.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-136.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5456,7 +5479,7 @@
     "explanation": "空白+三角=空白;三角+空白=三角，三角+三角=无。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-137.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-137.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5491,7 +5514,7 @@
     "explanation": "元素种类，只有B 是三种元素",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-138.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-138.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5526,7 +5549,7 @@
     "explanation": "每一行黑白个数相等",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-139.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-139.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5561,7 +5584,7 @@
     "explanation": "前三个图，图一和图二合起来，顺时针旋转90°等于第三个图。所以后三个图应该也是，\n图一合图二合起来，顺时针旋转90°等于第三个图。只有选项D 符合，所以选D。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-140.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-140.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5596,7 +5619,7 @@
     "explanation": "图中图形都是一个圆被分成八份，还有一个小圆和一个小星星组成。那我们从小星星的\n位置入手，图一到图二小星星顺时针走了1 个格，图二到图三小星星顺时针走了3 个格，图\n三到图四小星星顺时针走了5 个格，小星星走的格数是1、3、5，所以下一个图小星星，应\n该在图四的基础上顺时针走7 个格。我们再来看小圆的位置，图一到图二逆时针走2 个格，\n图二到图三逆时针走2 个格，图三到图四逆时针走2 个格。所以下一个图小圆，应该在图四\n的基础上逆时针走2 个格。只有选项B 符合，所以选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-141.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-141.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5631,7 +5654,7 @@
     "explanation": "第一排，第一个图加第二图，留下重合的黑色小正方形，不重合的去掉，得到第三个图\n形。第二排第三排也是一样道理。只有选项A 符合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-142.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-142.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5666,7 +5689,7 @@
     "explanation": "图中的图形都是正方形一半黑色，一半白色，有一个黑色小球和一个白色小球。我们从\n正方形中一半黑一半白入手，图一左白右黑，图二上白下黑，图三左黑右白，图四上黑下白，\n所以下一个图应该是左白右黑，排除A 选项，再来看黑色小球，图一到图四位置依次是，\n左上，右下，左上，右下，所以下一个图小黑球的位置应该是左上角。排除D 选项。再来\n看小白球位置，小白球顺时针旋转，所以下一个图小口球位置应该是左下角。排除C 所以答\n案选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-143.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-143.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5701,7 +5724,7 @@
     "explanation": "从第一行来看，第一个图加第二图等于第三个图的位置，但是两个黑色的正方形重合不\n显示，灰色正方形和黑色正方形重合显示黑色正方形，灰色正方形加空白显示灰色正方形，\n黑色正方形加灰色正方形显示黑色正方形。第二行，第三行也是一样的道理。第三行第三个\n图，从左到右应该是黑色正方形，灰色正方形，灰色正方形，灰色正方形。只有选项A 符\n合，所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-144.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-144.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5736,7 +5759,7 @@
     "explanation": "第一排的三个图形，第一个图形加第二个图形，重合的线条不要，留下不重合的线条。\n第二排也是一样，第一个图形加第二个图形，重合的线条不要，留下不重合的线条。所以第\n三排的规律和第一二排一样，也是第一个图形加第二个图形，重合的线条不要，留下不重合\n的线条。所以第三排第三个图形应该是一个竖着的三角形和一条小横线。选项只有A 符合，\n所以选A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-145.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-145.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5771,7 +5794,7 @@
     "explanation": "图一+图二最里侧的图形=图三",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-146.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-146.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5806,7 +5829,7 @@
     "explanation": "图中的图形都是正方形中带有不规则的线条，那我们从线条数入手。图一中正方形内是\n一条线，图二中是两条线，图三中是一个三角形三条线，图四中是一个正方形四条线，很显\n然规律就是线条数，依次+1，那么下一图中正方形内的线条数应为4+1=5 条。其中选项A\n与B 有不同的数法(因为有相交的线条，也可以数出来5 条，但不完全是5 条) 我们先不优\n先考虑，选项D 是四条线排除选项C5 条，且只有一种数法，答案为C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-147.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-147.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5839,8 +5862,9 @@
     ],
     "answer": "D",
     "explanation": "两个图形向同向移动",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-148.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5873,8 +5897,9 @@
     ],
     "answer": "C",
     "explanation": "顺时针移动",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-149.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5909,7 +5934,7 @@
     "explanation": "黑+白=黑；白+白=白，黑+黑=黑",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-150.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-150.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5942,8 +5967,9 @@
     ],
     "answer": "D",
     "explanation": "ABC 均有三个直角拐点",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-151.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -5978,7 +6004,7 @@
     "explanation": "星+空=空；空+空=星，星+星=星",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-152.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-152.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6011,8 +6037,9 @@
     ],
     "answer": "C",
     "explanation": "里外图形不一致",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-153.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6047,7 +6074,7 @@
     "explanation": "白白=黑，黑黑=黑，黑白=白",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-154.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-154.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6082,7 +6109,7 @@
     "explanation": "一行为一组，横横保留左横，横竖保留竖",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-155.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-155.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6117,7 +6144,7 @@
     "explanation": "每一行，都有直线、曲线、曲线+直线",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-156.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-156.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6152,7 +6179,7 @@
     "explanation": "图一+图二，然后旋转90°得到图三",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-157.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-157.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6185,8 +6212,9 @@
     ],
     "answer": "A",
     "explanation": "其他都是轴对称图形",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-158.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6221,7 +6249,7 @@
     "explanation": "每行均有心形、小圆、大圆、十字、x、三角形五边形元素，问号处缺少大圆和x 元素",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-159.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-159.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6256,7 +6284,7 @@
     "explanation": "题里第三张图含有第一张和第二张图的重台元素，题目里图一和图二中只有月亮重合，\n所以第三张图里一定有月亮",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-160.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-160.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6291,7 +6319,7 @@
     "explanation": "图一最左边的黑点往下走，中间的黑点往左走，右边的黑点往左走，三个黑点走到头后\n一律回到另一边重新开始走",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-161.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-161.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6324,8 +6352,9 @@
     ],
     "answer": "C",
     "explanation": "只有C 有6 个面",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-162.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6360,7 +6389,7 @@
     "explanation": "平移",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-163.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-163.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6395,7 +6424,7 @@
     "explanation": "左右圆改变颜色，中间圆颜色不变，旋转图形即可",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-164.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-164.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6430,7 +6459,7 @@
     "explanation": "第一层顺时针，第二层逆时针",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-165.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-165.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6463,8 +6492,9 @@
     ],
     "answer": "B",
     "explanation": "黑白色块数量",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-166.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6499,7 +6529,7 @@
     "explanation": "图三的最里层是图二的外层，中间层是图一的外层，外层是图二的外层。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-167.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-167.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6534,7 +6564,7 @@
     "explanation": "图形中的黑色区域依次为一笔画、两笔画、一笔画、两笔画、一笔画，故最后一个图黑\n色区域应该为两笔画，只有C 项符合",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-168.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-168.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6569,7 +6599,7 @@
     "explanation": "黑色方块向右移动两个，超过宫格范围便向下一格，圆形向右移动一格并向下移动一行，\n\"应该选B，黑色方块向右移动两个，超过宫格范围便向下一格，圆形向右移动一格并向下\n移动一行",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-169.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-169.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6604,7 +6634,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-170.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-170.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6639,7 +6669,7 @@
     "explanation": "对称轴的数量都是121",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-171.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-171.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6674,7 +6704,7 @@
     "explanation": "交点数分别为1,2,3,4",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-172.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-172.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6707,8 +6737,9 @@
     ],
     "answer": "D",
     "explanation": "合并，旋转90°",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-173.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6743,7 +6774,7 @@
     "explanation": "只有B 圆在两个重叠的地方",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-174.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-174.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6778,7 +6809,7 @@
     "explanation": "图二内圈变外圈，图一外圈+图二外圈并入图三内圈--合并",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-175.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-175.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6813,7 +6844,7 @@
     "explanation": "按照黑色圆点移动，只有C 最符合",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-176.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-176.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6846,8 +6877,9 @@
     ],
     "answer": "D",
     "explanation": "轴对称",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-177.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6882,7 +6914,7 @@
     "explanation": "有空、白、黑三种，白加白等于黑，黑加黑等于白，空加白等于白，空加黑等于黑，白\n加黑等于空",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-178.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-178.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6915,8 +6947,9 @@
     ],
     "answer": "A",
     "explanation": "交点数量依次递减",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-179.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6951,7 +6984,7 @@
     "explanation": "图1、2 里最小面积的图形拼接，再中心对称",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-180.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-180.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -6984,8 +7017,9 @@
     ],
     "answer": "A",
     "explanation": "对称轴数量",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-181.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7020,7 +7054,7 @@
     "explanation": "白白得白，白黑得黑，黑黑得白",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-182.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-182.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7055,7 +7089,7 @@
     "explanation": "去同存异后，顺时针45°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-183.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-183.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7090,7 +7124,7 @@
     "explanation": "每个图形的内部有且只有一个与外部大图形一致的图案",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-184.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-184.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7125,7 +7159,7 @@
     "explanation": "黑球逆时针旋转，方形沿对角线移动，每次移动距离均相等",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-185.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-185.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7158,8 +7192,9 @@
     ],
     "answer": "D",
     "explanation": "曲、直线、三角",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-186.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7194,7 +7229,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-187.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-187.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7227,8 +7262,9 @@
     ],
     "answer": "B",
     "explanation": "元素不重复",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-188.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7263,7 +7299,7 @@
     "explanation": "每一行，黑白球总数量相等",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-189.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-189.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7298,7 +7334,7 @@
     "explanation": "每行每列都含有正方形、长方形、大圆、小圆、三角形、线条元素，问号处缺少长方形",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-190.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-190.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7333,7 +7369,7 @@
     "explanation": "横线逆时针旋转，竖线不变",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-191.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-191.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7368,7 +7404,7 @@
     "explanation": "消同存异",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-192.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-192.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7403,7 +7439,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-193.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-193.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7438,7 +7474,7 @@
     "explanation": "轴对称",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-194.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-194.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7471,8 +7507,9 @@
     ],
     "answer": "B",
     "explanation": "B 全是三角形",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-195.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7505,8 +7542,9 @@
     ],
     "answer": "C",
     "explanation": "按照行黑白叠加规则",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-tx/pdd-tx-196.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7541,7 +7579,7 @@
     "explanation": "两条线条，一条旋转90°，一条旋转45°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-197.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-197.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7576,7 +7614,7 @@
     "explanation": "黑白=黑，白白=白，黑黑=黑",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-198.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-198.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7611,7 +7649,7 @@
     "explanation": "分割线之间都有交点，D 没有",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-199.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-199.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7646,7 +7684,7 @@
     "explanation": "去同存异，前两个图形结合去同存异得出第三个图形，选择A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-200.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-200.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7681,7 +7719,7 @@
     "explanation": "D 是四部分组成，其他是三部分",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-201.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-201.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7716,7 +7754,7 @@
     "explanation": "去同存异，图二图三去同存异结合后得到图一",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-202.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-202.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7751,7 +7789,7 @@
     "explanation": "选项ACDE 是外面图形边数大于里面图形边数，只有选项B 不一致。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-203.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-203.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7786,7 +7824,7 @@
     "explanation": "前三图均有三条线，后三条都有四条线",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-204.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-204.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7821,7 +7859,7 @@
     "explanation": "用图二去截图一，得到图三",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-205.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-205.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7856,7 +7894,7 @@
     "explanation": "图一+图二=图三，星星重合只显示一个",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-206.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-206.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7891,7 +7929,7 @@
     "explanation": "前一图下面外侧的图形=后一图上面的图形、且相邻两图中有且只有一个相同图形，且相\n邻两图中(1 与32 与4)，有两组相同图形，但大小相反",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-207.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-207.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7926,7 +7964,7 @@
     "explanation": "每行均有两个黑球两个白球",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-208.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-208.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7961,7 +7999,7 @@
     "explanation": "黑点顺时针旋转90°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-209.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-209.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -7996,7 +8034,7 @@
     "explanation": "图二包含图一，图三包含图二",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-210.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-210.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -8031,7 +8069,7 @@
     "explanation": "图三为图一的下半部分+图二的中间部分",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-211.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-211.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -8066,7 +8104,7 @@
     "explanation": "示例中右侧上下两图都比左侧上下两图少了个勾，问号上面的图形比它左侧的图形少了\n个Y，那么问号处也应比左侧少个Y",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-212.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-212.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -8101,7 +8139,7 @@
     "explanation": "每个图中均有且只有一个封闭空间",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-213.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-213.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -8136,7 +8174,7 @@
     "explanation": "规律变化是两个封闭空间、一个封闭空间循环",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-214.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-214.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -8171,7 +8209,7 @@
     "explanation": "无",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-215.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-215.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"
@@ -8206,7 +8244,7 @@
     "explanation": "图一中是两条重合的线，其中一条依次顺时针旋转90°，另一条依次逆时针旋转45°",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-tx/pdd-tx-216.png?v=7",
+    "stemImage": "/images/pdd-tx/pdd-tx-216.png?v=8",
     "tipIds": [
       "tip-tx-shuliang",
       "tip-tx-weizhi"

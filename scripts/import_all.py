@@ -1264,9 +1264,11 @@ def parse_pdd_bank(
 
 
 def build_pdd_graphic_questions() -> list[dict[str, Any]]:
-    """拼多多图推：只用有解析段（题干+解析），并从同一页截取配图。
+    """拼多多图推：有解析段抽题干/解析，并按「答：X」出现顺序一一截图。
 
-    注意：前半「无解析」截图与后半「有解析」题序并不对应，绝不能按序号 zip。
+    关键：前半无解析截图与后半有解析题序不对应，绝不能按序号 zip。
+    正确做法：parse_pdd_bank 与页面上「答：X」标记是同一顺序（已验证 216/216 字母一致），
+    每道题截取「上一答标记 → 本答标记」之间的图（可跨到上/下页）。
     """
     try:
         import fitz
@@ -1295,54 +1297,110 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
     img_root = OUT_DIR.parent / "images" / "pdd-tx"
     img_root.mkdir(parents=True, exist_ok=True)
 
-    page_text: list[str] = []
-    for i in range(doc.page_count):
-        page_text.append(re.sub(r"\s+", "", doc[i].get_text() or ""))
+    # 与 parse_pdd_bank 同一顺序遍历「答：X」锚点
+    page_answers: list[tuple[int, float, str]] = []
+    for pi in range(explained_start, doc.page_count):
+        page = doc[pi]
+        hits: list[tuple[float, str]] = []
+        for w in page.get_text("words"):
+            m = re.match(r"(?:正确答案|答案|答)\s*[：:;；]?\s*([A-E])\b", w[4])
+            if m:
+                hits.append((float(w[1]), m.group(1).upper()))
+        hits.sort(key=lambda x: x[0])
+        uniq: list[tuple[float, str]] = []
+        for y, a in hits:
+            if uniq and abs(uniq[-1][0] - y) < 12:
+                continue
+            uniq.append((y, a))
+        for y, a in uniq:
+            page_answers.append((pi, y, a))
 
-    def find_page(stem: str, expl: str = "") -> int | None:
-        """优先用解析里的独特句子定位；题干常是「问号处…」这种套话，不可靠。"""
-        candidates: list[str] = []
-        expl_key = re.sub(r"\s+", "", expl or "")
-        stem_key = re.sub(r"\s+", "", stem or "")
-        # 解析前 30～50 字通常足够唯一
-        for src, lengths in (
-            (expl_key, (40, 28, 18, 12)),
-            (stem_key, (28, 20, 14)),
-        ):
-            for length in lengths:
-                if len(src) >= length:
-                    candidates.append(src[:length])
-        # 过短/过泛的题干不要单独用来搜页
-        generic = re.compile(
-            r"^(从所给的四个选项中|问号处的图形应该是|找出下列图形中不同于|接下来的图形应该是|根据图形规律)"
+    if len(page_answers) != len(explained):
+        print(
+            f"  WARN graphic answer count mismatch: page={len(page_answers)} text={len(explained)}"
         )
-        for needle in candidates:
-            if len(needle) < 10:
-                continue
-            if generic.search(needle) and len(needle) < 24:
-                continue
-            for pi in range(explained_start, doc.page_count):
-                if needle in page_text[pi]:
-                    return pi
-        return None
+    mismatch = 0
+    for i, exp in enumerate(explained):
+        if i >= len(page_answers):
+            break
+        if (exp.get("answer") or "").upper() != page_answers[i][2]:
+            mismatch += 1
+    if mismatch:
+        print(f"  WARN graphic answer letter mismatches: {mismatch}")
+    else:
+        print(f"  -> page answer anchors aligned: {min(len(page_answers), len(explained))}")
 
-    def images_between(page: Any, y0: float, y1: float) -> list[tuple[float, float, float, float]]:
+    def images_in_y_range(
+        page: Any, y0: float, y1: float
+    ) -> list[tuple[float, float, float, float]]:
         out = []
-        for b in page.get_text("dict")["blocks"]:
-            if b.get("type") != 1:
+        for info in page.get_image_info(xrefs=True):
+            x0, by0, x1, by1 = info["bbox"]
+            if by1 < y0 - 8 or by0 > y1 + 8:
                 continue
-            x0, by0, x1, by1 = b["bbox"]
-            mid = (by0 + by1) / 2
-            if mid < y0 - 4 or mid > y1 + 4:
-                continue
-            if (x1 - x0) * (by1 - by0) < 60 * 60:
+            if (x1 - x0) * (by1 - by0) < 50 * 50:
                 continue
             out.append((x0, by0, x1, by1))
         out.sort(key=lambda b: b[1])
         return out
 
+    def clip_for_answer(idx: int) -> tuple[Any, Any] | None:
+        """返回 (page, clip_rect) 或 None。"""
+        if idx >= len(page_answers):
+            return None
+        pi, ay, _ = page_answers[idx]
+        page = doc[pi]
+        if idx > 0 and page_answers[idx - 1][0] == pi:
+            y0 = page_answers[idx - 1][1] + 4
+        else:
+            y0 = page.rect.y0 + 30
+        imgs = images_in_y_range(page, y0, ay - 2)
+        # 图在上一页底部（本题题干跨页）
+        if not imgs and pi > explained_start:
+            prev = doc[pi - 1]
+            prev_ans = None
+            for w in prev.get_text("words"):
+                if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]):
+                    y = float(w[1])
+                    if prev_ans is None or y > prev_ans:
+                        prev_ans = y
+            top = (prev_ans + 8) if prev_ans is not None else prev.rect.y0 + 40
+            prev_imgs = images_in_y_range(prev, top, prev.rect.y1 - 16)
+            if prev_imgs:
+                page = prev
+                imgs = prev_imgs
+        # 图在下一页顶部（答案在本页、图却落到下页——少见）
+        if not imgs and pi + 1 < doc.page_count:
+            nxt = doc[pi + 1]
+            nxt_ans = None
+            for w in nxt.get_text("words"):
+                if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]):
+                    nxt_ans = float(w[1])
+                    break
+            y1 = (nxt_ans - 4) if nxt_ans is not None else nxt.rect.y1 - 40
+            nxt_imgs = images_in_y_range(nxt, nxt.rect.y0 + 10, y1)
+            if nxt_imgs:
+                page = nxt
+                imgs = nxt_imgs
+        if not imgs:
+            return None
+        x0 = min(b[0] for b in imgs) - 6
+        by0 = min(b[1] for b in imgs) - 6
+        x1 = max(b[2] for b in imgs) + 6
+        by1 = max(b[3] for b in imgs) + 6
+        clip = fitz.Rect(
+            max(page.rect.x0 + 16, x0),
+            max(page.rect.y0 + 10, by0),
+            min(page.rect.x1 - 16, x1),
+            min(page.rect.y1 - 10, by1),
+        )
+        if clip.height < 40 or clip.width < 40:
+            return None
+        return page, clip
+
     questions: list[dict[str, Any]] = []
     attached = 0
+    n = len(explained)
     for i, exp in enumerate(explained):
         seq = i + 1
         qid = f"pdd-tx-{seq:03d}"
@@ -1350,77 +1408,37 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
         options = list(exp.get("options") or [])
         expl = exp.get("explanation") or ""
         answer = (exp.get("answer") or "A").upper()
+        # 以页面锚点答案为准（与截图同源）
+        if i < len(page_answers):
+            answer = page_answers[i][2]
 
         if len(options) < 2:
             keys = ["A", "B", "C", "D"] + (["E"] if answer == "E" else [])
             labels = ["一", "二", "三", "四", "五"]
             options = [{"key": k, "text": f"上图第{labels[j]}项"} for j, k in enumerate(keys)]
+        else:
+            # 确保选项键覆盖到答案字母
+            have = {o["key"] for o in options}
+            keys = ["A", "B", "C", "D"] + (["E"] if answer == "E" else [])
+            labels = ["一", "二", "三", "四", "五"]
+            fixed = []
+            for j, k in enumerate(keys):
+                found = next((o for o in options if o["key"] == k), None)
+                if found and (found.get("text") or "").strip():
+                    fixed.append(found)
+                else:
+                    fixed.append({"key": k, "text": f"上图第{labels[j]}项"})
+            options = fixed
 
         stem_image = None
-        pi = find_page(stem, expl)
-        if pi is not None:
-            page = doc[pi]
-            # 锚点：优先用解析句，其次题干
-            anchor_y = None
-            for raw in (expl, stem):
-                key = re.sub(r"\s+", "", raw or "")
-                for length in (24, 16, 12, 8):
-                    if len(key) < length:
-                        continue
-                    anchor_y = _anchor_y_for_needle(page, key[:length])
-                    if anchor_y is not None:
-                        break
-                if anchor_y is not None:
-                    break
-            # 图在「答：X」之上；若锚点是解析文字，答案标记在其上方
-            ans_y = None
-            if anchor_y is not None:
-                # 找锚点上方最近的答案标记
-                best = None
-                for w in page.get_text("words"):
-                    if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]):
-                        y = float(w[1])
-                        if y < anchor_y - 5 and (best is None or y > best):
-                            best = y
-                ans_y = best
-            if ans_y is None:
-                ans_y = _next_answer_y(page, after_y=None)
-            # 截取答案标记上方的图（图推：题干/图 → 答 → 解）
-            y1 = (ans_y - 2) if ans_y is not None else (anchor_y - 4 if anchor_y else page.rect.y1 - 40)
-            prev_ans = _prev_answer_y(page, y1) if y1 else None
-            y0 = (prev_ans + 8) if prev_ans is not None else page.rect.y0 + 40
-            if y1 <= y0:
-                y0 = max(page.rect.y0 + 40, y1 - 280)
-            imgs = images_between(page, y0, y1)
-            # 图在上一页
-            if not imgs and pi > explained_start:
-                prev = doc[pi - 1]
-                prev_ans_y = _prev_answer_y(prev, prev.rect.y1)
-                prev_top = (prev_ans_y + 8) if prev_ans_y is not None else prev.rect.y0 + 40
-                prev_imgs = images_between(prev, prev_top, prev.rect.y1 - 20)
-                if prev_imgs:
-                    page = prev
-                    pi = pi - 1
-                    imgs = prev_imgs
-                    y0 = min(b[1] for b in imgs) - 6
-                    y1 = max(b[3] for b in imgs) + 6
-            if imgs:
-                x0 = min(b[0] for b in imgs) - 6
-                by0 = min(b[1] for b in imgs) - 6
-                x1 = max(b[2] for b in imgs) + 6
-                by1 = max(b[3] for b in imgs) + 6
-                clip = fitz.Rect(
-                    max(page.rect.x0 + 20, x0),
-                    max(page.rect.y0 + 12, by0),
-                    min(page.rect.x1 - 20, x1),
-                    min(page.rect.y1 - 12, by1),
-                )
-                if clip.height >= 40 and clip.width >= 40:
-                    out_path = img_root / f"{qid}.png"
-                    pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
-                    pix.save(str(out_path))
-                    stem_image = f"/images/pdd-tx/{qid}.png?v=7"
-                    attached += 1
+        got = clip_for_answer(i)
+        if got is not None:
+            page, clip = got
+            out_path = img_root / f"{qid}.png"
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
+            pix.save(str(out_path))
+            stem_image = f"/images/pdd-tx/{qid}.png?v=8"
+            attached += 1
 
         q: dict[str, Any] = {
             "id": qid,
