@@ -1,8 +1,8 @@
 {
-  "rawCount": 1990,
-  "uniqueCount": 1892,
+  "rawCount": 1991,
+  "uniqueCount": 1857,
   "beisenCount": 70,
-  "pddCount": 1028,
+  "pddCount": 993,
   "sprintPackCount": 14,
   "sprintQuestionCount": 70,
   "modules": {
@@ -10,16 +10,16 @@
     "思维策略": 15,
     "数字推理": 323,
     "数学运算": 380,
-    "数量关系": 23,
+    "数量关系": 21,
     "资料分析": 324,
     "综合": 28,
-    "言语理解": 550
+    "言语理解": 517
   },
   "sources": {
     "beisen": 70,
     "mock1": 35,
     "mock2": 31,
-    "pdd": 1028,
+    "pdd": 993,
     "plan-w2": 15,
     "plan-w3": 9,
     "docx-sz": 323,
