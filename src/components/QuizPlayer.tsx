@@ -165,6 +165,9 @@ export function QuizPlayer({
           <span className={moduleTagClass(q.module)}>{q.module}</span>
           {q.patternTag ? <span className="tag soft">{q.patternTag}</span> : null}
           <span className="muted">{q.source}</span>
+          <span className="muted tiny" title="题目编号，报 bug 时请发这个">
+            {q.id}
+          </span>
         </div>
 
         <h2 className="stem">{q.stem || '（本题含图形，请结合下图判断）'}</h2>

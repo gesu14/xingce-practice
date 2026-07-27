@@ -33182,7 +33182,7 @@
     ]
   },
   {
-    "id": "pdd-sx-167",
+    "id": "pdd-sx-168",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "数量关系",
@@ -33191,6 +33191,14 @@
       {
         "key": "A",
         "text": "2025"
+      },
+      {
+        "key": "B",
+        "text": "2024"
+      },
+      {
+        "key": "C",
+        "text": "2023"
       },
       {
         "key": "D",
@@ -33208,7 +33216,7 @@
     "patternTag": "数量思维"
   },
   {
-    "id": "pdd-sx-231",
+    "id": "pdd-sx-232",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -33241,7 +33249,7 @@
     ]
   },
   {
-    "id": "pdd-sx-240",
+    "id": "pdd-sx-241",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "数量关系",
@@ -33275,7 +33283,7 @@
     "patternTag": "数量思维"
   },
   {
-    "id": "pdd-sx-268",
+    "id": "pdd-sx-269",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "数量关系",
@@ -35226,6 +35234,14 @@
         "text": "观察嗜盐菌在高浓度环境中是否具有承受强辐射的能力"
       },
       {
+        "key": "B",
+        "text": "观察嗜盐菌在DNA 被破坏之后能否重新恢复正常功能"
+      },
+      {
+        "key": "C",
+        "text": "观察嗜盐菌DNA 被破坏的过程并探索其被修复的奥秘"
+      },
+      {
         "key": "D",
         "text": "观察嗜盐菌在模拟太空的真空环境中是否能够继续生存"
       }
@@ -35856,6 +35872,14 @@
     "stem": "抽卡是指在游戏中通过免费赠送或花钱购买的道具,随机抽得稀有材料的游戏方\n式。除了抽卡,消耗自己积攒的材料以一定的概率合成罕见的游戏角色,也采用了\n\n相似的游戏机制。抽卡游戏实际上是一个概率问题。不确定性的奖励是吸引人们\n抽卡的主要原因。有研究让小鼠按下控制杆,到达一定次数可以获得食物。但一\n组是随机得到的,另一组是有规律地得到的。结果发现,在奖励消除后,随机得到食\n物奖励的小鼠会更持久地按控制杆,这种现象被称为\"间歇强化\"。此外,当我们成\n功的时候,大脑会释放多巴胺以让人感觉愉悦。但与成功失之交臂时,多巴胺同样\n会分论。这种机制会鼓励人们继续努力直到成功。\n下面哪个词能够代替\"失之交臂\", 而使原文意义不变? (  )",
     "options": [
       {
+        "key": "A",
+        "text": "错失良机"
+      },
+      {
+        "key": "B",
+        "text": "擦肩而过"
+      },
+      {
         "key": "C",
         "text": "机不可失"
       },
@@ -35915,6 +35939,14 @@
     "module": "言语理解",
     "stem": "用含0.25mg/m 的藻蓝蛋白(藻青素)处理培养的小鼠骨髓瘤细胞,再经514nm\n激光辐照300J/平方厘米,发现癌细胞存活率仅15% ;而单纯采用激光辐照或藻\n蓝蛋白处理,细胞存活率69%和71%。人大肠癌细胞株HR8348 培养后分别用\n100μg , 50μg , 25μg 的钝顶螺旋藻的藻蓝蛋白处理,经光波为630nm 的铜激光\n辐照12J/cm2,用MTT 法检测培养癌细胞存活率分别为22.2% ,6%和89.7% ,\n显示良好的剂量效应。对肉瘤S180 小鼠,分别给予藻蓝蛋白注射2mg 或口服\n20mg 后,经铜激光福照瘤体15 天后,有效率分别为50%和53% ,与对照组相比,\n\n具显著差异。体内外试验证实藻蓝蛋白确有光教作用,且无毒副反应,是一种理想\n的光敏剂。\n对这段话的理解正确的一项是:",
     "options": [
+      {
+        "key": "A",
+        "text": "藻蓝蛋白与激光照射相结合的杀菌效果比单纯的藻蓝蛋白好得多。"
+      },
+      {
+        "key": "B",
+        "text": "激光的杀灭癌细胞的效果取决于用多少藻蛋白处理癌细胞株。"
+      },
       {
         "key": "C",
         "text": "对小白鼠注射藻蓝蛋白的吸收效果比同等剂量口服藻蓝蛋白的吸收效果好。"
@@ -36655,6 +36687,14 @@
     "module": "言语理解",
     "stem": "虽然春节、清明、端午和中秋都被称为中国四大传统节日，不过与其他三个相\n比，中秋要年轻许多，直到宋代才以\"节日\"的姿态示人。在中国的四大传统节日\n中，春节是资格最老的。虽然将正月初一定为春节是民国成立以后的事了,但是\n\n这个节日本身历史久远保守估计也已经在中国走过了三千年的历程。四大传统节\n日中排行第二的是端午节。端午节起源于先秦,而最终形成独立节日则是在汉魏\n时期。相比较之下,清明节比中秋节略年长些虽然有关清明从节气演变到节日的\n起源，一般会提到春秋时晋文公重耳和其忠臣介子推的传说但传说终归是传说清\n明节的最终生成则是在中国历史上最为辉煌的大唐。\n下面对文本内容理解正确的一项是",
     "options": [
+      {
+        "key": "A",
+        "text": "中秋节在宋代以前就已经中国的节日了。"
+      },
+      {
+        "key": "B",
+        "text": "端午节在先秦时期已形成独立节日。"
+      },
       {
         "key": "C",
         "text": "清明节与春秋时晋文公重耳和其忠臣介子推的传说未必有关。"
@@ -37697,6 +37737,14 @@
     "module": "言语理解",
     "stem": "恐惧是恐怖片给予人最普遍的情绪之一，这种恐惧情绪在不同文化之间具有共同\n的演化起源。人们看恐怖片产生的恐惧，与害怕受到攻击，个人资源被占有的恐\n惧类似，都来源于对\"掠夺\"的原始恐惧。弗洛伊德认为,恐怖电影可以提供一种\n二手但是安全的惊悚体验来探究本我，并唤起深埋已久的情绪，以及被长期禁止\n的欲望。恐怖电影有一种类似于做梦的功能，是一种虚拟实境演练，以利于应付\n真实人生的危急情况。在虚构的世界里预先体验恐惧，可以让我们做好准备，以\n应对真实世界里的危机。\n根据本文内容，下面推断正确的是:",
     "options": [
+      {
+        "key": "A",
+        "text": "就算语言不同，文化背景不同的人也能感知到恐怖片带来的恐惧感。"
+      },
+      {
+        "key": "B",
+        "text": "恐怖片之所以兴起，为了让人们预先演练真实人生。"
+      },
       {
         "key": "C",
         "text": "人们之所以喜欢看恐怖片，是为了体验\"掠夺\"的原始恐惧。"
@@ -39729,6 +39777,14 @@
     "module": "言语理解",
     "stem": "助人从本质上说是人类行为的种表现形式。S 模型认为人们的决策是个单一的比\n较过程。在选择利他还是自私之前，大脑会自动收集支持这两个选项的证据。\n最开始，两个选项的证据都是空白的，人们并没有偏好。但一旦某个选项的证据\n率先超过了阈限，人们就会选择它。但D 模型认为决策在本质上是直觉和理性\n的竞争。人们在直觉上会有一种利他或自私的偏好，旦有机会开始思考自己的直\n觉是否准确，他们可能会发生动摇，转向另一个选择。研究发现，时间压力(在\n2 秒内做出决策)会放大人们这种固有的倾向，使利他者更加利他，而自私者更\n加自私。但当人们需要思考10 秒后才能决策时，原本利他的人变得轻微自私，\n\n而原本自私的人却变得利他。\n下面对本文内容理解正确的是:",
     "options": [
+      {
+        "key": "A",
+        "text": "D 型认为人们的直觉和理性通常是相互矛盾的，因此选择利他还是自私也是不\n固定的。"
+      },
+      {
+        "key": "B",
+        "text": "D 模型认为人们的本性决定了他们会选择利他还是自私，但是思考会让他们改\n变选择。"
+      },
       {
         "key": "C",
         "text": "S 模型认为在助人行为中，人们会首先选择在大脑中有证据支持的选项。"
@@ -45116,6 +45172,14 @@
     "stem": "慢性肾脏病(CKD)是世界范围内的主要健康问题，有观察性研究表明，睡眠时间\n短和睡眠质量差与慢性肾脏病发生率增加有关。然而，由于多种可能的混杂因素，\n因此难以阐明睡眠与慢性肾脏病之间关系的确切性质。有许多研究发现睡眠行为\n与心血管疾病和肾脏功能有关，但很少有研究睡眠时间长短对肾功能的损害。最\n近有研究表明，与中等睡眠对间(每天6-8 小时)相比，短睡眠时间(每天<6 小时)\n或长睡眠时间(每天≥9 小时)与慢性肾脏病患病率较高相关。短睡眠时间的遗传\n风险评分与慢性肾脏病显著相关，这些发现表明短睡眠时间对肾脏功能有明显不\n利影响。\n根据本文内容，下面推断正确的是:",
     "options": [
       {
+        "key": "A",
+        "text": "个体睡眠时间的长短对患慢性肾脏病的风险并不存在显著影响。"
+      },
+      {
+        "key": "B",
+        "text": "短时间质量好的睡眠比长时间睡眠质量差的睡眠对人们的身体更有益。"
+      },
+      {
         "key": "C",
         "text": "睡眠时间长短与心血管疾病之间的关系缺乏一定的研究价值。"
       },
@@ -45654,6 +45718,10 @@
       {
         "key": "A",
         "text": "胚胎,温度做主"
+      },
+      {
+        "key": "B",
+        "text": "TSD 如何影响胚胎性别"
       },
       {
         "key": "C",
@@ -47212,6 +47280,14 @@
     "stem": "年前日本遭遇能源危机,这个资源匮乏的岛国不是被动地应对--在油价高起时\n节制消耗,在油价低廉时又恢复消费的无度,而是把能源危机变成提高国家经济竞\n争力的\"黄金时机\",举国上下厉行节能,政府打出一系列\"政策环保\"牌,使得该国的\n\n能源使用效率不断提升,成为全球楷模。现在,高油价不仅对日本经济的冲击有限,\n反而,之前未雨绸缪建立的低资源消耗发展模式,使得日本企业在高油价时代更具\n竞争优势,低油耗汽车等日本产品风靡全球。可以推知,日本应对能源危机的主动\n策略是_____。",
     "options": [
       {
+        "key": "A",
+        "text": "油价高起时节制消耗,油价低廉时恢复无度消费"
+      },
+      {
+        "key": "B",
+        "text": "改变能源使用方式,以非稀缺能源代替稀缺能源"
+      },
+      {
         "key": "C",
         "text": "调整经济增长发力点,改变过分依赖能源的缺点"
       },
@@ -47680,6 +47756,14 @@
     "stem": "他真是(固执)得像头牛。用下面哪个词语替换括号中的词可以使得句意不变。",
     "options": [
       {
+        "key": "A",
+        "text": "顽固"
+      },
+      {
+        "key": "B",
+        "text": "巩固"
+      },
+      {
         "key": "C",
         "text": "保守"
       },
@@ -48050,6 +48134,10 @@
         "text": "狩猎采集到农耕经济的过渡时期得到了明确。"
       },
       {
+        "key": "B",
+        "text": "研究提取了25 个DNA 样本。"
+      },
+      {
         "key": "C",
         "text": "新石器时代东亚的南北人群的交往逐渐加深。"
       },
@@ -48082,6 +48170,10 @@
       {
         "key": "B",
         "text": "柠檬中的黄酮类成分可以加强柠檬苦素对癌细胞的抑制功效。"
+      },
+      {
+        "key": "C",
+        "text": "癌细胞的出现是由于DNA 损伤，而柠檬中的柚皮素可以促进DNA 修复。"
       },
       {
         "key": "D",
@@ -48150,6 +48242,10 @@
       {
         "key": "C",
         "text": "麻醉剂通过产生内啡肽来直接刺激多巴胺的释放，以此缓解疼痛。"
+      },
+      {
+        "key": "D",
+        "text": "GABA 可以抑制多巴胺神经元激活，进而增加多巴胺的释放。"
       }
     ],
     "answer": "C",
@@ -48656,6 +48752,10 @@
       {
         "key": "C",
         "text": "器官移植技术未来所面临的风险与挑战"
+      },
+      {
+        "key": "D",
+        "text": "3D 打印技术提供了解决当前问题的方案"
       }
     ],
     "answer": "C",
@@ -49842,6 +49942,10 @@
       {
         "key": "C",
         "text": "小黄家有一幅据传是清朝知名画家的画作，小黄为了确认其真实性，登上某电\n视台的宝物鉴赏节目，请专家帮忙鉴定"
+      },
+      {
+        "key": "D",
+        "text": "A 货运公司同B 供应商之间因货物由于大火产生毁损而产生国际贸易争端，作\n为国际贸易仲裁委员会的C 介入为A 与B 进行仲裁"
       }
     ],
     "answer": "A",
@@ -52305,6 +52409,10 @@
     "module": "言语理解",
     "stem": "得知天天逃课，从不按时完成作业的王磊居然在期末考试中取得了全年级第三名的\n\n成绩，李老师不禁(),惊讶万分。填入括号内最恰当的词语是：",
     "options": [
+      {
+        "key": "A",
+        "text": "怛然失色\nB;面如土色"
+      },
       {
         "key": "C",
         "text": "骇人听闻"
@@ -54820,6 +54928,14 @@
         "text": "民航货运量"
       },
       {
+        "key": "B",
+        "text": "铁路客运量"
+      },
+      {
+        "key": "C",
+        "text": "公路货运量"
+      },
+      {
         "key": "D",
         "text": "水运货运量"
       }
@@ -54847,7 +54963,11 @@
       },
       {
         "key": "B",
-        "text": "减少了约108 亿\nc.增长了约66 亿"
+        "text": "减少了约108 亿"
+      },
+      {
+        "key": "C",
+        "text": "增长了约66 亿"
       },
       {
         "key": "D",
@@ -55057,8 +55177,12 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "对团购网站用户进行了一次调查，获得了如下列图表的调查数据。根据图表，回答问题。\n\n下列说法错误的是()\nA25 岁及以下的用户使用最少的团购网站是网站C",
+    "stem": "对团购网站用户进行了一次调查，获得了如下列图表的调查数据。根据图表，回答问题。\n\n下列说法错误的是()",
     "options": [
+      {
+        "key": "A",
+        "text": "25 岁及以下的用户使用最少的团购网站是网站C"
+      },
       {
         "key": "B",
         "text": "46 岁及以上的用户最偏爱的团购网站是网站B"
@@ -55088,6 +55212,14 @@
       {
         "key": "A",
         "text": "收益860.5 元"
+      },
+      {
+        "key": "B",
+        "text": "损失879.5 元"
+      },
+      {
+        "key": "C",
+        "text": "损失883.5 元"
       },
       {
         "key": "D",
@@ -55143,11 +55275,19 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "某公司在4 个地区分别开了4 家连锁店，其商品销售渠道有4 种方式，分别是零售、在\n线、邮件预订、电话。下图反映了某年每个地区4 家连锁店不同渠道的平均销售额。根据图\n表回答下列问题:",
+    "stem": "某公司在4 个地区分别开了4 家连锁店，其商品销售渠道有4 种方式，分别是零售、在\n线、邮件预订、电话。下图反映了某年每个地区4 家连锁店不同渠道的平均销售额。根据图\n表回答下列问题:\nA、B C、D4 个地区零售渠道的销售额之比为()。",
     "options": [
       {
         "key": "A",
         "text": "1:5:4:6"
+      },
+      {
+        "key": "B",
+        "text": "1:4:3:5"
+      },
+      {
+        "key": "C",
+        "text": "2:5:4:6"
       },
       {
         "key": "D",
@@ -55395,8 +55535,12 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "手机的层出不穷给我们带来巨大的便利，但也大大增加了电子垃圾的数量，如果处置不\n当或随意抛弃就会对环境和人类健康构成巨大威胁。以下是关于废置手机处理方式的一些信\n息，请根据这些信息，回答相关问题。\n根据",
+    "stem": "手机的层出不穷给我们带来巨大的便利，但也大大增加了电子垃圾的数量，如果处置不\n当或随意抛弃就会对环境和人类健康构成巨大威胁。以下是关于废置手机处理方式的一些信\n息，请根据这些信息，回答相关问题。\n根据A、B 两家公司的调查数据，大家最不经常使用的废置手机处置方式是()",
     "options": [
+      {
+        "key": "A",
+        "text": "找商家以旧换新"
+      },
       {
         "key": "B",
         "text": "卖到二手市场"
@@ -55655,8 +55799,12 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "下图是世界几个国家去年4 月份APP 的下载情况。从全球的平均结果来看，移动应用\n(APP)76%是智能手机用户下载，24%是PAD 用户下载的，请根据相关信息，回答问题。\n如果德国使用PAD 和智能手机下载APP 的用户比例与全球平均值相同，那么去年4 月份德\n国的智能手机用户数约为()\nA6100 万",
+    "stem": "下图是世界几个国家去年4 月份APP 的下载情况。从全球的平均结果来看，移动应用\n(APP)76%是智能手机用户下载，24%是PAD 用户下载的，请根据相关信息，回答问题。\n如果德国使用PAD 和智能手机下载APP 的用户比例与全球平均值相同，那么去年4 月份德\n国的智能手机用户数约为()",
     "options": [
+      {
+        "key": "A",
+        "text": "6100 万"
+      },
       {
         "key": "B",
         "text": "5900 万"
@@ -55792,6 +55940,14 @@
       {
         "key": "A",
         "text": "电视"
+      },
+      {
+        "key": "B",
+        "text": "电脑"
+      },
+      {
+        "key": "C",
+        "text": "手机"
       },
       {
         "key": "D",
@@ -56194,6 +56350,14 @@
         "text": "约多42 个"
       },
       {
+        "key": "B",
+        "text": "约多8 个"
+      },
+      {
+        "key": "C",
+        "text": "约少8 个"
+      },
+      {
         "key": "D",
         "text": "约少41 个"
       }
@@ -56292,6 +56456,10 @@
         "text": "新闻资讯"
       },
       {
+        "key": "C",
+        "text": "地图导航"
+      },
+      {
         "key": "D",
         "text": "综合电商"
       }
@@ -56379,7 +56547,15 @@
     "options": [
       {
         "key": "A",
-        "text": "923418\nB723419\nC771942"
+        "text": "923418"
+      },
+      {
+        "key": "B",
+        "text": "723419"
+      },
+      {
+        "key": "C",
+        "text": "771942"
       },
       {
         "key": "D",
@@ -56437,6 +56613,14 @@
     "module": "资料分析",
     "stem": "以下判断正确的是()",
     "options": [
+      {
+        "key": "A",
+        "text": "德国的麦产量与肉产量相等"
+      },
+      {
+        "key": "B",
+        "text": "丹麦与法国的薯类产量相等"
+      },
       {
         "key": "C",
         "text": "五个国家中麦产显最高的国家是法国"
@@ -56531,6 +56715,14 @@
     "module": "资料分析",
     "stem": "基本工资与提成的差额呈()趋势。",
     "options": [
+      {
+        "key": "A",
+        "text": "先下降后上升"
+      },
+      {
+        "key": "B",
+        "text": "先上升后下降"
+      },
       {
         "key": "C",
         "text": "一直上升"
@@ -56728,6 +56920,14 @@
         "text": "48%"
       },
       {
+        "key": "B",
+        "text": "52%"
+      },
+      {
+        "key": "C",
+        "text": "78%"
+      },
+      {
         "key": "D",
         "text": "92%"
       }
@@ -56752,6 +56952,14 @@
       {
         "key": "A",
         "text": "第二年到第六年全球隐形矫正市场规模同比增量最多的是第三年"
+      },
+      {
+        "key": "B",
+        "text": "第三年全球隐形矫正市场规模同比增量为32 亿美元"
+      },
+      {
+        "key": "C",
+        "text": "第二年全球隐形矫正市场规模同比增速为44%"
       },
       {
         "key": "D",
@@ -56904,6 +57112,14 @@
     "stem": "下表是近五年电视制作的情况。请根据图表信息，回答相关问题。\n第三年国产电视剧播出部数约占当年电视剧播出部数的()",
     "options": [
       {
+        "key": "A",
+        "text": "25.0%"
+      },
+      {
+        "key": "B",
+        "text": "2.6%"
+      },
+      {
         "key": "C",
         "text": "97.0%"
       },
@@ -56927,8 +57143,12 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "年中国集成电路产业销售收入为7511.8 亿元，同比增长1580%，其中集成电路设计\n业销售收入为3063.5 亿元。同比增长21.6%，占总值40.5%;晶圆制造业销售收入为2149.1\n亿元，同比增长18.20%，占总值的28.40%封测业销售收入为2349.7 亿元，同比增长7.10%，\n占总值的31.1%。根据材料和图表回答下列问题。\n\n2018 年晶圆制造业销售收入和2019 年晶圆制造业销售收入的差值在以下哪个区间中()\nA400 亿元以上",
+    "stem": "年中国集成电路产业销售收入为7511.8 亿元，同比增长1580%，其中集成电路设计\n业销售收入为3063.5 亿元。同比增长21.6%，占总值40.5%;晶圆制造业销售收入为2149.1\n亿元，同比增长18.20%，占总值的28.40%封测业销售收入为2349.7 亿元，同比增长7.10%，\n占总值的31.1%。根据材料和图表回答下列问题。\n\n2018 年晶圆制造业销售收入和2019 年晶圆制造业销售收入的差值在以下哪个区间中()",
     "options": [
+      {
+        "key": "A",
+        "text": "400 亿元以上"
+      },
       {
         "key": "B",
         "text": "350-400 亿元之间"
@@ -56999,7 +57219,11 @@
       },
       {
         "key": "B",
-        "text": "持续下降\nc.先上升后下降"
+        "text": "持续下降"
+      },
+      {
+        "key": "C",
+        "text": "先上升后下降"
       },
       {
         "key": "D",
@@ -57503,6 +57727,14 @@
         "text": "辽宁省"
       },
       {
+        "key": "B",
+        "text": "四川省"
+      },
+      {
+        "key": "C",
+        "text": "吉林省"
+      },
+      {
         "key": "D",
         "text": "无法判断"
       }
@@ -57564,7 +57796,11 @@
       },
       {
         "key": "B",
-        "text": "先下降后上升\nc.一直下降"
+        "text": "先下降后上升"
+      },
+      {
+        "key": "C",
+        "text": "一直下降"
       },
       {
         "key": "D",
@@ -57586,8 +57822,12 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "(选择题)下图反映了去年不同年龄段人群的餐饮月均消费情况。请根据图表回答下列问\n题。\n餐饮月开支从小到大的排序为()\nA95 后学生，95 后办公族，95 前",
+    "stem": "(选择题)下图反映了去年不同年龄段人群的餐饮月均消费情况。请根据图表回答下列问\n题。\n餐饮月开支从小到大的排序为()",
     "options": [
+      {
+        "key": "A",
+        "text": "95 后学生，95 后办公族，95 前"
+      },
       {
         "key": "B",
         "text": "95 后办公族，95 后学生95 前"
@@ -57765,6 +58005,10 @@
       {
         "key": "C",
         "text": "5.01"
+      },
+      {
+        "key": "D",
+        "text": "6.01"
       }
     ],
     "answer": "C",
@@ -57854,7 +58098,15 @@
     "options": [
       {
         "key": "A",
-        "text": "2019 年第一季度\nB2019 年第二季度\nC2019 年第四季度"
+        "text": "2019 年第一季度"
+      },
+      {
+        "key": "B",
+        "text": "2019 年第二季度"
+      },
+      {
+        "key": "C",
+        "text": "2019 年第四季度"
       },
       {
         "key": "D",
@@ -57977,23 +58229,23 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "(选择题)根据2014-2020 年\"双十一全网销售额统计情况和2020 年双十一全网销售额各\n平台占比情况情况回答下列问题。\n以下年份同比增长率排序正确的是()。\nA2015>2019>2017>2018\nB.2015>2017>2019>2018\nC2015>2017>2018>2019\nD2015<2017<2019<2018",
+    "stem": "(选择题)根据2014-2020 年\"双十一全网销售额统计情况和2020 年双十一全网销售额各\n平台占比情况情况回答下列问题。\n以下年份同比增长率排序正确的是()。",
     "options": [
       {
         "key": "A",
-        "text": "选项 A"
+        "text": "2015>2019>2017>2018"
       },
       {
         "key": "B",
-        "text": "选项 B"
+        "text": "2015>2017>2019>2018"
       },
       {
         "key": "C",
-        "text": "选项 C"
+        "text": "2015>2017>2018>2019"
       },
       {
         "key": "D",
-        "text": "选项 D"
+        "text": "2015<2017<2019<2018"
       }
     ],
     "answer": "B",
@@ -58050,6 +58302,14 @@
       {
         "key": "A",
         "text": "1970-1980"
+      },
+      {
+        "key": "B",
+        "text": "1980-1990"
+      },
+      {
+        "key": "C",
+        "text": "1990-2000"
       },
       {
         "key": "D",
@@ -58554,6 +58814,14 @@
         "text": "我国动漫产业稳步上升"
       },
       {
+        "key": "B",
+        "text": "2017 年中国动漫行业总产值达到1536 亿元"
+      },
+      {
+        "key": "C",
+        "text": "在线动漫市场规模近百亿"
+      },
+      {
         "key": "D",
         "text": "动漫产值主要来自于在线动漫"
       }
@@ -58603,6 +58871,40 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
+    "stem": "(选择题)A、B、C、D 是四家数字医疗公司，由于市场前景看好，四家公司都获得了风险\n投资机构的青睐，而且去年全部上市成功。但上市后，各公司经历了不同的的发展状况，具\n体如下表所示。\n截至去年年底，A、B、C、D 四家上市公司股票市场价值跌幅最大的是()，跌了()",
+    "options": [
+      {
+        "key": "A",
+        "text": "B 公司，21%"
+      },
+      {
+        "key": "B",
+        "text": "B 公司，76%"
+      },
+      {
+        "key": "C",
+        "text": "C 公司，76%"
+      },
+      {
+        "key": "D",
+        "text": "D 公司，21%"
+      }
+    ],
+    "answer": "B",
+    "explanation": "本题中，去年年底收盘股价<上市当天开盘股价股票才是跌的，股票跌幅=(去年年底收盘股\n价-上市当天开盘股价)+去年年底收盘股价\n如图A、B、C、D 四家上市公司中，BD 公司的股票是跌的，\nB 公司跌幅=(4.5-19)/19=-76% D 公司跌幅=(3.1-39)13.9=-20.5%答案为B",
+    "needsImage": false,
+    "highYield": true,
+    "stemImage": "/images/pdd-sx/pdd-sx-142.png?v=6",
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "patternTag": "资料计算"
+  },
+  {
+    "id": "pdd-sx-143",
+    "source": "拼多多26年真题·资料/数量",
+    "sourceKey": "pdd",
+    "module": "资料分析",
     "stem": "(选择题)下表为我国2019 年第四季度邮政总量统计表。根据图表回答下列问题。\n2019 年第四季度邮政业务总量和电信业务总量相差()亿元",
     "options": [
       {
@@ -58626,14 +58928,14 @@
     "explanation": "2019 年第四季度邮政业务总量=17123+1795.5+14731=4980.9\n2019 年第四季度电信业务总量=95472+9404.8+97481=28700.1\n相差28700.1-4980.9 约等于23719",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-142.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-143.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-143",
+    "id": "pdd-sx-144",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58660,14 +58962,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-143.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-144.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-144",
+    "id": "pdd-sx-145",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58694,14 +58996,14 @@
     "explanation": "A 项第五年A 投资额占总投资额的比重为116345-169014=68.84%，错误\nB 项A 投资和B 投资在近五年间增长趋势保持一致，不须计算，第五至六年A 投资是增长的，\nB 是下降的，错误;\nC 项B 投资额增长率，第五六年是下降的不用计算，第二年=(45499-42115)=42115=8% 第三\n年=(53833-45499)+45499=18%，第四年=(8000053833)+53833=48.6% 第四年最高C 项错\n误;\nD 项近几年B 投资总额=42115+45499+53833+80000+52669+51334=325450 总投资额\n=110067+116936+153832+199614+169014+201684=951147 占比为325450+951147=34%正\n确。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-144.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-145.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-145",
+    "id": "pdd-sx-146",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58728,14 +59030,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-145.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-146.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-146",
+    "id": "pdd-sx-147",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58762,14 +59064,14 @@
     "explanation": "上半年销售一部的销售额=8584+7730+8433+9240+8228+7837=50052\n上半年销售二部的销售额=7700+8157+7404+8148+7161+7225=45795\n相差50052-45795=4257 答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-146.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-147.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-147",
+    "id": "pdd-sx-148",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58796,14 +59098,14 @@
     "explanation": "同比增长=(后一年-前一年)=前一年\n\n第2 年同比增长=(13-8)=8=62.5%\n第3 年同比增长=(25-13)=13=92%第4 年同比增长=(44-25)=25=76%\n第5 年同比增长=(51-44)=44=16%答案为B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-147.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-148.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-148",
+    "id": "pdd-sx-149",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58830,14 +59132,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-148.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-149.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-149",
+    "id": "pdd-sx-150",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58864,14 +59166,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-149.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-150.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-150",
+    "id": "pdd-sx-151",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58898,14 +59200,14 @@
     "explanation": "仔细观察上图，三季度>四季度>二季度，所以选择A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-150.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-151.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-151",
+    "id": "pdd-sx-152",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58932,14 +59234,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-151.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-152.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-152",
+    "id": "pdd-sx-153",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -58966,14 +59268,14 @@
     "explanation": "如图，橙色部分的前两名市场份额为24%和19%，24%+19%=43%\n199(选择题)一路平安汽车销售公司去年各分店及去年1-4 季度汽车销售情况如下所示\n如果单个季度的汽车销售量超过了150辆那么可以拿到厂商1000 元/辆的额外补贴那么去年\n\n全年，总计拿了()万补贴",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-152.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-153.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-153",
+    "id": "pdd-sx-154",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59000,14 +59302,14 @@
     "explanation": "如图，每个季度的汽车销售量都超过了150 辆，那么可以拿到补贴的车辆数\n=210+230+274+305=1019 辆，每辆补贴1000 元，共补贴1019*1000=1019000 千元=101.9 万\n元，答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-153.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-154.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-154",
+    "id": "pdd-sx-155",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59034,14 +59336,14 @@
     "explanation": "16 个产品的发货件数=14+12+5+3+2+1.4+12+1+10+7+4+2+17+13+12+0.9=67.7 万件\n总销量第二年增长20%，那么第二年的总销量=677*(1+20%)=81 万件",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-154.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-155.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-155",
+    "id": "pdd-sx-156",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59068,14 +59370,14 @@
     "explanation": "五年间，高校平均对每个贫困学生的资助额为:第一年6605.4÷5.4~1223 第二年\n9202.81÷8.7≈1058 第三年10406.65÷98~1062 第四年1210303÷107~1131、第五年\n10588.61÷9.1≈1164，第1 年-第2 年下降，排除AD;第3 年-第4 年上升，排除B。所以选\n择C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-155.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-156.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-156",
+    "id": "pdd-sx-157",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59102,14 +59404,14 @@
     "explanation": "集成灶3 月零售量=2162 月零售量=31，环比增幅=(216-31)/3.1 约等于596.8%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-156.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-157.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-157",
+    "id": "pdd-sx-158",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59136,14 +59438,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-157.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-158.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-158",
+    "id": "pdd-sx-159",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59170,14 +59472,14 @@
     "explanation": "人均消费=销售额÷消费人次\nA 地区=165÷95.64=1.73\nB 地区=150-89.45=1.68\nC 地区=154-10857=1.42\nD 地区=97÷60=1.62 答案为A\n207(选择题)HOC 公司过去10 年间的销售额及其增长速度\n\n下列说法不符合上图的是哪一项?\nA 年来该公司销售额持续增加\nB.该公司年销售额自成立以来始终保持在3000 万元以上\nC 该公司现在的销售额达到了第二年的两倍以上\nD，该公司第十年和第八年销售额增速同比上年度有所放缓",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-158.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-159.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-159",
+    "id": "pdd-sx-160",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59204,14 +59506,14 @@
     "explanation": "如图，销售额持续增加，A 项正确:\nc 项该公司现在的销售额达到了第二年的两倍以上，现在的销售额=6528.72 第二年的销售额\n=25876528.72+2587=25.C 项正确:\nD 项该公司第七年和第八年销售额增速同比上年度有所放缓，第七八年增速为12%，第六年\n为13%，D 项正确:\nB 项，该公司年销售额自成立以来始终保持在3000 万元以上，第二三四年不是，B 项错误。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-159.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-160.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-160",
+    "id": "pdd-sx-161",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59238,14 +59540,14 @@
     "explanation": "上一年12 月该公司实际利润=139.12÷(1+29.4%)=107.6",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-160.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-161.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-161",
+    "id": "pdd-sx-162",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59256,6 +59558,14 @@
         "text": "10.00%"
       },
       {
+        "key": "B",
+        "text": "8.60%"
+      },
+      {
+        "key": "C",
+        "text": "9.58%"
+      },
+      {
         "key": "D",
         "text": "11.20%"
       }
@@ -59264,14 +59574,14 @@
     "explanation": "(第二年-第一年)-第一年\n(18536-16855)÷16855 约等于10%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-161.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-162.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-162",
+    "id": "pdd-sx-163",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59298,14 +59608,14 @@
     "explanation": "如图，天然原油今年9 月份产量=1774，比去年同期增长2.7%，那么去年9 月份天然原油的\n产量=1774÷(1+2.7%)=1727·同理，蚕丝及机织物今年9 月份产量=5299.9，比去年同期增长",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-162.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-163.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-163",
+    "id": "pdd-sx-164",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59332,14 +59642,14 @@
     "explanation": "如图，细分教育分布情况，蓝色的为一线城市，语言学习为22%，最大，答案为D",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-163.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-164.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-164",
+    "id": "pdd-sx-165",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59366,14 +59676,14 @@
     "explanation": "B 厂最初120 人，\n第一年新招120 人=120+120=240 人\n第二年新招200 人=240+200=440 人\n第三年新招290 人=440+290=730 人\n第四年新招320 人=730+320=1050 人\n增长率为:\n第一年=(240-120)/120=1\n第二年=(440-240)1240=83.3%\n第三年=(730-440)/440=65.9%\n第四年=(1050-730)/730=43.8%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-164.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-165.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-165",
+    "id": "pdd-sx-166",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59400,14 +59710,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-165.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-166.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-166",
+    "id": "pdd-sx-167",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59434,14 +59744,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-166.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-167.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-168",
+    "id": "pdd-sx-169",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59468,19 +59778,23 @@
     "explanation": "如图,第三年电视剧播出部数=247100，其中进口电视剧播出部数=6377，那么国产电视剧播\n出部数=247100-6377=240723 国产电视剧播出部数占当年电视剧播出部数的\n240723+247100=97%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-168.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-169.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-169",
+    "id": "pdd-sx-170",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "(选择题)BM 公司是一家生物医药类的公司。9-12 月份总部和三个分部的销售情况如下\n表所示。请根据图表信息，回答相关问题。\n\n12 月份如果四个部门的总收入同比增长了12%，则去年12 月份的总收入为()元\nA5987968",
+    "stem": "(选择题)BM 公司是一家生物医药类的公司。9-12 月份总部和三个分部的销售情况如下\n表所示。请根据图表信息，回答相关问题。\n\n12 月份如果四个部门的总收入同比增长了12%，则去年12 月份的总收入为()元",
     "options": [
+      {
+        "key": "A",
+        "text": "5987968"
+      },
       {
         "key": "B",
         "text": "5400382"
@@ -59498,14 +59812,14 @@
     "explanation": "如图今年12 月份的总收入为534.64 万元，同比增长就是比去年增长了12%，那\n么去年的总收入\n=534.64+(1+12%)=477.3571 万元，问题问的是多少元，477.3571 万元=4773571 元",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-169.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-170.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-170",
+    "id": "pdd-sx-171",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59532,14 +59846,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-170.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-171.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-171",
+    "id": "pdd-sx-172",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59566,14 +59880,14 @@
     "explanation": "下图反映了近几年某公司员工的工资情况。根据图表回答下列问题: \n“提成”年增长率超过25%的年份有()个。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-171.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-172.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-172",
+    "id": "pdd-sx-173",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59600,14 +59914,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-172.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-173.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-173",
+    "id": "pdd-sx-174",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59634,14 +59948,14 @@
     "explanation": "下图反映了奶茶店A 四个月的营业记录。根据图表回答下列问题",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-173.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-174.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-174",
+    "id": "pdd-sx-175",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59668,14 +59982,14 @@
     "explanation": "奶茶店的利润始终处于上升状态 \n \n \n下图为A 国乳制品消费者月收入分布。请根据图表回答下列问题。 \n该国乳制品消费者中月收入\n10000\n元以上的人群约占()% 。\n\n \n33 \n43 \n53 \n57",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-174.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-175.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-175",
+    "id": "pdd-sx-176",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59702,14 +60016,14 @@
     "explanation": "根据某小店1-6 月营业额及同比增速情况统计回答下列问题 \n \n下列说法错误的是()。 \n该小店2-6 月营业额环比增速最慢的是6 月。 \n相比去年该小店上半年总营业额实现了正增长。 \n该小店2-6 月营业额环比实现正增长的月份有2 个。 \n该小店1-6 月营业额同比正增长的月份有5 个。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-175.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-176.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-176",
+    "id": "pdd-sx-177",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59736,14 +60050,14 @@
     "explanation": "该小店2-6 月营业额环比增速最慢的是6 月。 \n \n国家统计局电子商务交易平台调查显示，2019 年全国电子商务交易额为30.03 万亿元。据\n商务部统计数据显示，2018 年电子商务市场细分行业结构中，商品类电商交易额占比77%;:\n服务类电商交易额占比20%，合约类电商交易额占比3%。以下图表是2011-2018 年中国电\n子商务交易统计图(单位:亿元)。根据题干以及图表回答下列问题: \n2019 年全国电子商务交易额增长率为()。 \n10% \n11% \n12% \n\n13%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-176.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-177.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-178",
+    "id": "pdd-sx-179",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59770,14 +60084,14 @@
     "explanation": "先减后增再减",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-178.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-179.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-179",
+    "id": "pdd-sx-180",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59804,14 +60118,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-179.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-180.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-180",
+    "id": "pdd-sx-181",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59838,14 +60152,14 @@
     "explanation": "下图为2013-2018 年中国旅游支出规模统计图，根据表格回答下列问题: \n2019 年的国内旅游支出增速略大于2018 年增速，那么2019 年国内旅游支出规模为?",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-180.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-181.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-181",
+    "id": "pdd-sx-182",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59872,14 +60186,14 @@
     "explanation": "该地泛母婴人群家庭育儿消费占比最高的金额为2001-3000 元 \n \n\n \n根据图表，回答下列问题。 \n如果A 产品和B 产品的销量都为3000 个，A 的利润",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-181.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-182.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-182",
+    "id": "pdd-sx-183",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59906,14 +60220,14 @@
     "explanation": "该国传统含糖食品工业相对欠发达。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-182.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-183.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-183",
+    "id": "pdd-sx-184",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59940,14 +60254,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-183.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-184.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-184",
+    "id": "pdd-sx-185",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -59966,14 +60280,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-184.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-185.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-185",
+    "id": "pdd-sx-186",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60000,14 +60314,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-185.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-186.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-186",
+    "id": "pdd-sx-187",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60034,14 +60348,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-186.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-187.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-187",
+    "id": "pdd-sx-188",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60068,14 +60382,14 @@
     "explanation": "41 - 50 岁占比 26%，50 岁以上占比 34%。（26%+34%）=60% \n \n\n \n受经济发展趋势的影响，股市也会随之发生变动。某证券公司在某年四个季度的交易数、交\n易额和客户类型反映了这一变化。下图分别表明了四个季度的交易数和交易额。根据材料，\n回答下面的问题。 \n去年第4 季度交易额的增长率为()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-187.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-188.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-189",
+    "id": "pdd-sx-190",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60102,14 +60416,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-189.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-190.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-190",
+    "id": "pdd-sx-191",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60136,14 +60450,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-190.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-191.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-191",
+    "id": "pdd-sx-192",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60170,14 +60484,14 @@
     "explanation": "手机厂商在双十一期间，往往会提供比较理想的折扣来吸引消费者。根据天猫平台某年的双\n十一数据，我们获得了以下信息。请根据图表中的信息，回答问题。 \n已知魅族手机今年双11 的销售额同比增长500%，则去年魅族双11 的销售额为()亿元",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-191.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-192.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-192",
+    "id": "pdd-sx-193",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60204,14 +60518,14 @@
     "explanation": "以下图表是某年我国移动社交APP 使用者的年龄分布和性别分布结果。假设年龄分布在每\n个省份都一样。根据图表, \n回答下列问题。 \n如果接下来的一年中，25 岁以下的用户数量增加了10%，其他年龄段的人数不变，那么总体\n的数量将增加（)。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-192.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-193.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-194",
+    "id": "pdd-sx-195",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60238,14 +60552,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-194.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-195.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-195",
+    "id": "pdd-sx-196",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60272,14 +60586,14 @@
     "explanation": "第二年下半年，南美洲销售额占总销售额的比例明显大于非洲",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-195.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-196.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-196",
+    "id": "pdd-sx-197",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60306,14 +60620,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-196.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-197.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-197",
+    "id": "pdd-sx-198",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60332,14 +60646,14 @@
     "explanation": "先下降再上升",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-197.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-198.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-198",
+    "id": "pdd-sx-199",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60366,14 +60680,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-198.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-199.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-199",
+    "id": "pdd-sx-200",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60400,14 +60714,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-199.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-200.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-200",
+    "id": "pdd-sx-201",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60434,14 +60748,14 @@
     "explanation": "先上升后下降",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-200.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-201.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-201",
+    "id": "pdd-sx-202",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60468,14 +60782,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-201.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-202.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-202",
+    "id": "pdd-sx-203",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60502,14 +60816,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-202.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-203.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-203",
+    "id": "pdd-sx-204",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60536,14 +60850,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-203.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-204.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-204",
+    "id": "pdd-sx-205",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60570,14 +60884,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-204.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-205.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-205",
+    "id": "pdd-sx-206",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60604,14 +60918,14 @@
     "explanation": "先上升后下降 \n \n \n下表反映了某公司各部门上年度开支预算与实际开销情况。根据表格\n回答下列问题: \n对部门按照开支预算和实际开销之间的差距由小到大排序，下列排序\n正确的是() \n运营部<財务部<电商部 \nHR 部<电商部<财务部",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-205.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-206.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-206",
+    "id": "pdd-sx-207",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60638,14 +60952,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-206.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-207.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-207",
+    "id": "pdd-sx-208",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60672,14 +60986,14 @@
     "explanation": "实体店的单位销售成本最高",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-207.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-208.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-208",
+    "id": "pdd-sx-209",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60706,14 +61020,14 @@
     "explanation": "企业公布的财务信息反映了企业的经营和运营状况。毛利润、运营利\n润和净利润是通常使用到的指标。毛利润通常是企业营业收入除去营\n业成本(如原材料、设备等生产成本和营业税等)后的收入，运营利润\n是毛利润减去运营成本费用(如员工工资、管理费用、研发费用、销\n售费用、财务费用)后的收入，净利润是企业运营利润加其他收入之\n后减去所得税额之后的收入。运营利润，在其他收入(营业外收入)\n之前，反映了企业基本经营活动获得利润的能力。下表是A 公司去年\n和今年的运营信息，请根据相关信息回答问题。 \n以下几个指标，今年与去年相比增速最快的是: \n营业收入 \n毛利润 \n\n运营利润",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-208.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-209.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-210",
+    "id": "pdd-sx-211",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60740,14 +61054,14 @@
     "explanation": "下图反映了某年上半年某公司的收入情况(单位:万元)，根据图表回\n答下列问题: \n2 月至6 月，同比增长率从高到低依次排列正确的是()。 \n5 月>2 月>6 月>3 月>4 月 \n5 月>3 月>6 月>2 月>4 月 \n6 月>5 月>3 月>2 月>4 月 \n5 月>6 月>2 月>3 月>4 月",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-210.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-211.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-211",
+    "id": "pdd-sx-212",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60774,14 +61088,14 @@
     "explanation": "5 月>6 月>2 月>3 月>4 月",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-211.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-212.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-212",
+    "id": "pdd-sx-213",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60808,14 +61122,14 @@
     "explanation": "下图是2018-2019 年我国五大城市电影院票房情况统计图(单位:亿\n元)。根据图表回答下列问题 \n2018-2019 年全国五大城市电影院票房情况统计图 \n2019 年北上广深四大城市电影院票房增长率排名正确是()。 \n北京>上海>深圳>广州 \n)广州>深圳>上海>北京",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-212.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-213.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-213",
+    "id": "pdd-sx-214",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60842,14 +61156,14 @@
     "explanation": "广州>深圳>上海>北京 \n \n \n下列图表是我国2 月份全社会客货运输量的信息，请根据图表相关信\n息，回答问题 \n2 月份，公路货运量占货运总量的()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-213.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-214.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-214",
+    "id": "pdd-sx-215",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60876,14 +61190,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-214.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-215.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-215",
+    "id": "pdd-sx-216",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60910,14 +61224,14 @@
     "explanation": "2018<2017<2019<2020 \n港澳台商投资建筑业 \n\n下图反映了近几年某公司的投资情况(单位:千万元)。根据图表回答下列问题: \n近几年某公司的投资情况(位:千万元) \n几年对A 的投资金额总和占总投资金额总和的()%。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-215.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-216.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-216",
+    "id": "pdd-sx-217",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60944,14 +61258,14 @@
     "explanation": "根据某坚果厂上半年出口量及同比增速情况回答下列问题。 \n下列说法正确的是()。 \n该坚果厂第一季度出口总量约占上半年出口总量的49%。 \n该坚果厂出口量环比增量最多的是4 月， \n该坚果厂出口量环比增速最快的是4 月。 \n该坚果厂2-6 月出口量环比出现增长的月份有2、3 和4 月，",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-216.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-217.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-217",
+    "id": "pdd-sx-218",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -60978,14 +61292,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-217.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-218.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-218",
+    "id": "pdd-sx-219",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61001,21 +61315,25 @@
       },
       {
         "key": "C",
-        "text": "从2010 年到2019 年，硕士研究生录取率约为30%\nD2010 年到2013 年录取通过率逐年降低"
+        "text": "从2010 年到2019 年，硕士研究生录取率约为30%"
+      },
+      {
+        "key": "D",
+        "text": "2010 年到2013 年录取通过率逐年降低"
       }
     ],
     "answer": "D",
     "explanation": "2010 年到2013 年录取通过率逐年降低",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-218.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-219.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-219",
+    "id": "pdd-sx-220",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61042,14 +61360,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-219.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-220.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-220",
+    "id": "pdd-sx-221",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61076,14 +61394,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-220.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-221.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-221",
+    "id": "pdd-sx-222",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61110,14 +61428,14 @@
     "explanation": "以下图表是2015-2017 年我国K12(包含小学、初中、高中和职高)教育在校人数统计\n图(万人)。根据图表回答下列问题\n\n2017 年中国K12 教育在校人数总量比2015 年多()万人",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-221.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-222.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-222",
+    "id": "pdd-sx-223",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61144,14 +61462,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-222.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-223.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-223",
+    "id": "pdd-sx-224",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61178,14 +61496,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-223.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-224.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-225",
+    "id": "pdd-sx-226",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61212,14 +61530,14 @@
     "explanation": "某公司在某地区有A、B 两家连锁店。下图是A、B 两家连锁店对员工的基本素质测试\n情况(单位:人)。根据图表回答下列问题:\nA 店80 分以上的比例比B 店多()。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-225.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-226.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-227",
+    "id": "pdd-sx-228",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61246,14 +61564,14 @@
     "explanation": "根据下图回答问题:\n某国过去11 年石油进口情况(单位:百万)\n第一年到第五年，该国大约共从中东地区进口了多少石油(百万桶)?\n450\n400\n350\n\n答案A450\nAS 公司是一家汽车生产公司，汽车销往国内和国外。下表是AS 的某年的汽车销售情\n况，请根据表中信息回答问题。4S 公司汽车销售情况汇总(单位:精)\n汽车内销量汽车出口至--汽车内拼最同比增长%-汽车出口量同比增长%5 月份，汽车出\n口量环比增长约()。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-227.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-228.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-228",
+    "id": "pdd-sx-229",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61280,14 +61598,14 @@
     "explanation": "生产部门的员工",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-228.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-229.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-229",
+    "id": "pdd-sx-230",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61314,14 +61632,14 @@
     "explanation": "1060 \n397 \n4273",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-229.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-230.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-230",
+    "id": "pdd-sx-231",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61348,14 +61666,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-230.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-231.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-232",
+    "id": "pdd-sx-233",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61382,14 +61700,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-232.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-233.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-233",
+    "id": "pdd-sx-234",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61416,14 +61734,14 @@
     "explanation": "下图反映了某公司的业务收入、预算总收入以及预算总支出(单位:百万元)。根据图表回答下\n列问题: \n若第七年至第十一年的业务收入与第二年至第六年的年均增长率保持一致，则五年后的业务\n收入预计有多少()百万元.。 \nA\n5075 \nB\n7902 \nC\n9911 \nD\n12246",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-233.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-234.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-234",
+    "id": "pdd-sx-235",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61450,14 +61768,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-234.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-235.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-235",
+    "id": "pdd-sx-236",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61484,14 +61802,14 @@
     "explanation": "2015>2018>2016>2017>2019",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-235.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-236.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-236",
+    "id": "pdd-sx-237",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61518,40 +61836,6 @@
     "explanation": "近年来，互联网发展带动了网络文学繁荣。下图显示了某网络文学网站近几年的用户增长情",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-236.png?v=6",
-    "patternTag": "资料计算",
-    "tipIds": [
-      "tip-zl-zengzhang"
-    ]
-  },
-  {
-    "id": "pdd-sx-237",
-    "source": "拼多多26年真题·资料/数量",
-    "sourceKey": "pdd",
-    "module": "资料分析",
-    "stem": "根据2015-2019 年福州市结婚登记及离婚登记数统计情况回答下列问题。 \n以下说法正确的是()。 \nA2015-2019 年福州市离结率呈现先升后降的态势 \nB2015-2019 年福州市结婚登记总数超过27 万对 \nC2016-2019 年福州市结婚登记数同比增速最快的是2016 年 \nD 经济压力是福州市结婚数量下降的最主要原因",
-    "options": [
-      {
-        "key": "A",
-        "text": "选项 A"
-      },
-      {
-        "key": "B",
-        "text": "选项 B"
-      },
-      {
-        "key": "C",
-        "text": "选项 C"
-      },
-      {
-        "key": "D",
-        "text": "选项 D"
-      }
-    ],
-    "answer": "B",
-    "explanation": "",
-    "needsImage": false,
-    "highYield": true,
     "stemImage": "/images/pdd-sx/pdd-sx-237.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
@@ -61560,6 +61844,40 @@
   },
   {
     "id": "pdd-sx-238",
+    "source": "拼多多26年真题·资料/数量",
+    "sourceKey": "pdd",
+    "module": "资料分析",
+    "stem": "根据2015-2019 年福州市结婚登记及离婚登记数统计情况回答下列问题。 \n以下说法正确的是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "2015-2019 年福州市离结率呈现先升后降的态势"
+      },
+      {
+        "key": "B",
+        "text": "2015-2019 年福州市结婚登记总数超过27 万对"
+      },
+      {
+        "key": "C",
+        "text": "2016-2019 年福州市结婚登记数同比增速最快的是2016 年"
+      },
+      {
+        "key": "D",
+        "text": "经济压力是福州市结婚数量下降的最主要原因"
+      }
+    ],
+    "answer": "B",
+    "explanation": "",
+    "needsImage": false,
+    "highYield": true,
+    "stemImage": "/images/pdd-sx/pdd-sx-238.png?v=6",
+    "patternTag": "资料计算",
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ]
+  },
+  {
+    "id": "pdd-sx-239",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61586,14 +61904,14 @@
     "explanation": "店的及格率比A 店低",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-238.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-239.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-239",
+    "id": "pdd-sx-240",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61620,14 +61938,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-239.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-240.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-241",
+    "id": "pdd-sx-242",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61635,7 +61953,11 @@
     "options": [
       {
         "key": "A",
-        "text": "市场规模增长最多的是2017 年 \nB2020 年互联网医疗市场规模突破400 亿元"
+        "text": "市场规模增长最多的是2017 年"
+      },
+      {
+        "key": "B",
+        "text": "2020 年互联网医疗市场规模突破400 亿元"
       },
       {
         "key": "C",
@@ -61650,14 +61972,14 @@
     "explanation": "市场规模增长最多的是2017 年",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-241.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-242.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-242",
+    "id": "pdd-sx-243",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61684,14 +62006,14 @@
     "explanation": "4 月>10 月>8 月",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-242.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-243.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-244",
+    "id": "pdd-sx-245",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61718,14 +62040,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-244.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-245.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-245",
+    "id": "pdd-sx-246",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61752,14 +62074,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-245.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-246.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-246",
+    "id": "pdd-sx-247",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61786,14 +62108,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-246.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-247.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-248",
+    "id": "pdd-sx-249",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61820,14 +62142,14 @@
     "explanation": "大部分有闲一族更愿意固守已有游戏",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-248.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-249.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-249",
+    "id": "pdd-sx-250",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61854,14 +62176,14 @@
     "explanation": "3 月>11 月>8 月>9 月",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-249.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-250.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-250",
+    "id": "pdd-sx-251",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61884,14 +62206,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-250.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-251.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-251",
+    "id": "pdd-sx-252",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61918,14 +62240,14 @@
     "explanation": "2012-2020 年港澳台商投资建筑业企业从业人员数累计不超过150 万人",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-251.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-252.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-252",
+    "id": "pdd-sx-253",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61952,14 +62274,14 @@
     "explanation": "辽宁>湖北>山东>贵州",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-252.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-253.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-253",
+    "id": "pdd-sx-254",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -61986,14 +62308,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-253.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-254.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-254",
+    "id": "pdd-sx-255",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62020,14 +62342,14 @@
     "explanation": "第五年该国家具网购市场规模与第一年相比近乎翻倍",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-254.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-255.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-255",
+    "id": "pdd-sx-256",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62050,14 +62372,14 @@
     "explanation": "2019 年全国三项社保保险基金支出额占2015-2019 年全国三项社保保险基金支出\n总额的20%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-255.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-256.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-256",
+    "id": "pdd-sx-257",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62084,14 +62406,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-256.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-257.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-257",
+    "id": "pdd-sx-258",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62118,14 +62440,14 @@
     "explanation": "该洗涤剂T 厂1-7 月总产量为125 万吨 \n \n\n \n下图反映了A 国近六年网民规模与网购用户规模数量变化。请根据图表回答下列问题。 \n与第1 年相比，第6 年网民规模增加了()亿人。 \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-257.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-258.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-260",
+    "id": "pdd-sx-261",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62152,14 +62474,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-260.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-261.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-261",
+    "id": "pdd-sx-262",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62182,14 +62504,14 @@
     "explanation": "相邻业务扩张 \n \n \n\n \nM 公司的主营业务是主机游戏和在线游戏。下图反映了近五年来M 公司主机游戏和在线游\n戏市场规模变化情况。根据图表回答下列问题:  \n关于主机游戏和在线游戏市场规模比值说法正确的是: \nA\n先减小后增大 \nB\n逐渐增大 \nC\n逐渐减小 \nD\n先增大后减小 \n答案“C 逐渐减小",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-261.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-262.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-262",
+    "id": "pdd-sx-263",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62216,14 +62538,14 @@
     "explanation": "该公司销售额增幅最大的一年是第四年",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-262.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-263.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-263",
+    "id": "pdd-sx-264",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62250,14 +62572,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-263.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-264.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-264",
+    "id": "pdd-sx-265",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62284,14 +62606,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-264.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-265.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-265",
+    "id": "pdd-sx-266",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62318,14 +62640,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-265.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-266.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-266",
+    "id": "pdd-sx-267",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62352,14 +62674,14 @@
     "explanation": "2022 年中国夜间经济市场规模预测将在2016 年基础上翻一番",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-266.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-267.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-267",
+    "id": "pdd-sx-268",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62386,14 +62708,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-267.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-268.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-269",
+    "id": "pdd-sx-270",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62420,14 +62742,14 @@
     "explanation": "下图是网约车app 渗透率及用户规模变化(单位:月)。请根据图表内容回答下列问题:  \n若按照2017-08 的增长率来计算，那么2018-06 的网约车app 渗透率及用户规模分别是: \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-269.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-270.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-270",
+    "id": "pdd-sx-271",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62452,15 +62774,16 @@
     ],
     "answer": "A",
     "explanation": "",
-    "needsImage": true,
+    "needsImage": false,
     "highYield": true,
+    "stemImage": "/images/pdd-sx/pdd-sx-271.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-271",
+    "id": "pdd-sx-272",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62487,14 +62810,14 @@
     "explanation": "该化肥厂该年中有5 个月的月产量低于90 吨，",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-271.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-272.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-272",
+    "id": "pdd-sx-273",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62521,14 +62844,14 @@
     "explanation": "2016>2017->2020>-2019>2018",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-272.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-273.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-273",
+    "id": "pdd-sx-274",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62555,14 +62878,14 @@
     "explanation": "图中6 项居民人均消费支出总额占第一季度居民人均消费支出的二分之一",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-273.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-274.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-274",
+    "id": "pdd-sx-275",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62589,14 +62912,14 @@
     "explanation": "水运和空运的成本增加 \n\n \n \nAF 公司是一家付费游戏APP 制作公司。下表是AF 公司几款主要APP 的价格变化情况。其\n中EZDD、FZDD、GZDD、HZDD 是冒险类游戏APP。请根据表中的信息回答问题。 \nORDD 的下载价格上涨了 \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-274.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-275.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-276",
+    "id": "pdd-sx-277",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62623,14 +62946,14 @@
     "explanation": "下图反映了近几年某公司四种商品的销售量情况(单位:万件)。根据图表回答下列问题近几年 \n与上一年相比，销售量增幅最大的是() \n第三年B 商品 \n第二年B 商品 \n第四年A 商品 \n第四年C 商品 \n答案：第三年B 商品",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-276.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-277.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-277",
+    "id": "pdd-sx-278",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62657,14 +62980,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-277.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-278.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-278",
+    "id": "pdd-sx-279",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62691,14 +63014,14 @@
     "explanation": "该年江苏省GDP 增加量超过上海、安徽和浙江增加量之和",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-278.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-279.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-279",
+    "id": "pdd-sx-280",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62725,14 +63048,14 @@
     "explanation": "先增后降再增",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-279.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-280.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-280",
+    "id": "pdd-sx-281",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62759,14 +63082,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-280.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-281.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-281",
+    "id": "pdd-sx-282",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62793,14 +63116,14 @@
     "explanation": "该钢厂1-12 月不锈钢产量同比增速最快的是3",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-281.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-282.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-282",
+    "id": "pdd-sx-283",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62827,14 +63150,14 @@
     "explanation": "根据第一年6 月-第二年6 月全国饮料产量及增长情况统计图回答下列问题 \n第二年6 月全国饮料产是同比增速约为()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-282.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-283.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-283",
+    "id": "pdd-sx-284",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62861,14 +63184,14 @@
     "explanation": "根据某省6 市景点收费情况统计回答下列问题 \n已知今年A 城市收费景点同比下降了6%，问去年A 城市收费景点约为()个。 \nA  146 \nB\n131 \n\nC\n151 \nD\n156",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-283.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-284.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-284",
+    "id": "pdd-sx-285",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62895,14 +63218,14 @@
     "explanation": "根据2020 年3 月-2021 年3 月原油进口月度走势图回答下列问题 \n与2020 年3 月相比，2021 年3 月原油进口量的同比增长率约为() \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-284.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-285.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-286",
+    "id": "pdd-sx-287",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62929,14 +63252,14 @@
     "explanation": "A\n第一年至第五年该公司销售额增长率持续上升 \nB\n预计第六年该公司销售额将突破250000 万元 \nC\n第六年，该公司销售额增长率将迎来转机 \nD\n第一年至第五年该公司销售额增长率持续下降",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-286.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-287.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-287",
+    "id": "pdd-sx-288",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62963,14 +63286,14 @@
     "explanation": "第一年至第五年该公司销售额增长率持续下降",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-287.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-288.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-288",
+    "id": "pdd-sx-289",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -62997,14 +63320,14 @@
     "explanation": "2016 年一季度化肥产量高于2021 年一季度产量",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-288.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-289.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-289",
+    "id": "pdd-sx-290",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63031,14 +63354,14 @@
     "explanation": "3-5 月的销售额较低",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-289.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-290.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-290",
+    "id": "pdd-sx-291",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63061,14 +63384,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-290.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-291.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-291",
+    "id": "pdd-sx-292",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63095,14 +63418,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-291.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-292.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-292",
+    "id": "pdd-sx-293",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63129,48 +63452,40 @@
     "explanation": "第二年各个月份投诉量变化幅度(与前一个月相比)从大到小排序为()。 \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-292.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-293.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-293",
+    "id": "pdd-sx-294",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "近年来，互联网发展带动了网络文学繁荣。下图显示了某网络文学网站近几年的用户增长情\n况。根据图表回答下列问题: \n第四年的用户增长量大约是第三年的多少倍? \nA\n10 \nB9C8",
+    "stem": "近年来，互联网发展带动了网络文学繁荣。下图显示了某网络文学网站近几年的用户增长情\n况。根据图表回答下列问题: \n第四年的用户增长量大约是第三年的多少倍?",
     "options": [
       {
         "key": "A",
-        "text": "选项 A"
+        "text": "10"
       },
       {
         "key": "B",
-        "text": "选项 B"
-      },
-      {
-        "key": "C",
-        "text": "选项 C"
-      },
-      {
-        "key": "D",
-        "text": "选项 D"
+        "text": "9C8"
       }
     ],
     "answer": "A",
     "explanation": "根据图表信息，下列说法正确的是()。 \nA\n \n30 岁及以上人群在商务应酬中比18-29 岁人群更多地进行白酒消费。 \nB\n \nA 国消费者在情侣约会中更多地进行白酒消费。 \nC\n \nA 国18-29 岁的消费者偏好一人独的而非商务应酬。 \nD",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-293.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-294.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-294",
+    "id": "pdd-sx-295",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63197,14 +63512,14 @@
     "explanation": "A 国30 岁及以上消费者偏好在亲友在场的情境中进行白酒消费。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-294.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-295.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-295",
+    "id": "pdd-sx-296",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63231,14 +63546,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-295.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-296.png?v=6",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "patternTag": "资料计算"
   },
   {
-    "id": "pdd-sx-296",
+    "id": "pdd-sx-297",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63265,14 +63580,14 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-296.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-297.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
   },
   {
-    "id": "pdd-sx-297",
+    "id": "pdd-sx-298",
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
@@ -63299,7 +63614,7 @@
     "explanation": "先减后增再减",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-297.png?v=6",
+    "stemImage": "/images/pdd-sx/pdd-sx-298.png?v=6",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"

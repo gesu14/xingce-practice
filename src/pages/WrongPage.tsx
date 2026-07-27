@@ -42,10 +42,20 @@ export function WrongPage() {
 
       <div className="list">
         {questions.map((q) => (
-          <div key={q.id} className="list-item">
-            <div>
-              <span className={moduleTagClass(q.module)}>{q.module}</span>
-              <p>{q.stem.slice(0, 80) || '（图形题）'}…</p>
+          <div key={q.id} className="list-item wrong-item">
+            <div className="wrong-item-body">
+              <div className="meta-row">
+                <span className={moduleTagClass(q.module)}>{q.module}</span>
+                <span className="muted tiny">{q.id}</span>
+              </div>
+              <p>{q.stem.slice(0, 120) || '（图形题）'}{(q.stem?.length ?? 0) > 120 ? '…' : ''}</p>
+              {q.stemImage ? (
+                <div className="stem-image-wrap wrong-thumb">
+                  <img className="stem-image" src={q.stemImage} alt="题目配图" />
+                </div>
+              ) : q.needsImage ? (
+                <p className="warn">本题含图表，但缺少配图。</p>
+              ) : null}
             </div>
             <button
               type="button"

@@ -53,14 +53,14 @@ def split_options(body: str) -> tuple[str, list[dict[str, str]]]:
     # Prefer the last contiguous A-D/E block
     start_idx = 0
     for i, m in enumerate(matches):
-        key = m.group(1) or m.group(2)
+        key = (m.group(1) or m.group(2)).upper()
         if key == "A":
             start_idx = i
     matches = matches[start_idx:]
     stem = body[: matches[0].start()].strip()
     options: list[dict[str, str]] = []
     for i, m in enumerate(matches):
-        key = m.group(1) or m.group(2)
+        key = (m.group(1) or m.group(2)).upper()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
         text = body[m.end() : end].strip()
         text = re.split(r"\n\s*参考答案|\n\s*[A-E]【解析】", text)[0].strip()
@@ -114,6 +114,52 @@ def split_plain_option_lines(chunk: str) -> tuple[str, list[dict[str, str]]]:
         if trial:
             return trial
     return chunk.strip(), []
+
+
+def split_options_loose(body: str) -> tuple[str, list[dict[str, str]]]:
+    """兜底：拼多多资料分析 PDF 抽字时的两类漏项——
+
+    1) 字母后句点没被抽出来，直接紧贴数字（如「A2019 年第一季度」「B15」）；
+    2) 个别字母被 OCR/抽字识别成小写（如「c.一直下降」）。
+
+    只在行首匹配，且只用于本函数专属场景（仅 parse_pdd_bank 调用），避免
+    影响题干里本来就有的「a，b 两辆车」这类小写变量名（这类写法后面跟的是
+    逗号，不是句点，因此这里小写字母只认句点/句号作分隔）。
+    """
+    pattern = re.compile(
+        r"(?:^|\n)\s*(?:([A-E])(?:\s*[\.．。、，,\)：:]\s*|\s+|(?=[0-9]))|([a-e])\s*[\.．。]\s*)",
+        re.M,
+    )
+    matches = [
+        m
+        for m in pattern.finditer(body)
+        if not re.search(
+            r"(答案为|答案是|答案选|本题选|故选|选择)\s*$",
+            body[max(0, m.start() - 8) : m.start(1) if m.group(1) else m.start(2)],
+        )
+    ]
+    if len(matches) < 2:
+        return body.strip(), []
+    start_idx = 0
+    for i, m in enumerate(matches):
+        if (m.group(1) or m.group(2)).upper() == "A":
+            start_idx = i
+    matches = matches[start_idx:]
+    stem = body[: matches[0].start()].strip()
+    options: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for i, m in enumerate(matches):
+        key = (m.group(1) or m.group(2)).upper()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
+        text = body[m.end() : end].strip()
+        text = re.split(r"\n\s*正确答案|\n\s*答案|\n\s*题目解析", text)[0].strip()
+        if key in seen or not text:
+            continue
+        seen.add(key)
+        options.append({"key": key, "text": text})
+    if len(options) < 2 or any(len(o["text"]) > 200 for o in options):
+        return body.strip(), []
+    return stem, options
 
 
 MODULE_ALIAS = {
@@ -981,14 +1027,18 @@ def parse_pdd_bank(
 
         body = _fix_char_per_line_noise(body)
         stem, options = split_inline_abcd(body)
-        if len(options) < 2:
+        if len(options) < 4:
             stem2, options2 = split_options(body)
-            if len(options2) >= len(options):
+            if len(options2) > len(options):
                 stem, options = stem2, options2
         if len(options) < 2:
             stem3, options3 = split_plain_option_lines(body)
             if len(options3) > len(options):
                 stem, options = stem3, options3
+        if len(options) < 4:
+            stem4, options4 = split_options_loose(body)
+            if len(options4) > len(options):
+                stem, options = stem4, options4
 
         stem = re.sub(r"^\d{1,3}\s*[、．.\)]\s*", "", stem).strip()
         stem = re.sub(r"^\d{1,3}\s*\(?\s*单选题\s*\)?\s*", "", stem).strip()
@@ -1397,6 +1447,59 @@ def build_pdd_questions() -> list[dict[str, Any]]:
     return out
 
 
+def _anchor_y_for_needle(page: Any, needle: str) -> float | None:
+    """在整页词序列里定位 needle（忽略空白）的起始 y 坐标。
+
+    PyMuPDF 的按词切分常把「2011」「年」「BAT」拆成独立 token，若直接在单个
+    word 里找子串会因数字被切断而找不到锚点，进而让题干误判在页首，band 算
+    错、抓到别的题的图。这里把全页词拼成一条无空白长串再定位，再映射回对应
+    word 的纵坐标，兼容跨 token 的情况。
+    """
+    if not needle:
+        return None
+    words = page.get_text("words")
+    joined_parts: list[str] = []
+    starts: list[int] = []
+    pos = 0
+    for w in words:
+        t = re.sub(r"\s+", "", w[4])
+        starts.append(pos)
+        joined_parts.append(t)
+        pos += len(t)
+    joined = "".join(joined_parts)
+    idx = joined.find(needle)
+    if idx < 0:
+        return None
+    wi = 0
+    for i, s in enumerate(starts):
+        if s <= idx:
+            wi = i
+        else:
+            break
+    return float(words[wi][1])
+
+
+def _next_answer_y(page: Any, after_y: float | None = None) -> float | None:
+    """页面上第一个「正确答案/答案/答」标记的 y 坐标（可选：只取 after_y 之后的）。"""
+    for w in page.get_text("words"):
+        if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]):
+            y = float(w[1])
+            if after_y is None or y > after_y + 20:
+                return y
+    return None
+
+
+def _prev_answer_y(page: Any, before_y: float) -> float | None:
+    """页面上 before_y 之前最后一个「正确答案/答案/答」标记的 y 坐标（上一题的收尾）。"""
+    best = None
+    for w in page.get_text("words"):
+        if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]):
+            y = float(w[1])
+            if y < before_y - 5 and (best is None or y > best):
+                best = y
+    return best
+
+
 def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
     """按题干在 PDF 中定位并截取图表（拼多多数学题号会重置，不能靠序号）。"""
     try:
@@ -1416,6 +1519,16 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
     for i in range(doc.page_count):
         page_text.append(re.sub(r"\s+", "", doc[i].get_text() or ""))
 
+    # 有些页面会把上一页材料图的截图在页首重复渲染一次（同一张图两次出现），
+    # 记录每张图（按内容 digest）第一次出现的页码，后续页上的重复出现要排除，
+    # 否则会把上一题的材料图误拼进当前题
+    digest_first_page: dict[bytes, int] = {}
+    for i in range(doc.page_count):
+        for info in doc[i].get_image_info(xrefs=True):
+            d = info.get("digest")
+            if d is not None and d not in digest_first_page:
+                digest_first_page[d] = i
+
     def find_page(stem: str, prefer_from: int = 231) -> int | None:
         key = re.sub(r"\s+", "", stem or "")
         if len(key) < 10:
@@ -1432,18 +1545,33 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
                         return pi
         return None
 
-    def images_in_band(page: Any, y0: float, y1: float) -> list[tuple[float, float, float, float]]:
+    def images_in_band(page: Any, y0: float, y1: float, pi: int) -> list[tuple[float, float, float, float]]:
         out = []
-        for b in page.get_text("dict")["blocks"]:
-            if b.get("type") != 1:
-                continue
-            x0, by0, x1, by1 = b["bbox"]
+        for info in page.get_image_info(xrefs=True):
+            x0, by0, x1, by1 = info["bbox"]
             if by1 < y0 - 8 or by0 > y1 + 8:
                 continue
             if (x1 - x0) * (by1 - by0) < 60 * 60:
                 continue
+            d = info.get("digest")
+            # 跳过在更早页面就出现过的重复截图（上一题材料图溢到本页页首）
+            if d is not None and digest_first_page.get(d, pi) != pi:
+                continue
             out.append((x0, by0, x1, by1))
         return out
+
+    def excluded_bottom_before(page: Any, pi: int, y: float) -> float | None:
+        """本页上「重复图」（属于上一题、被排除）里，紧贴在 y 之上的那个的下边界。
+        用来把当前题材料图的上边界卡在它下面，避免截到重复图残留的边角内容。"""
+        best = None
+        for info in page.get_image_info(xrefs=True):
+            d = info.get("digest")
+            if d is None or digest_first_page.get(d, pi) == pi:
+                continue
+            by1 = info["bbox"][3]
+            if by1 <= y + 12 and (best is None or by1 > best):
+                best = by1
+        return best
 
     attached = 0
     for q in questions:
@@ -1458,24 +1586,53 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
         if pi is None:
             continue
         page = doc[pi]
-        stem_key = re.sub(r"\s+", "", (q.get("stem") or ""))[:18]
-        # 题干锚点 y
-        y0 = page.rect.y0 + 40
-        for w in page.get_text("words"):
-            if stem_key and stem_key[:8] in re.sub(r"\s+", "", w[4]):
-                y0 = max(page.rect.y0 + 20, float(w[1]) - 10)
+        stem_key = re.sub(r"\s+", "", (q.get("stem") or ""))[:24]
+        # 题干锚点 y：数字/年份常被切成独立 token，单词子串匹配会失败，
+        # 于是退化用整页拼接后的字符串定位，多个长度兜底
+        anchor_y = None
+        for length in (24, 16, 10):
+            anchor_y = _anchor_y_for_needle(page, stem_key[:length])
+            if anchor_y is not None:
                 break
-        # 答案锚点 y
-        y1 = page.rect.y1 - 30
-        for w in page.get_text("words"):
-            if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]) and float(w[1]) > y0 + 20:
-                y1 = min(y1, float(w[1]) - 4)
-                break
-        imgs = images_in_band(page, y0 - 30, y1 + 20)
-        # 题干页无图时，常见图在上一页
-        if not imgs and pi > 0:
+        y0 = max(page.rect.y0 + 20, anchor_y - 10) if anchor_y is not None else page.rect.y0 + 40
+        anchor_found = anchor_y is not None
+        # 答案锚点 y：本题自己的「正确答案/答案」必须出现在题干之后
+        ans_y = _next_answer_y(page, after_y=y0 if anchor_found else None)
+        imgs: list[tuple[float, float, float, float]] = []
+        if ans_y is not None:
+            # 本页能确认题目边界，正常在题干~答案之间找图
+            y1 = ans_y - 4
+            imgs = images_in_band(page, y0 - 30, y1 + 20, pi)
+        else:
+            # 本页找不到本题自己的答案标记，大概率材料图/表延伸到了下一页——
+            # 优先查下一页，避免退化成"扫到页底"时误吞上一题遗留在本页的图
+            y1 = page.rect.y1 - 30
+            if pi + 1 < doc.page_count:
+                nxt = doc[pi + 1]
+                nxt_ans_y = _next_answer_y(nxt)
+                nxt_y1 = (nxt_ans_y - 4) if nxt_ans_y is not None else nxt.rect.y1 - 30
+                next_imgs = images_in_band(nxt, nxt.rect.y0 + 10, nxt_y1, pi + 1)
+                if next_imgs:
+                    page = nxt
+                    pi = pi + 1
+                    imgs = next_imgs
+                    y0 = min(b[1] for b in imgs) - 10
+                    y1 = max(b[3] for b in imgs) + 10
+            if not imgs:
+                imgs = images_in_band(page, y0 - 30, y1 + 20, pi)
+        # 材料图表在题干上方（先给图/表，题干在下面小结提问）的情况：往本页上方找，
+        # 上界卡在上一题的答案标记之后，避免抓到别的题的图
+        if not imgs and anchor_found:
+            up_bound = _prev_answer_y(page, y0)
+            up_top = (up_bound + 15) if up_bound is not None else page.rect.y0 + 10
+            up_imgs = images_in_band(page, up_top, y0 - 5, pi)
+            if up_imgs:
+                imgs = up_imgs
+                y0 = min(b[1] for b in imgs) - 10
+        # 仍找不到、且题干锚点本身没定位到（大概率整段 band 算错）时，才退回上一页
+        if not imgs and not anchor_found and pi > 0:
             prev = doc[pi - 1]
-            prev_imgs = images_in_band(prev, prev.rect.y0 + 40, prev.rect.y1 - 40)
+            prev_imgs = images_in_band(prev, prev.rect.y0 + 40, prev.rect.y1 - 40, pi - 1)
             if prev_imgs:
                 page = prev
                 pi = pi - 1
@@ -1490,6 +1647,10 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
             # 若图在题干上方（材料图），仍纳入
             y0 = min(y0, by0)
             y1 = max(y1, by1)
+            # 若紧贴上方是被排除的重复图，把上边界卡在它下面，避免截到其边角内容
+            exc_bottom = excluded_bottom_before(page, pi, by0)
+            if exc_bottom is not None:
+                y0 = max(y0, exc_bottom + 2)
             clip = fitz.Rect(
                 max(page.rect.x0 + 20, x0),
                 max(page.rect.y0 + 16, y0),
@@ -1513,9 +1674,70 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
         q["needsImage"] = False
         attached += 1
 
+    # 兜底：正常流程仍没配上图的题，放宽搜索（关键词更短、页范围更宽、不卡答案边界），
+    # 直接拿该页面积最大的图整张贴上去，好过完全没有配图
+    rescued = 0
+    for q in questions:
+        if not q.get("needsImage") or q.get("stemImage"):
+            continue
+        clean_stem = re.sub(r"\s+", "", q.get("stem") or "")
+        # 题干本身很短、又没有「()/（）」这种填空标记的，大概率是切分错误产生的碎片
+        # （不是真题干），不值得为它硬凑一张图
+        if len(clean_stem) < 12 and not re.search(r"[（(]\s*[）)]", clean_stem):
+            continue
+        key = clean_stem + re.sub(r"\s+", "", q.get("explanation") or "")
+        pi = None
+        for length in (18, 12, 8):
+            needle = key[:length]
+            if len(needle) < 8:
+                continue
+            for i in range(1, doc.page_count):
+                if needle in page_text[i]:
+                    pi = i
+                    break
+            if pi is not None:
+                break
+        if pi is None:
+            continue
+        best = None
+        for offset in (0, 1, -1):
+            ppi = pi + offset
+            if ppi < 0 or ppi >= doc.page_count:
+                continue
+            page = doc[ppi]
+            for info in page.get_image_info(xrefs=True):
+                x0, by0, x1, by1 = info["bbox"]
+                area = (x1 - x0) * (by1 - by0)
+                if area < 60 * 60:
+                    continue
+                d = info.get("digest")
+                if d is not None and digest_first_page.get(d, ppi) != ppi:
+                    continue
+                if best is None or area > best[0]:
+                    best = (area, ppi, (x0, by0, x1, by1))
+        if best is None:
+            continue
+        _, ppi, (x0, by0, x1, by1) = best
+        page = doc[ppi]
+        clip = fitz.Rect(
+            max(page.rect.x0 + 4, x0 - 8),
+            max(page.rect.y0 + 4, by0 - 8),
+            min(page.rect.x1 - 4, x1 + 8),
+            min(page.rect.y1 - 4, by1 + 8),
+        )
+        if clip.height < 40 or clip.width < 40:
+            continue
+        qid = q["id"]
+        out_path = img_root / f"{qid}.png"
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
+        pix.save(str(out_path))
+        q["stemImage"] = f"/images/pdd-sx/{qid}.png?v=6"
+        q["needsImage"] = False
+        rescued += 1
+
     doc.close()
     still = sum(1 for q in questions if q.get("needsImage") and not q.get("stemImage"))
-    print(f"  -> attached math charts: {attached}; still need image: {still}")
+    print(f"  -> attached math charts: {attached}; rescued: {rescued}; still need image: {still}")
 
 
 def main() -> None:

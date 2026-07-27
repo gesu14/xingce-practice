@@ -531,6 +531,27 @@
   border: 1px solid var(--line);
 }
 
+.list-item.wrong-item {
+  align-items: flex-start;
+}
+
+.wrong-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.wrong-item-body .meta-row {
+  margin-bottom: 0.35rem;
+}
+
+.wrong-thumb {
+  margin: 0.55rem 0 0;
+}
+
+.wrong-thumb .stem-image {
+  max-height: min(45vh, 420px);
+}
+
 .preview-list {
   margin: 0 0 1rem;
   padding-left: 1.2rem;

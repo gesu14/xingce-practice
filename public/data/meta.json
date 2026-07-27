@@ -1,8 +1,8 @@
 {
-  "rawCount": 1989,
-  "uniqueCount": 1891,
+  "rawCount": 1990,
+  "uniqueCount": 1892,
   "beisenCount": 70,
-  "pddCount": 1027,
+  "pddCount": 1028,
   "sprintPackCount": 14,
   "sprintQuestionCount": 70,
   "modules": {
@@ -11,7 +11,7 @@
     "数字推理": 323,
     "数学运算": 380,
     "数量关系": 23,
-    "资料分析": 323,
+    "资料分析": 324,
     "综合": 28,
     "言语理解": 550
   },
@@ -19,7 +19,7 @@
     "beisen": 70,
     "mock1": 35,
     "mock2": 31,
-    "pdd": 1027,
+    "pdd": 1028,
     "plan-w2": 15,
     "plan-w3": 9,
     "docx-sz": 323,

@@ -9,6 +9,28 @@ const SOURCE_LABELS: Record<string, string> = {
   pdd: '拼多多26年真题',
 };
 
+type PickMode = 'unseen' | 'order' | 'random';
+
+function pickQuestions(
+  pool: Question[],
+  count: number,
+  mode: PickMode,
+  answered: ProgressStore['answered'],
+): Question[] {
+  if (!pool.length || count <= 0) return [];
+  if (mode === 'order') {
+    return [...pool].sort((a, b) => a.id.localeCompare(b.id, 'en')).slice(0, count);
+  }
+  if (mode === 'random') {
+    return shuffle(pool).slice(0, count);
+  }
+  // 优先未做：先从未答过的里抽，不够再从已做过的里补
+  const unseen = shuffle(pool.filter((q) => !answered[q.id]));
+  if (unseen.length >= count) return unseen.slice(0, count);
+  const seen = shuffle(pool.filter((q) => answered[q.id]));
+  return [...unseen, ...seen].slice(0, count);
+}
+
 export function PracticePage() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
@@ -18,6 +40,7 @@ export function PracticePage() {
   const initialModule = params.get('module') || '全部';
   const [module, setModule] = useState(initialModule);
   const [count, setCount] = useState(20);
+  const [pickMode, setPickMode] = useState<PickMode>('unseen');
   const [onlyText, setOnlyText] = useState(false);
   const [onlyImaged, setOnlyImaged] = useState(false);
   const practiceKey = sessionKey('practice', source || 'default');
@@ -80,6 +103,11 @@ export function PracticePage() {
     });
   }, [pool, module, onlyText, onlyImaged]);
 
+  const filteredUnseen = useMemo(
+    () => filtered.filter((q) => !progress.answered[q.id]).length,
+    [filtered, progress.answered],
+  );
+
   const selectedStats = useMemo(() => {
     if (module === '全部') return allStats;
     return moduleStats.find((m) => m.name === module) || { total: 0, done: 0, correct: 0 };
@@ -88,7 +116,7 @@ export function PracticePage() {
   function start(fresh = true) {
     if (fresh) {
       clearSession(practiceKey);
-      const picked = shuffle(filtered).slice(0, count);
+      const picked = pickQuestions(filtered, count, pickMode, progress.answered);
       sessionStorage.setItem('xingce-session', JSON.stringify(picked.map((q) => q.id)));
     } else if (existing?.questionIds?.length) {
       sessionStorage.setItem('xingce-session', JSON.stringify(existing.questionIds));
@@ -104,7 +132,8 @@ export function PracticePage() {
       <h1>{sourceLabel || '按模块刷题'}</h1>
       <p className="lede">
         {sourceLabel ? '只练拼多多 26 年新题整理（言语 / 资料数量 / 图形）。' : null}
-        当前筛选 {filtered.length} 道可选；本范围已完成 {selectedStats.done}/{selectedStats.total}
+        当前筛选 {filtered.length} 道可选（其中未做 {filteredUnseen}）；本范围已完成{' '}
+        {selectedStats.done}/{selectedStats.total}
         {selectedStats.done ? `（对 ${selectedStats.correct}）` : ''}。
       </p>
 
@@ -173,6 +202,23 @@ export function PracticePage() {
             ))}
           </select>
         </label>
+
+        <label>
+          选题方式
+          <select value={pickMode} onChange={(e) => setPickMode(e.target.value as PickMode)}>
+            <option value="unseen">优先未做（推荐）</option>
+            <option value="order">按题号顺序</option>
+            <option value="random">完全随机（可重复）</option>
+          </select>
+        </label>
+
+        <p className="muted tiny">
+          {pickMode === 'unseen'
+            ? '从未做过的题里随机抽；当前范围未做题不够时，才会补已做过的。'
+            : pickMode === 'order'
+              ? '按题目编号固定顺序取前 N 道（从最早编号开始）。'
+              : '从当前筛选里完全随机抽 N 道，做过的也可能再次抽到。'}
+        </p>
 
         <label className="check">
           <input type="checkbox" checked={onlyText} onChange={(e) => setOnlyText(e.target.checked)} />
