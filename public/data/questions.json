@@ -33018,7 +33018,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-231.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-231.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -33052,7 +33052,7 @@
     "explanation": "上海医疗>蓝帆医疗>药明康德>新和成",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-239.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-239.png?v=8",
     "tipIds": [
       "tip-sl-rongchi",
       "tip-sl-sixiang"
@@ -33087,7 +33087,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-267.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-267.png?v=8",
     "tipIds": [
       "tip-sl-rongchi",
       "tip-sl-sixiang"
@@ -53303,7 +53303,7 @@
     "explanation": "A 项:A 总量=9800+11000+15000+18000=53800;B 总量=2500+4330+8500+14000=2933，A>B 且\n不接近，A 正确D 错误。\nB 项:B 增长速度=(14000-2500)/2500=4.6;A 增长速度=(18000-9800)/9800=83.7%，错误。\nC 项:B 第二年增长率=(4330-2500)/2500=73.2%，A 第二年增长率=(11000-9800)/9800-12.2%错\n误。\n特别注意：看清柱状图是新用户量，而不是用户量。(注意图标的标题)",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-001.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-001.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53337,7 +53337,7 @@
     "explanation": "如图A 项正确;B 项错误，第二三四年没有达到3000 万元;C 项6528.72/2352=2.78，正确;D\n项第十年和第八年销售额增速均为12.0%，比第六年13.0%有所放缓正确。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-002.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-002.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53371,7 +53371,7 @@
     "explanation": "销售利润率=(销售收入-销售成本)÷销售收入\nA 店铺=(168-12.7)/16.8=24.4%\nC 店铺=(10.4-6.3)/10.4=39.4%\nD 店铺=(8.5-4.5)/8.5=47%\nF 店铺=(3-1.4)/3=53%\n注意：这里指的是利润率",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-003.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-003.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53405,7 +53405,7 @@
     "explanation": "部分问卷无效，无法得出具体数据",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-004.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-004.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53439,7 +53439,7 @@
     "explanation": "第二年销售额增幅=(191571-162376)/162376=18%\n第三年销售额增幅=(204540-191571)/191571=6.8%\n第四年销售额增幅=(217261-204540)/204540=6.2%\n第五年销售额增幅=(227991-217261)/217261=4.9%\n销售额增幅降低的年份有3 个。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-005.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-005.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53473,7 +53473,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-006.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-006.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53503,7 +53503,7 @@
     "explanation": "如图，2012 年百度与腾讯增长率大致相同，均为50%左右。（只看增长率）",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-007.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-007.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53533,7 +53533,7 @@
     "explanation": "=(252-48)/(383-65)\n贡献率(%)=贡献量(产出量，所得量)/投入量(消耗量，占用量)*100%\n贡献率也用于分析经济增长中各因素作用大小的程度。计算公式:贡献率(%)=某因素增加量\n(增量或增长程度)/总增加量(总增量或增长程度)x100%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-008.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-008.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53563,7 +53563,7 @@
     "explanation": "第一年=57819/739.96=78.1%\n第二年=610.4/829.39=73.6%\n第三年=539.43/772.41=69.8%\n第四年=686.88/955.23=72%\n第五年=615 16/74775=82.3%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-009.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-009.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53597,7 +53597,7 @@
     "explanation": "如图所示，注意单位",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-011.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-011.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53631,7 +53631,7 @@
     "explanation": "(1300/57%*32%)-(900/49.9%*38%)≈44",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-012.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-012.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -53661,7 +53661,7 @@
     "explanation": "2014 二手车交易量同比增量=920-[920/(1+8.6%)1=73\n2015 二手车交易量同比增量=962-[962/(1+4.6%)1=42\n2016 二手车交易量同比增量=1068-[1068/(1+11%)1=106\n2017 二手车交易量同比增量=1270-[1270/(1+19%)1=203\n2018 二手车交易量同比增量=1384-[1384/(1+9%)1=114\n2019 二手车交易量同比增量=1467-[1467/(1+6%)1=84",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-013.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-013.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53695,7 +53695,7 @@
     "explanation": "增速是百分比3 月份是低于2 月份的，\n15 根据",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-014.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-014.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53721,7 +53721,7 @@
     "explanation": "已知，1 欧洲地区第二年上半年比重约9%2 欧洲地区第二年全年比重约8%3 欧洲地\n\n区第三年下半年比单=第二年下半年比单4 欧洲第地区第三年上半年比重约11%由1.2 口\n推断，欧洲第二年下半年比重低于9%进面，由3 和4 可得，第三年下半年比車小千9%第\n三年全年比重小于11%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-015.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-015.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53755,7 +53755,7 @@
     "explanation": "3-4 年=(2544.7-2122.5)12122.5=19.9%\n4-5 年=(3054.4-25447)12544.7=20%\n5-6 年=(3641.3-3054.4)/3054.4=19.2%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-016.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-016.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53789,7 +53789,7 @@
     "explanation": "如图美国地区销售总量为33.1 万件，增长率为-24.3%，\n按照此增长率，GB 公司之后的第二年在美国的销售量将达到33.1*(1-24.3%)=25.06",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-017.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-017.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53819,7 +53819,7 @@
     "explanation": "饿了么=(1064.6-886.1)/886.1=20%\n美团=(796.8-747.4)/747.4=6.6%\n百度=(185.6-125.3)/125.3=48%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-018.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-018.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53849,7 +53849,7 @@
     "explanation": "D 团购网站 B 的蓝领用户多于团购网站 C 的蓝领用户",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-019.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-019.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53883,7 +53883,7 @@
     "explanation": "27*1000*15%:-405、27+4+45-1-25-6+2=28.28*1000*150-4228*1000*1=28281000-4057842\n27000=889.5",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-020.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-020.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53917,7 +53917,7 @@
     "explanation": "5970 万/1230-4030 万/680=-10728 约等于11000",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-021.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-021.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53951,7 +53951,7 @@
     "explanation": "如图，251.1",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-022.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-022.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -53985,7 +53985,7 @@
     "explanation": "1925:7700:5775:9625=1:4:3:5",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-023.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-023.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54015,7 +54015,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-024.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-024.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54049,7 +54049,7 @@
     "explanation": "学生资助总支出÷贫困学生数(注意单位，学生数是千人，资助是万元)\n第一年:66054/5.4=12232:\n第二年:920281/8.7=10578;\n第三年:104066.5/98=10619;\n第四年121030.3/10.7=1131.1;\n第五年:1058861/91=1163.6，先下降再上升",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-025.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-025.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54083,7 +54083,7 @@
     "explanation": "220/(180+220+215+198+206)=21.6%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-026.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-026.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54113,7 +54113,7 @@
     "explanation": "1500*51.5%*42.2%=326",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-027.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-027.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54143,7 +54143,7 @@
     "explanation": "入境游客同比增速=(13948.24-13844.38)/13844.38=0.75%④\n外国人入境游客同比增速=(291653-281512)/2815.12=3.6%①\n港澳入境游客同比增速=(10444.59-1045626)/10456.26=-0.1%⑤\n台湾入境游客同比增速=(587.13-573)/573=2.47%③\n入境过夜游客同比增速=(6073.84-592673)/5926.73=2.48%②",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-028.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-028.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54177,7 +54177,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-029.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-029.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54211,7 +54211,7 @@
     "explanation": "36000/85.2%=42253.5",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-030.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-030.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54245,7 +54245,7 @@
     "explanation": "C 项比例最小",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-031.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-031.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54279,7 +54279,7 @@
     "explanation": "不止看增长，还要看下降，只有变化超过 3%就算",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-032.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-032.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54309,7 +54309,7 @@
     "explanation": "(310+320+350+400+370+410+420+425+445+520+470+530)/\n(300+320+380+380+380+400+420+420+450+500+500+520)=1",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-033.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-033.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54343,7 +54343,7 @@
     "explanation": "第一年大中华区资产总额=46947/(1+9%)=43070，比第六年少52850-43070=9780 万美元",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-034.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-034.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54373,7 +54373,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-035.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-035.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54407,7 +54407,7 @@
     "explanation": "低增长不等同于负增长",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-036.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-036.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54441,7 +54441,7 @@
     "explanation": "第一年销售总额=702.3+1427.27+45.04+7881=2253.42\n第五年销售总额=2061+2527+167+398=5153\n平均每年增长(5153-2253.42)÷4=724.9",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-037.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-037.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54475,7 +54475,7 @@
     "explanation": "B 产品第二季度销售额增长率=(56.2-51.9)÷519=8.3%;\n第三季度=(65.7-56.2)÷562=16.9%;\n第四季度=(70.4-65.7)÷65.7-7.2%，先上升后下降",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-038.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-038.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54509,7 +54509,7 @@
     "explanation": "185÷23=80.4 百万人;80.4*76%=61 百万=6100 万",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-039.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-039.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54543,7 +54543,7 @@
     "explanation": "19395.6÷64934.4=30%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-040.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-040.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54577,7 +54577,7 @@
     "explanation": "第二年销售额增长速度=(4330-2386)÷2386=81.5%\n\n第三年销售额增长速度=(8453-4330)÷4330=95%\n第四年销售额增长速度=(14522-8453)÷8453=71.8%\n第五年销售额增长速度=(20662-14522)÷14522=42.3%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-041.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-041.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54611,7 +54611,7 @@
     "explanation": "前一年销售三部销售额=306739÷(1+8.1%)=283755\n销售二部销售额=271392÷(1+7.3%)=252928 作差约等于31000",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-042.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-042.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54645,7 +54645,7 @@
     "explanation": "只有每天花费的时间没有次数",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-043.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-043.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54679,7 +54679,7 @@
     "explanation": "今年D 地区盈利占该省总盈利的比重=29014÷333177=8.7%\n去年D 地区盈利占该省总盈利的比重=(29014-4876)÷(333177-119328)=11.3%\n作差8.7%-11.3%=-2.6%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-044.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-044.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54713,7 +54713,7 @@
     "explanation": "C 项B 国的赛事服务及健身服务产业占体育总产值的8%+6%=14%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-045.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-045.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54747,7 +54747,7 @@
     "explanation": "A 项，三星级酒店入住率没有二星级的高，错误;\nB 项，三星级饭店7 月份平均房价低于1-7 月份平均房价，错误;\nC 项，1-7 月，星级饭店平均入住率呈增长下降再增长趋势，错误;\nD 项五星级饭店7 月平均房价751.9 低于1-7 月平均水平796.1，正确",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-046.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-046.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54781,7 +54781,7 @@
     "explanation": "第二年境内上市公司数2063-仅发A 股的境内上市公司数1869-仅发B 股的境内上市公司数\n108=86",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-047.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-047.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54815,7 +54815,7 @@
     "explanation": "A 项，2019 年水产增量为117.72÷(1+9%)*9%=9.72，错误;\nB项蔬菜产量占全具主要农副产品产量的",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-048.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-048.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54849,7 +54849,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-049.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-049.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54883,7 +54883,7 @@
     "explanation": "(320-240)/240=33.3%\n(400-320)/320=25%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-050.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-050.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54917,7 +54917,7 @@
     "explanation": "4300*95%/(1+5%)=3890",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-051.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-051.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -54951,7 +54951,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-052.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-052.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -54985,7 +54985,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-053.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-053.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55019,7 +55019,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-054.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-054.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55053,7 +55053,7 @@
     "explanation": "第6 年商务信息咨询订单量=1307.9÷(1-3.7%)=1358。比投资咨询项目订单量多1358-1316-42\n个",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-055.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-055.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55087,7 +55087,7 @@
     "explanation": "A 选项36786-(36786+46189)x100%=36786+82975x100%≈44.33%，A 错误:\nB 选项:空调增幅=35965/31196=115 电视机增幅=39467/31208=126 115<126B 错误:\nC 选项(36587+54636)+(26293+26315)=91223+52608=73C 错误:\nD 选项第二年=31208/26315=1.2 第五年=54636/461891.2 正确",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-056.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-056.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55121,7 +55121,7 @@
     "explanation": "选项B 错误，(32+38)/200*100%=35%，AC、D 三项由图可知，说法正确。因此，本题选B.",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-057.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-057.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55155,7 +55155,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-058.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-058.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55189,7 +55189,7 @@
     "explanation": "90%/60%*100=150\n39%/48%*100=80\n75%/40%*100=180\n66%/33%*100=200",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-059.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-059.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55223,7 +55223,7 @@
     "explanation": "65/(65+100+50+25)=27.1%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-060.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-060.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55253,7 +55253,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-061.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-061.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55287,7 +55287,7 @@
     "explanation": "[(570120-421056)/421056+1}*570120",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-062.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-062.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55321,7 +55321,7 @@
     "explanation": "以下判断正确的是()\nA.德国的麦产量与肉产量相等\nB 丹麦与法国的薯类产量相等\nC.五个国家中麦产显最高的国家是法国\nD.以上三个都不对",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-063.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-063.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55355,7 +55355,7 @@
     "explanation": "图表中的比例为农作物本国生产量与总供给量的比例，无法判断出某种农作物具体的产量，\n所以ABC 项均无法判断。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-064.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-064.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55389,7 +55389,7 @@
     "explanation": "30%/12%=2.5",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-065.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-065.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55423,7 +55423,7 @@
     "explanation": "(83729-384.18)/100=4.5311 亿美元。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-066.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-066.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55457,7 +55457,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-067.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-067.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55491,7 +55491,7 @@
     "explanation": "3250-2900=350\n4300-4050=250\n6025-5850=175\n7500-6450=1050\n9000-7900=1100",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-068.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-068.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55525,7 +55525,7 @@
     "explanation": "如图，第456781011 年",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-069.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-069.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55559,7 +55559,7 @@
     "explanation": "27853/(1+0.8%)=27632",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-070.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-070.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55593,7 +55593,7 @@
     "explanation": "(191571-162376)/162376=18%\n(204540-191571)/191571=6.8%\n(217261-204540)/204540=6.2%\n(227991-217261)1217261=4.9%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-071.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-071.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55627,7 +55627,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-072.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-072.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55657,7 +55657,7 @@
     "explanation": "如图A 项正确，\nB 项销售收入下降率2-3 月=(7400-8400)÷8400-1.2%;3-4 月=(6300-7400)÷7400--14.9%;\n销量下降率2-3 月=(6440-7000)÷7000--8%;3-4 月=(6510-6440)初6440=1%。正确:\nC 项新车销量3-4 月为上升状态，错误。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-073.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-073.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55691,7 +55691,7 @@
     "explanation": "利润率=(出厂价成本)÷成本价\n第二年利润率=(120-100)÷100=20%;\n第三年=(120-90)÷90=33.3%;\n第四年=(150-100)÷100=50%;\n第五年=(240-180)÷180=33.3%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-074.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-074.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55725,7 +55725,7 @@
     "explanation": "「(0.7+12+0.4+02)-(0.6+04+0.2+01)]÷(0.6+0.4+0.2+0.1)=92%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-075.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-075.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55759,7 +55759,7 @@
     "explanation": "A 项第三年全球隐形矫正市场规模同比增量=(104-72)÷72=44%;第四年=(129-104)\n÷104=24%;第五年=(122-129)÷129=-5.4%;第六年=(147-122)÷12220.5%，正确。\nB 项第三年全球隐形矫正市场规模同比增量为104-72=32 亿美元正确。\nC 项第二年全球隐形矫正市场规模同比增速(72-50)÷50=44%正确。\nD 项全球隐形矫正市场规模同比增速最快的是第二年与第三年相同均为44%，错误。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-076.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-076.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55793,7 +55793,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-077.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-077.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55823,7 +55823,7 @@
     "explanation": "二季度发电量=701+771+725=2197\n三季度=839+84.6+774=245.9\n四季度=784+741+692=221.7\n三季度>四季度>二季度",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-078.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-078.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55857,7 +55857,7 @@
     "explanation": "（变化幅度不分正负）\n2 月投诉量变化幅度=(71-62)÷62=14.5%;3 月=(61-71)÷71=-14.1%\n4 月=(42-61)÷61=-31.1%;5 月=(61-42)÷42=45.2%;6 月=(67-61)÷61=9.8%:\n7 月=(130-67)÷67=94%:8 月=(106-130)÷130=-18.5%;9 月=(66-106)÷106=-37.7%;\n10 月=(56-66)÷66=-15.2%;11 月=(47-56)÷56=-16.1%;12 月=(62-47)÷47=31.9%。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-079.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-079.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55887,7 +55887,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-080.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-080.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -55921,7 +55921,7 @@
     "explanation": "第一年每个季度卖出商务笔记本数量一致，第一季度与第二季度的收入也一致，那么一二季\n度的均价也应一致，C 项是一致的，答案为C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-081.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-081.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55955,7 +55955,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-082.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-082.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -55989,7 +55989,7 @@
     "explanation": "2018 年晶圆制造业销售收入=6532*27.84%=18185;\n2019 年晶圆制造业销售收入=7511.8*284%=2133.4，作差=314，选D",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-084.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-084.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56023,7 +56023,7 @@
     "explanation": "由柱状图可知第五年化妆品A 的销售量是21000，其五年的销售量是\n21000+20000+16000+15000+9000=81000，因此化妆品的销售量占其五年销售量的比重为\n21000/81000 约等于26%，故本题正确答案选B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-085.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-085.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56057,7 +56057,7 @@
     "explanation": "由上表可得:\n2 月收入增长率:(90-88)÷88x100%=2.27%;3 月收入增长率:(114-90)÷90x100%=26.67%;4 月收入\n\n增长率:(137-114)÷114x100%=21.18\n5 月收入增长率:(140-137)÷137x100%=2.19。\n因此该公司收入增长率呈现先上升后下降趋势，所以选择C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-086.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-086.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56091,7 +56091,7 @@
     "explanation": "由上表可得:\n第六年增长率:(33.5-31.6)÷31.6x100%=6.01%\n第十年增长率:(47.7-33.5)÷33.5x100%=42.39%\n第八年增长率:(66.6-47.7)÷47.7x100%=39.62%\n因此，后三年增长率呈现先上升后下降趋势，所以选择B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-087.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-087.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56125,7 +56125,7 @@
     "explanation": "由上图可知，英国销售额是87916，日本销售额是81315;\n(87916-81315)÷87916x100%=8%，所以选择B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-088.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-088.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56159,7 +56159,7 @@
     "explanation": "24339÷(1+10.5%)=22026",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-089.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-089.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56193,7 +56193,7 @@
     "explanation": "上周天零售总额=43055÷(1+10.1%)=39105\n本周五的零售总额约是上周周天的零售总额的67177÷39105=1.7 倍",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-090.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-090.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56227,7 +56227,7 @@
     "explanation": "由上图可知，4 月份汽车内销量是65455，3 月份汽车内销量是65080。65455-65080=375，\n所以选择A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-091.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-091.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56238,7 +56238,7 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "根据资料，选择正确答案",
+    "stem": "第二年的增长速度=(5105-4862)÷4862=5%;第三年=(5386-5105)÷5105=5.5%;第四年\n=(5709-5386)÷5386=6%;第五年-(6052-5709)÷5709=6%;\n按照目前的增长趋势，那也应是6%的趋势，第六年=6052*(1+6%)=6416",
     "options": [
       {
         "key": "A",
@@ -56258,10 +56258,10 @@
       }
     ],
     "answer": "C",
-    "explanation": "第二年的增长速度=(5105-4862)÷4862=5%;第三年=(5386-5105)÷5105=5.5%;第四年\n=(5709-5386)÷5386=6%;第五年-(6052-5709)÷5709=6%;\n按照目前的增长趋势，那也应是6%的趋势，第六年=6052*(1+6%)=6416",
+    "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-092.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-092.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56272,7 +56272,7 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "根据资料，选择正确答案",
+    "stem": "[(15480-430*25)+(15000-26*3758)+(17052-28*406)+(16682-25*439)\n(430+375+406+439)≈13",
     "options": [
       {
         "key": "A",
@@ -56292,10 +56292,10 @@
       }
     ],
     "answer": "B",
-    "explanation": "[(15480-430*25)+(15000-26*3758)+(17052-28*406)+(16682-25*439)\n(430+375+406+439)≈13",
+    "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-093.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-093.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56329,7 +56329,7 @@
     "explanation": "商业:119713÷(1-6.8%)=12844.74\n办公楼:4363.3÷(1-8.3%)=4758.23\n别墅:4410.7÷(1-7%)=4742.69\n住宅:147929.4÷(1+2.2%)=144745.01\n商品:171654.4÷(1+1.3%)=169451.53",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-094.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-094.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56396,7 +56396,7 @@
     "explanation": "291-219=72 百万美元，选择B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-100.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-100.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56430,7 +56430,7 @@
     "explanation": "根据上图可知，参与调查的育儿成员人数为1424 人，认为国产品牌好用的占比是39.8%，\n所以1424x39.8%~567 人。选择B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-101.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-101.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56464,7 +56464,7 @@
     "explanation": "如图A 项正确;B 项，第六年年底，大中华区营业额达到10670 万美元，比上年增加106 万，\n那么第五年的营业额=10670-106=10564，正确;C 项，第六年，北美区公司资产总额为750\n万美元，比上一年减少",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-102.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-102.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56498,7 +56498,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-103.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-103.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56532,7 +56532,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-104.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-104.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56566,7 +56566,7 @@
     "explanation": "123(选择题)下面是某淘宝店铺连续四年的销售情况，根据图表回答问题。\n\n第一年到第四年间，年均增长率最大的是()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-105.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-105.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56600,7 +56600,7 @@
     "explanation": "销售额年均增长率=(240-75)175=2.2\n销售成本年均增长率=(160-52)/52=2.08\n销售利润年均增长率=(80-23)/23=2.48",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-106.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-106.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56634,7 +56634,7 @@
     "explanation": "第二年第三季度销售额增长率=(480-336)/336=43%\n第三年第三季度销售额增长率=(570-480)1480=18.8%\n\n第四年第三季度销售额增长率=(577-570)/570=1.2%答案为C",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-107.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-107.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56668,7 +56668,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-108.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-108.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56702,7 +56702,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-109.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-109.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56736,7 +56736,7 @@
     "explanation": "第二年B 产品销售量增幅=(33482-26995)/26995=24%\n第三年B 产品销售量增幅=(39341-33482)/33482=17.5%\n第四年B 产品销售量增幅=(46106-39341)/39341=17.2%\n第五年B 产品销售量增幅=(54729-46106)/16106=18.7%答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-110.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-110.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56770,7 +56770,7 @@
     "explanation": "去年第二季度销售一部同比增长率=(16000.4-42926)/4292.6=273%\n去年第二季度销售二部同比增长率=(16887-6347)/634.7=166%\n去年第二季度销售三部同比增长率=(117668-67094)/67094=75.4%\n去年第二季度销售四部同比增长率=(3455.5-1484.9)/1484.9=133%答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-111.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-111.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56804,7 +56804,7 @@
     "explanation": "第二年销售额增长率=(191571-162376)/162376=18%，\n第三年销售额增长率=(204540-191571)/191571=6.8%\n第四年销售额增长率=(217261-204540)/204540=6.2%\n第五年销售额增长率=(2279912172611217261=4.9% ，平均增长率\n=(18%+6.8%+6.2%+4.9%)14=8.98%\n选项A 错误:选项B 如果按平均增长率计算，\n第六年该公司销售额=227991*(1+8.98%)=248464\n否则无法判断，因为不知道增长率是多少，错误，C 项也无法判断。\nD 项正确",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-112.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-112.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56838,7 +56838,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-113.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-113.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56872,7 +56872,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-114.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-114.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -56906,7 +56906,7 @@
     "explanation": "如图，第五年的收入总额=31628，第四年的收入总额=263965 增长率=(31628-\n263965)126396.5=19.8%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-115.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-115.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56940,7 +56940,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-116.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-116.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -56974,7 +56974,7 @@
     "explanation": "总结是大型企业比较稳定，赚钱也比较稳定，所以是1",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-117.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-117.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57008,7 +57008,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-118.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-118.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57042,7 +57042,7 @@
     "explanation": "A 项，城市D 的汽车保有量为320，同比增长率为3%，那么城市D 前一年的汽车保有量为\n320/(1+3%)=310，错误。\nB 项，城市F 的汽车保有量为270 万辆，保持3%的年增长率不变，270*(1+3%)=2781 278.1\n(1+3%)=286443、286443*(1+3%)=295 错误\nC 项，城市C 的汽车保有量增长67%为330*(1+67%)=5511，那其他的城市也可能增长，且城\n市A\n只要稍稍增长就会超过城市C，所以无法判断城市C 是否排在首位，错误。\n答案为D\n143(选择题)某旅游最点去年6-12 月份经营情况如",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-119.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-119.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57076,7 +57076,7 @@
     "explanation": "该景区7 月份的营业收入为50298 增长率=17.2%，那么该景区6 月份的营业收入约为50298\n(1+17.2%)≈43000，答案为B\n144(选择题)",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-120.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-120.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57110,7 +57110,7 @@
     "explanation": "选项中只有2015 2017 2018 2019 四年，所以只算这四年就可以了\n2015 年同比增长率=(1230-805)/805=53%\n2017 年同比增长率=(2540-1770)/1770=44%\n2018 年同比增长率=(31432-2540)12540=24%\n2019 年同比增长率=(4101-3143.2)/3143.2=30.5%2018<2019<2017<2015，答案为B\n147(选择题)",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-121.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-121.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57144,7 +57144,7 @@
     "explanation": "如图，对手机的处理方式中不处理的比例高A 项正确。B 项，我国废置手机的处理\n情况中闲置率较高，大量的废置手机没有得到合理地处理正确。D 项，题干说如果处置不当\n或随意抛弃就会对环境和人类健康构成巨大威胁，上图中直接扔掉的比率是很小的，所以D\n项大多数人没有对废置手机做有害处理正确。c 项，A 公司的调查数据相加等于100%，B 公\n司不等于，所以B 公司的调查结果相对更准确是错误的。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-122.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-122.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57178,7 +57178,7 @@
     "explanation": "12 月该公司实际利润139.2 万元，同比增长为29.4%，那么上一年12 月该公司实\n际利润=139.2÷(1+29.4%)=107.6，答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-123.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-123.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57212,7 +57212,7 @@
     "explanation": "1970-1980 公共交通使用人数增长率=(1695-204)/204=730%\n1980-1990 公共交通使用人数增长率=(4385-1695)/1695=159%\n1990-2000 公共交通使用人数增长率=(10592-4385)/4385=142%\n2000-2010 公共交通使用人数增长率=(20304-10592)/10592=92%答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-124.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-124.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57246,7 +57246,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-125.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-125.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57280,7 +57280,7 @@
     "explanation": "第一年某一原料的成本占总成本的比重=1173/1642=71%\n第二年某一原料的成本占总成本的比重=1266/1739=73%\n第三年某一原料的成本占总成本的比重=1389/1985=70%先增加再降低，答案为B",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-126.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-126.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57314,7 +57314,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-127.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-127.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57348,7 +57348,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-128.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-128.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57382,7 +57382,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-129.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-129.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57412,7 +57412,7 @@
     "explanation": "今年N 公司的员工工资总额=380+320+140+780+520+260+70=2470 预计明年公司资支出增加\n20%，即2470*(1+20%)=3000",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-130.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-130.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57446,7 +57446,7 @@
     "explanation": "第五年，A 品牌盈利的同比增长幅度=(13071-11303)÷11303=15.6%\n第五年，B 品牌盈利的同比增长幅度=(3687-3391)=3391=8.7%\n相差15.6%-8.7%≈7%，答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-131.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-131.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57480,7 +57480,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-132.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-132.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57514,7 +57514,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-133.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-133.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57548,7 +57548,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-134.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-134.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57582,7 +57582,7 @@
     "explanation": "第五年动画市场的总收入=1100+2981+527+6552+3265+408=14833",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-135.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-135.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57616,7 +57616,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-136.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-136.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57650,7 +57650,7 @@
     "explanation": "年均增长率=[(2.9+0.9+4.5+47+12.7+15.2)-76]÷76=10%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-137.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-137.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57684,7 +57684,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-138.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-138.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57718,7 +57718,7 @@
     "explanation": "第五年电视机利润增长率=(54636-46189)=46189=18.3%\n第五年空调利润增长率=(36587-36786)=36786=-0.5%\n第六年电视机利润\n=54636*(1+18.3%)=64634 第六年空调利润=36587*(1-0.5%)=3640464634+36404=101038",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-139.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-139.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57752,7 +57752,7 @@
     "explanation": "保持第八年的快递物流业务量增长率第八年的快递物流业务量增长率=(2001000-1402000\n÷1402000=42.7%\n2001000*(1+427%)=2855427.2855427*(1+42.7%)=40746944074694*(1+42.7%=5814588>51000\n00 答案为C\n174(选择题)",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-140.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-140.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57786,7 +57786,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-141.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-141.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57820,7 +57820,7 @@
     "explanation": "B 项，2017 年中国动漫行业总产值达到1536 亿元，可以看到图中2017 年是1540 亿元，错\n误\nD 项，在线动漫市场规模近百亿，可以看到图中2018 年在线动漫市场规模为111.6，超百亿，\n错误",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-142.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-142.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57850,7 +57850,7 @@
     "explanation": "需要算出车站商务利润和客运业务利润的同比增长率，\n车站商务利润:第二年=(25-23)/23=8.7% 第三年=(28-25)/25=12% 第四年=(3128)128=10.7%\n第四年=(34-31)/31=9.7%，同比增长率趋势为先上升后下降\n客运业务利润:第二年=(62-58)/58=6.9% 第三年=(65-62)/62=4.8% 第四年=(67-65)/65=31% 第\n五年=(70-67)/67=4.5%，同比增长率趋势为先下降后上升。答案为B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-143.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-143.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57884,7 +57884,7 @@
     "explanation": "本题中，去年年底收盘股价<上市当天开盘股价股票才是跌的，股票跌幅=(去年年底收盘股\n价-上市当天开盘股价)+去年年底收盘股价\n如图A、B、C、D 四家上市公司中，BD 公司的股票是跌的，\nB 公司跌幅=(4.5-19)/19=-76% D 公司跌幅=(3.1-39)13.9=-20.5%答案为B",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-144.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-144.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57918,7 +57918,7 @@
     "explanation": "2019 年第四季度邮政业务总量=17123+1795.5+14731=4980.9\n2019 年第四季度电信业务总量=95472+9404.8+97481=28700.1\n相差28700.1-4980.9 约等于23719",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-145.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-145.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -57952,7 +57952,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-146.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-146.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -57986,7 +57986,7 @@
     "explanation": "A 项第五年A 投资额占总投资额的比重为116345-169014=68.84%，错误\nB 项A 投资和B 投资在近五年间增长趋势保持一致，不须计算，第五至六年A 投资是增长的，\nB 是下降的，错误;\nC 项B 投资额增长率，第五六年是下降的不用计算，第二年=(45499-42115)=42115=8% 第三\n年=(53833-45499)+45499=18%，第四年=(8000053833)+53833=48.6% 第四年最高C 项错\n误;\nD 项近几年B 投资总额=42115+45499+53833+80000+52669+51334=325450 总投资额\n=110067+116936+153832+199614+169014+201684=951147 占比为325450+951147=34%正\n确。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-147.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-147.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58020,7 +58020,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-148.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-148.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58054,7 +58054,7 @@
     "explanation": "上半年销售一部的销售额=8584+7730+8433+9240+8228+7837=50052\n上半年销售二部的销售额=7700+8157+7404+8148+7161+7225=45795\n相差50052-45795=4257 答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-149.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-149.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58088,7 +58088,7 @@
     "explanation": "同比增长=(后一年-前一年)=前一年\n\n第2 年同比增长=(13-8)=8=62.5%\n第3 年同比增长=(25-13)=13=92%第4 年同比增长=(44-25)=25=76%\n第5 年同比增长=(51-44)=44=16%答案为B。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-150.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-150.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58122,7 +58122,7 @@
     "explanation": "题干中，2019 年北京首都国际机场起降架次同比增长-1.5%，答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-151.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-151.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58156,7 +58156,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-152.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-152.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58190,7 +58190,7 @@
     "explanation": "仔细观察上图，三季度>四季度>二季度，所以选择A。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-153.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-153.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58224,7 +58224,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-154.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-154.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58258,7 +58258,7 @@
     "explanation": "如图，橙色部分的前两名市场份额为24%和19%，24%+19%=43%\n199(选择题)一路平安汽车销售公司去年各分店及去年1-4 季度汽车销售情况如下所示\n如果单个季度的汽车销售量超过了150辆那么可以拿到厂商1000 元/辆的额外补贴那么去年\n\n全年，总计拿了()万补贴",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-155.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-155.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58292,7 +58292,7 @@
     "explanation": "如图，每个季度的汽车销售量都超过了150 辆，那么可以拿到补贴的车辆数\n=210+230+274+305=1019 辆，每辆补贴1000 元，共补贴1019*1000=1019000 千元=101.9 万\n元，答案为A",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-156.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-156.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58326,7 +58326,7 @@
     "explanation": "16 个产品的发货件数=14+12+5+3+2+1.4+12+1+10+7+4+2+17+13+12+0.9=67.7 万件\n总销量第二年增长20%，那么第二年的总销量=677*(1+20%)=81 万件",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-157.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-157.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58360,7 +58360,7 @@
     "explanation": "五年间，高校平均对每个贫困学生的资助额为:第一年6605.4÷5.4~1223 第二年\n9202.81÷8.7≈1058 第三年10406.65÷98~1062 第四年1210303÷107~1131、第五年\n10588.61÷9.1≈1164，第1 年-第2 年下降，排除AD;第3 年-第4 年上升，排除B。所以选\n择C。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-158.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-158.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58394,7 +58394,7 @@
     "explanation": "集成灶3 月零售量=2162 月零售量=31，环比增幅=(216-31)/3.1 约等于596.8%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-159.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-159.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58428,7 +58428,7 @@
     "explanation": "人均消费=销售额÷消费人次\nA 地区=165÷95.64=1.73\nB 地区=150-89.45=1.68\nC 地区=154-10857=1.42\nD 地区=97÷60=1.62 答案为A\n207(选择题)HOC 公司过去10 年间的销售额及其增长速度\n\n下列说法不符合上图的是哪一项?\nA 年来该公司销售额持续增加\nB.该公司年销售额自成立以来始终保持在3000 万元以上\nC 该公司现在的销售额达到了第二年的两倍以上\nD，该公司第十年和第八年销售额增速同比上年度有所放缓",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-160.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-160.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58462,7 +58462,7 @@
     "explanation": "如图，销售额持续增加，A 项正确:\nc 项该公司现在的销售额达到了第二年的两倍以上，现在的销售额=6528.72 第二年的销售额\n=25876528.72+2587=25.C 项正确:\nD 项该公司第七年和第八年销售额增速同比上年度有所放缓，第七八年增速为12%，第六年\n为13%，D 项正确:\nB 项，该公司年销售额自成立以来始终保持在3000 万元以上，第二三四年不是，B 项错误。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-161.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-161.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58496,7 +58496,7 @@
     "explanation": "(第二年-第一年)-第一年\n(18536-16855)÷16855 约等于10%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-162.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-162.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58530,7 +58530,7 @@
     "explanation": "如图，天然原油今年9 月份产量=1774，比去年同期增长2.7%，那么去年9 月份天然原油的\n产量=1774÷(1+2.7%)=1727·同理，蚕丝及机织物今年9 月份产量=5299.9，比去年同期增长",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-163.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-163.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58564,7 +58564,7 @@
     "explanation": "如图，细分教育分布情况，蓝色的为一线城市，语言学习为22%，最大，答案为D",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-164.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-164.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58598,7 +58598,7 @@
     "explanation": "B 厂最初120 人，\n第一年新招120 人=120+120=240 人\n第二年新招200 人=240+200=440 人\n第三年新招290 人=440+290=730 人\n第四年新招320 人=730+320=1050 人\n增长率为:\n第一年=(240-120)/120=1\n第二年=(440-240)1240=83.3%\n第三年=(730-440)/440=65.9%\n第四年=(1050-730)/730=43.8%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-165.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-165.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58632,7 +58632,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-166.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-166.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58666,7 +58666,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-167.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-167.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58700,7 +58700,7 @@
     "explanation": "如图2015 年生猪出栏量=70825，2015 年生猪出栏量=54419，从2020 年起全国生猪出栏量\n每年按照10%的速度增长。\n那么2020 年生猪出栏量=54419*(1+10%)=59860.9\n2021 年生猪出栏量=598609*(1+10%)=65846.99\n2022 年生猪出栏量=65846.99*(1+10%)=72431.68972431689>70825，答案为D",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-168.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-168.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -58734,7 +58734,7 @@
     "explanation": "如图今年12 月份的总收入为534.64 万元，同比增长就是比去年增长了12%，那\n么去年的总收入\n=534.64+(1+12%)=477.3571 万元，问题问的是多少元，477.3571 万元=4773571 元",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-169.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-169.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58768,7 +58768,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-170.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-170.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58802,7 +58802,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-171.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-171.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58836,7 +58836,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-172.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-172.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58870,7 +58870,7 @@
     "explanation": "下图反映了奶茶店A 四个月的营业记录。根据图表回答下列问题",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-173.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-173.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58904,7 +58904,7 @@
     "explanation": "奶茶店的利润始终处于上升状态 \n \n \n下图为A 国乳制品消费者月收入分布。请根据图表回答下列问题。 \n该国乳制品消费者中月收入\n10000\n元以上的人群约占()% 。\n\n \n33 \n43 \n53 \n57",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-174.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-174.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58938,7 +58938,7 @@
     "explanation": "根据某小店1-6 月营业额及同比增速情况统计回答下列问题 \n \n下列说法错误的是()。 \n该小店2-6 月营业额环比增速最慢的是6 月。 \n相比去年该小店上半年总营业额实现了正增长。 \n该小店2-6 月营业额环比实现正增长的月份有2 个。 \n该小店1-6 月营业额同比正增长的月份有5 个。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-175.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-175.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -58972,7 +58972,7 @@
     "explanation": "该小店2-6 月营业额环比增速最慢的是6 月。 \n \n国家统计局电子商务交易平台调查显示，2019 年全国电子商务交易额为30.03 万亿元。据\n商务部统计数据显示，2018 年电子商务市场细分行业结构中，商品类电商交易额占比77%;:\n服务类电商交易额占比20%，合约类电商交易额占比3%。以下图表是2011-2018 年中国电\n子商务交易统计图(单位:亿元)。根据题干以及图表回答下列问题: \n2019 年全国电子商务交易额增长率为()。 \n10% \n11% \n12% \n\n13%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-176.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-176.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59006,7 +59006,7 @@
     "explanation": "先减后增再减",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-178.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-178.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59040,7 +59040,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-179.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-179.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59074,7 +59074,7 @@
     "explanation": "下图为2013-2018 年中国旅游支出规模统计图，根据表格回答下列问题: \n2019 年的国内旅游支出增速略大于2018 年增速，那么2019 年国内旅游支出规模为?",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-180.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-180.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59108,7 +59108,7 @@
     "explanation": "该地泛母婴人群家庭育儿消费占比最高的金额为2001-3000 元 \n \n\n \n根据图表，回答下列问题。 \n如果A 产品和B 产品的销量都为3000 个，A 的利润",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-181.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-181.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59142,7 +59142,7 @@
     "explanation": "该国传统含糖食品工业相对欠发达。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-182.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-182.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59176,7 +59176,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-183.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-183.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59202,7 +59202,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-184.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-184.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59236,7 +59236,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-185.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-185.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59270,7 +59270,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-186.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-186.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59304,7 +59304,7 @@
     "explanation": "2016 年增量:4335.5-3609.8=725.7(亿元) \n2017 年增量:5411.3-4335.5=1075.8(亿元)。 \n2018 年增量:6532-5411.3=1120.7(亿元)。 \n2019 年增量:7511.8-6532=979.8(亿元) \n即2018>2019>2017>2016.",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-187.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-187.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59338,11 +59338,45 @@
     "explanation": "41 - 50 岁占比 26%，50 岁以上占比 34%。（26%+34%）=60% \n \n\n \n受经济发展趋势的影响，股市也会随之发生变动。某证券公司在某年四个季度的交易数、交\n易额和客户类型反映了这一变化。下图分别表明了四个季度的交易数和交易额。根据材料，\n回答下面的问题。 \n去年第4 季度交易额的增长率为()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-188.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-188.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
     ]
+  },
+  {
+    "id": "pdd-sx-189",
+    "source": "拼多多26年真题·资料/数量",
+    "sourceKey": "pdd",
+    "module": "资料分析",
+    "stem": "第3 季度:11+13+5=29(亿元)。 \n第4 季度交易额:18+26+21=65(亿元) \n65/29-1=124.1%。所以答案是",
+    "options": [
+      {
+        "key": "A",
+        "text": "选项 A"
+      },
+      {
+        "key": "B",
+        "text": "选项 B"
+      },
+      {
+        "key": "C",
+        "text": "选项 C"
+      },
+      {
+        "key": "D",
+        "text": "选项 D"
+      }
+    ],
+    "answer": "D",
+    "explanation": "",
+    "needsImage": false,
+    "highYield": true,
+    "stemImage": "/images/pdd-sx/pdd-sx-189.png?v=8",
+    "tipIds": [
+      "tip-zl-zengzhang"
+    ],
+    "patternTag": "资料计算"
   },
   {
     "id": "pdd-sx-190",
@@ -59372,7 +59406,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-190.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-190.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59406,7 +59440,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-191.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-191.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59440,7 +59474,7 @@
     "explanation": "手机厂商在双十一期间，往往会提供比较理想的折扣来吸引消费者。根据天猫平台某年的双\n十一数据，我们获得了以下信息。请根据图表中的信息，回答问题。 \n已知魅族手机今年双11 的销售额同比增长500%，则去年魅族双11 的销售额为()亿元",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-192.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-192.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59451,7 +59485,7 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "根据资料，选择正确答案",
+    "stem": "以下图表是某年我国移动社交APP 使用者的年龄分布和性别分布结果。假设年龄分布在每\n个省份都一样。根据图表, \n回答下列问题。 \n如果接下来的一年中，25 岁以下的用户数量增加了10%，其他年龄段的人数不变，那么总体\n的数量将增加（)。",
     "options": [
       {
         "key": "A",
@@ -59471,10 +59505,10 @@
       }
     ],
     "answer": "A",
-    "explanation": "以下图表是某年我国移动社交APP 使用者的年龄分布和性别分布结果。假设年龄分布在每\n个省份都一样。根据图表, \n回答下列问题。 \n如果接下来的一年中，25 岁以下的用户数量增加了10%，其他年龄段的人数不变，那么总体\n的数量将增加（)。",
+    "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-193.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-193.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59508,7 +59542,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-195.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-195.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59542,7 +59576,7 @@
     "explanation": "第二年下半年，南美洲销售额占总销售额的比例明显大于非洲",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-196.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-196.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59576,7 +59610,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-197.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-197.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59602,7 +59636,7 @@
     "explanation": "先下降再上升",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-198.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-198.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59636,7 +59670,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-199.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-199.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59670,7 +59704,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-200.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-200.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59704,7 +59738,7 @@
     "explanation": "先上升后下降",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-201.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-201.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59738,7 +59772,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-202.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-202.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59772,7 +59806,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-203.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-203.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59806,7 +59840,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-204.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-204.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59840,7 +59874,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-205.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-205.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59874,7 +59908,7 @@
     "explanation": "先上升后下降 \n \n \n下表反映了某公司各部门上年度开支预算与实际开销情况。根据表格\n回答下列问题: \n对部门按照开支预算和实际开销之间的差距由小到大排序，下列排序\n正确的是() \n运营部<財务部<电商部 \nHR 部<电商部<财务部",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-206.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-206.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59908,7 +59942,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-207.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-207.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -59942,7 +59976,7 @@
     "explanation": "实体店的单位销售成本最高",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-208.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-208.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -59976,40 +60010,7 @@
     "explanation": "企业公布的财务信息反映了企业的经营和运营状况。毛利润、运营利\n润和净利润是通常使用到的指标。毛利润通常是企业营业收入除去营\n业成本(如原材料、设备等生产成本和营业税等)后的收入，运营利润\n是毛利润减去运营成本费用(如员工工资、管理费用、研发费用、销\n售费用、财务费用)后的收入，净利润是企业运营利润加其他收入之\n后减去所得税额之后的收入。运营利润，在其他收入(营业外收入)\n之前，反映了企业基本经营活动获得利润的能力。下表是A 公司去年\n和今年的运营信息，请根据相关信息回答问题。 \n以下几个指标，今年与去年相比增速最快的是: \n营业收入 \n毛利润 \n\n运营利润",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-209.png?v=7",
-    "patternTag": "资料计算",
-    "tipIds": [
-      "tip-zl-zengzhang"
-    ]
-  },
-  {
-    "id": "pdd-sx-211",
-    "source": "拼多多26年真题·资料/数量",
-    "sourceKey": "pdd",
-    "module": "资料分析",
-    "stem": "根据资料，选择正确答案",
-    "options": [
-      {
-        "key": "A",
-        "text": "选项 A"
-      },
-      {
-        "key": "B",
-        "text": "选项 B"
-      },
-      {
-        "key": "C",
-        "text": "选项 C"
-      },
-      {
-        "key": "D",
-        "text": "选项 D"
-      }
-    ],
-    "answer": "D",
-    "explanation": "下图反映了某年上半年某公司的收入情况(单位:万元)，根据图表回\n答下列问题: \n2 月至6 月，同比增长率从高到低依次排列正确的是()。 \n5 月>2 月>6 月>3 月>4 月 \n5 月>3 月>6 月>2 月>4 月 \n6 月>5 月>3 月>2 月>4 月 \n5 月>6 月>2 月>3 月>4 月",
-    "needsImage": true,
-    "highYield": true,
+    "stemImage": "/images/pdd-sx/pdd-sx-209.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60041,9 +60042,8 @@
     ],
     "answer": "D",
     "explanation": "5 月>6 月>2 月>3 月>4 月",
-    "needsImage": false,
+    "needsImage": true,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-212.png?v=7",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60077,7 +60077,7 @@
     "explanation": "下图是2018-2019 年我国五大城市电影院票房情况统计图(单位:亿\n元)。根据图表回答下列问题 \n2018-2019 年全国五大城市电影院票房情况统计图 \n2019 年北上广深四大城市电影院票房增长率排名正确是()。 \n北京>上海>深圳>广州 \n)广州>深圳>上海>北京",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-213.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-213.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60111,7 +60111,7 @@
     "explanation": "广州>深圳>上海>北京 \n \n \n下列图表是我国2 月份全社会客货运输量的信息，请根据图表相关信\n息，回答问题 \n2 月份，公路货运量占货运总量的()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-214.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-214.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60145,7 +60145,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-215.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-215.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60179,7 +60179,7 @@
     "explanation": "2018<2017<2019<2020 \n港澳台商投资建筑业 \n\n下图反映了近几年某公司的投资情况(单位:千万元)。根据图表回答下列问题: \n近几年某公司的投资情况(位:千万元) \n几年对A 的投资金额总和占总投资金额总和的()%。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-216.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-216.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60213,7 +60213,7 @@
     "explanation": "根据某坚果厂上半年出口量及同比增速情况回答下列问题。 \n下列说法正确的是()。 \n该坚果厂第一季度出口总量约占上半年出口总量的49%。 \n该坚果厂出口量环比增量最多的是4 月， \n该坚果厂出口量环比增速最快的是4 月。 \n该坚果厂2-6 月出口量环比出现增长的月份有2、3 和4 月，",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-217.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-217.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60247,7 +60247,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-218.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-218.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60281,7 +60281,7 @@
     "explanation": "2010 年到2013 年录取通过率逐年降低",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-219.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-219.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60315,7 +60315,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-220.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-220.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60349,7 +60349,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-221.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-221.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60383,7 +60383,7 @@
     "explanation": "以下图表是2015-2017 年我国K12(包含小学、初中、高中和职高)教育在校人数统计\n图(万人)。根据图表回答下列问题\n\n2017 年中国K12 教育在校人数总量比2015 年多()万人",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-222.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-222.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60417,7 +60417,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-223.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-223.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60451,7 +60451,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-224.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-224.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60485,7 +60485,7 @@
     "explanation": "某公司在某地区有A、B 两家连锁店。下图是A、B 两家连锁店对员工的基本素质测试\n情况(单位:人)。根据图表回答下列问题:\nA 店80 分以上的比例比B 店多()。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-226.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-226.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60519,7 +60519,7 @@
     "explanation": "生产部门的员工",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-228.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-228.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60553,7 +60553,7 @@
     "explanation": "1060 \n397 \n4273",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-229.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-229.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60587,7 +60587,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-230.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-230.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60621,7 +60621,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-232.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-232.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60655,7 +60655,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-233.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-233.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60689,7 +60689,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-234.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-234.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60723,7 +60723,7 @@
     "explanation": "2015>2018>2016>2017>2019",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-235.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-235.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60757,7 +60757,7 @@
     "explanation": "近年来，互联网发展带动了网络文学繁荣。下图显示了某网络文学网站近几年的用户增长情",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-236.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-236.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60791,7 +60791,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-237.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-237.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60825,7 +60825,7 @@
     "explanation": "店的及格率比A 店低",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-238.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-238.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60859,7 +60859,7 @@
     "explanation": "市场规模增长最多的是2017 年",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-240.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-240.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60893,7 +60893,7 @@
     "explanation": "4 月>10 月>8 月",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-241.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-241.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -60927,7 +60927,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-243.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-243.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60961,7 +60961,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-244.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-244.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -60995,7 +60995,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-245.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-245.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61029,7 +61029,7 @@
     "explanation": "大部分有闲一族更愿意固守已有游戏",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-247.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-247.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61063,7 +61063,7 @@
     "explanation": "3 月>11 月>8 月>9 月",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-248.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-248.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61093,7 +61093,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-249.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-249.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61127,7 +61127,7 @@
     "explanation": "2012-2020 年港澳台商投资建筑业企业从业人员数累计不超过150 万人",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-250.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-250.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61161,7 +61161,7 @@
     "explanation": "辽宁>湖北>山东>贵州",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-251.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-251.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61195,7 +61195,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-252.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-252.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61229,7 +61229,7 @@
     "explanation": "第五年该国家具网购市场规模与第一年相比近乎翻倍",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-253.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-253.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61259,7 +61259,7 @@
     "explanation": "2019 年全国三项社保保险基金支出额占2015-2019 年全国三项社保保险基金支出\n总额的20%",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-254.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-254.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61293,7 +61293,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-255.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-255.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61327,7 +61327,7 @@
     "explanation": "该洗涤剂T 厂1-7 月总产量为125 万吨 \n \n\n \n下图反映了A 国近六年网民规模与网购用户规模数量变化。请根据图表回答下列问题。 \n与第1 年相比，第6 年网民规模增加了()亿人。 \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-256.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-256.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61361,7 +61361,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-259.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-259.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61391,7 +61391,7 @@
     "explanation": "相邻业务扩张 \n \n \n\n \nM 公司的主营业务是主机游戏和在线游戏。下图反映了近五年来M 公司主机游戏和在线游\n戏市场规模变化情况。根据图表回答下列问题:  \n关于主机游戏和在线游戏市场规模比值说法正确的是: \nA\n先减小后增大 \nB\n逐渐增大 \nC\n逐渐减小 \nD\n先增大后减小 \n答案“C 逐渐减小",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-260.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-260.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61425,7 +61425,7 @@
     "explanation": "该公司销售额增幅最大的一年是第四年",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-261.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-261.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61459,7 +61459,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-262.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-262.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61493,7 +61493,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-263.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-263.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61527,7 +61527,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-264.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-264.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61561,7 +61561,7 @@
     "explanation": "2022 年中国夜间经济市场规模预测将在2016 年基础上翻一番",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-265.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-265.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61595,7 +61595,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-266.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-266.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61629,7 +61629,7 @@
     "explanation": "下图是网约车app 渗透率及用户规模变化(单位:月)。请根据图表内容回答下列问题:  \n若按照2017-08 的增长率来计算，那么2018-06 的网约车app 渗透率及用户规模分别是: \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-268.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-268.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61663,7 +61663,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-269.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-269.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61697,7 +61697,7 @@
     "explanation": "该化肥厂该年中有5 个月的月产量低于90 吨，",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-270.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-270.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61731,7 +61731,7 @@
     "explanation": "2016>2017->2020>-2019>2018",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-271.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-271.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61765,7 +61765,7 @@
     "explanation": "图中6 项居民人均消费支出总额占第一季度居民人均消费支出的二分之一",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-272.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-272.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61799,7 +61799,7 @@
     "explanation": "水运和空运的成本增加 \n\n \n \nAF 公司是一家付费游戏APP 制作公司。下表是AF 公司几款主要APP 的价格变化情况。其\n中EZDD、FZDD、GZDD、HZDD 是冒险类游戏APP。请根据表中的信息回答问题。 \nORDD 的下载价格上涨了 \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-273.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-273.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61833,7 +61833,7 @@
     "explanation": "下图反映了近几年某公司四种商品的销售量情况(单位:万件)。根据图表回答下列问题近几年 \n与上一年相比，销售量增幅最大的是() \n第三年B 商品 \n第二年B 商品 \n第四年A 商品 \n第四年C 商品 \n答案：第三年B 商品",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-275.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-275.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61867,7 +61867,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-276.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-276.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61901,7 +61901,7 @@
     "explanation": "该年江苏省GDP 增加量超过上海、安徽和浙江增加量之和",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-277.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-277.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -61935,7 +61935,7 @@
     "explanation": "先增后降再增",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-278.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-278.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -61969,7 +61969,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-279.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-279.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62003,7 +62003,7 @@
     "explanation": "该钢厂1-12 月不锈钢产量同比增速最快的是3",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-280.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-280.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62037,7 +62037,7 @@
     "explanation": "根据第一年6 月-第二年6 月全国饮料产量及增长情况统计图回答下列问题 \n第二年6 月全国饮料产是同比增速约为()",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-281.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-281.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62071,7 +62071,7 @@
     "explanation": "根据2020 年3 月-2021 年3 月原油进口月度走势图回答下列问题 \n与2020 年3 月相比，2021 年3 月原油进口量的同比增长率约为() \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-283.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-283.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -62105,7 +62105,7 @@
     "explanation": "A\n第一年至第五年该公司销售额增长率持续上升 \nB\n预计第六年该公司销售额将突破250000 万元 \nC\n第六年，该公司销售额增长率将迎来转机 \nD\n第一年至第五年该公司销售额增长率持续下降",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-285.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-285.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62116,7 +62116,7 @@
     "source": "拼多多26年真题·资料/数量",
     "sourceKey": "pdd",
     "module": "资料分析",
-    "stem": "根据资料，选择正确答案",
+    "stem": "第一年至第五年该公司销售额增长率持续下降",
     "options": [
       {
         "key": "A",
@@ -62136,10 +62136,10 @@
       }
     ],
     "answer": "D",
-    "explanation": "第一年至第五年该公司销售额增长率持续下降",
+    "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-286.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-286.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62173,7 +62173,7 @@
     "explanation": "2016 年一季度化肥产量高于2021 年一季度产量",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-287.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-287.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -62207,7 +62207,7 @@
     "explanation": "3-5 月的销售额较低",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-288.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-288.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62237,7 +62237,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-289.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-289.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -62271,7 +62271,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-290.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-290.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62305,7 +62305,7 @@
     "explanation": "第二年各个月份投诉量变化幅度(与前一个月相比)从大到小排序为()。 \nA",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-291.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-291.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -62331,7 +62331,7 @@
     "explanation": "根据图表信息，下列说法正确的是()。 \nA\n \n30 岁及以上人群在商务应酬中比18-29 岁人群更多地进行白酒消费。 \nB\n \nA 国消费者在情侣约会中更多地进行白酒消费。 \nC\n \nA 国18-29 岁的消费者偏好一人独的而非商务应酬。 \nD",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-292.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-292.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62365,7 +62365,7 @@
     "explanation": "A 国30 岁及以上消费者偏好在亲友在场的情境中进行白酒消费。",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-293.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-293.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -62399,7 +62399,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-294.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-294.png?v=8",
     "tipIds": [
       "tip-zl-zengzhang"
     ],
@@ -62433,7 +62433,7 @@
     "explanation": "",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-295.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-295.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"
@@ -62467,7 +62467,7 @@
     "explanation": "先减后增再减",
     "needsImage": false,
     "highYield": true,
-    "stemImage": "/images/pdd-sx/pdd-sx-296.png?v=7",
+    "stemImage": "/images/pdd-sx/pdd-sx-296.png?v=8",
     "patternTag": "资料计算",
     "tipIds": [
       "tip-zl-zengzhang"

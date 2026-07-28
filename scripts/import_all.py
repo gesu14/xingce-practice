@@ -1811,6 +1811,58 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
             out.append((x0, by0, x1, by1))
         return out
 
+    def is_option_ui_bbox(b: tuple[float, float, float, float]) -> bool:
+        """作答页选项列表截图（瘦高、偏窄），不是资料图表。"""
+        x0, by0, x1, by1 = b
+        w, h = x1 - x0, by1 - by0
+        if w <= 0 or h <= 0:
+            return False
+        # 典型：宽约 100–280，高明显大于宽
+        if w < 300 and h > w * 1.25:
+            return True
+        return False
+
+    def pick_chart_bboxes(
+        page: Any,
+        pi: int,
+        stem_y: float,
+        ans_y: float | None,
+        stem: str,
+    ) -> list[tuple[float, float, float, float]]:
+        """优先取题干上方的材料大图，丢掉选项 UI 截图。"""
+        prev_y = _prev_answer_y(page, stem_y)
+        up_top = (prev_y + 12) if prev_y is not None else page.rect.y0 + 8
+        below_bot = (ans_y - 4) if ans_y is not None else page.rect.y1 - 20
+
+        above = [
+            b
+            for b in images_in_band(page, up_top, stem_y - 2, pi)
+            if not is_option_ui_bbox(b)
+        ]
+        below = [
+            b
+            for b in images_in_band(page, stem_y - 40, below_bot + 20, pi)
+            if not is_option_ui_bbox(b)
+        ]
+        wants_chart = bool(
+            re.search(r"下图|上图|如图|图表|下表|根据|统计|所示|回答下列问题", stem or "")
+        )
+        # 资料题：图几乎总在题干文字上方（或题干文字是图内 OCR 后又在图下重复排版）
+        if wants_chart and above:
+            return above
+        if below:
+            return below
+        if above:
+            return above
+        # 实在没有非 UI 图时，才退回带 UI 的结果里挑面积最大的一张
+        raw_above = images_in_band(page, up_top, stem_y - 2, pi)
+        raw_below = images_in_band(page, stem_y - 40, below_bot + 20, pi)
+        raw = raw_above + raw_below
+        if not raw:
+            return []
+        raw.sort(key=lambda b: (b[2] - b[0]) * (b[3] - b[1]), reverse=True)
+        return [raw[0]]
+
     def excluded_bottom_before(page: Any, pi: int, y: float) -> float | None:
         """本页上「重复图」（属于上一题、被排除）里，紧贴在 y 之上的那个的下边界。
         用来把当前题材料图的上边界卡在它下面，避免截到重复图残留的边角内容。"""
@@ -1824,8 +1876,46 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
                 best = by1
         return best
 
+    def repair_generic_stem(q: dict[str, Any]) -> None:
+        """题干被收成「根据资料，选择正确答案」时，从解析里把真题干/选项捞回来。"""
+        stem = (q.get("stem") or "").strip()
+        if stem not in {"根据资料，选择正确答案", "根据资料选择正确答案"}:
+            return
+        expl = q.get("explanation") or ""
+        if len(expl) < 20:
+            return
+        body = expl
+        # 解析里若仍粘着「答案：X …」先裁掉答案后残余
+        body = re.split(r"\n\s*(?:正确答案|答案)\s*[：:]", body)[0].strip()
+        new_stem, options = split_inline_abcd(body)
+        if len(options) < 4:
+            s2, o2 = split_options(body)
+            if len(o2) > len(options):
+                new_stem, options = s2, o2
+        if len(options) < 2:
+            s3, o3 = split_plain_option_lines(body)
+            if len(o3) > len(options):
+                new_stem, options = s3, o3
+        if len(options) < 4:
+            s4, o4 = split_options_loose(body)
+            if len(o4) > len(options):
+                new_stem, options = s4, o4
+        new_stem = re.sub(r"^\d{1,3}\s*[、．.\)]\s*", "", (new_stem or "").strip())
+        if len(new_stem) >= 10:
+            q["stem"] = new_stem
+            if len(options) >= 2:
+                q["options"] = options[:5]
+            # 题干已从解析挪走后，解析可清空或保留尾注；这里留空避免重复
+            q["explanation"] = ""
+            if re.search(
+                r"下图|上图|如图|图表|下表|根据(图|表)|统计图|所示|回答下列问题|根据下",
+                new_stem,
+            ):
+                q["needsImage"] = True
+
     attached = 0
     for q in questions:
+        repair_generic_stem(q)
         if not q.get("needsImage"):
             continue
         if q.get("stemImage"):
@@ -1863,40 +1953,51 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
         # 答案锚点 y：本题自己的「正确答案/答案」必须出现在题干之后
         ans_y = _next_answer_y(page, after_y=y0 if anchor_found else None)
         imgs: list[tuple[float, float, float, float]] = []
-        if ans_y is not None:
-            # 本页能确认题目边界，正常在题干~答案之间找图
-            y1 = ans_y - 4
-            imgs = images_in_band(page, y0 - 30, y1 + 20, pi)
+        if anchor_found:
+            imgs = pick_chart_bboxes(page, pi, y0, ans_y, raw_stem)
+            if imgs:
+                y0 = min(y0, min(b[1] for b in imgs) - 8)
+                y1 = max(
+                    (ans_y - 4) if ans_y is not None else page.rect.y1 - 30,
+                    max(b[3] for b in imgs) + 8,
+                )
+            else:
+                y1 = (ans_y - 4) if ans_y is not None else page.rect.y1 - 30
         else:
-            # 本页找不到本题答案：只有锚点可靠时才在「题干下方」找图；
-            # 锚点找不到时绝不能从页顶扫到页底（会吞上一题的图）
             y1 = page.rect.y1 - 30
-            if anchor_found:
-                imgs = images_in_band(page, y0 + 2, y1 + 20, pi)
-            if not imgs and pi + 1 < doc.page_count:
-                nxt = doc[pi + 1]
+            if ans_y is not None:
+                imgs = [
+                    b
+                    for b in images_in_band(page, page.rect.y0 + 20, ans_y - 4, pi)
+                    if not is_option_ui_bbox(b)
+                ]
+        # 本页没有：仅当题干文字也出现在下一页时才看下一页（避免漏图页偷邻页图表）
+        if not imgs and pi + 1 < doc.page_count and anchor_found:
+            nxt = doc[pi + 1]
+            nxt_text = page_text[pi + 1]
+            stem_hit = len(stem_key) >= 12 and stem_key[:12] in nxt_text
+            if stem_hit:
                 nxt_ans_y = _next_answer_y(nxt)
                 nxt_y1 = (nxt_ans_y - 4) if nxt_ans_y is not None else nxt.rect.y1 - 30
-                next_imgs = images_in_band(nxt, nxt.rect.y0 + 10, nxt_y1, pi + 1)
+                next_imgs = [
+                    b
+                    for b in images_in_band(nxt, nxt.rect.y0 + 10, nxt_y1, pi + 1)
+                    if not is_option_ui_bbox(b)
+                ]
                 if next_imgs:
                     page = nxt
                     pi = pi + 1
                     imgs = next_imgs
                     y0 = min(b[1] for b in imgs) - 10
                     y1 = max(b[3] for b in imgs) + 10
-        # 材料图表在题干上方（先给图/表，题干在下面小结提问）：
-        # 仅当本题答案也在本页时才往上找，否则容易抓到上一题的图
-        if not imgs and anchor_found and ans_y is not None:
-            up_bound = _prev_answer_y(page, y0)
-            up_top = (up_bound + 15) if up_bound is not None else page.rect.y0 + 10
-            up_imgs = images_in_band(page, up_top, y0 - 5, pi)
-            if up_imgs:
-                imgs = up_imgs
-                y0 = min(b[1] for b in imgs) - 10
         # 仍找不到、且题干锚点本身没定位到（大概率整段 band 算错）时，才退回上一页
         if not imgs and not anchor_found and pi > 0:
             prev = doc[pi - 1]
-            prev_imgs = images_in_band(prev, prev.rect.y0 + 40, prev.rect.y1 - 40, pi - 1)
+            prev_imgs = [
+                b
+                for b in images_in_band(prev, prev.rect.y0 + 40, prev.rect.y1 - 40, pi - 1)
+                if not is_option_ui_bbox(b)
+            ]
             if prev_imgs:
                 page = prev
                 pi = pi - 1
@@ -1908,9 +2009,9 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
             by0 = min(b[1] for b in imgs) - 8
             x1 = max(b[2] for b in imgs) + 8
             by1 = max(b[3] for b in imgs) + 8
-            # 若图在题干上方（材料图），仍纳入
-            y0 = min(y0, by0)
-            y1 = max(y1, by1)
+            # 紧贴选中的图块裁，不要扩到答案行（否则会把下方选项 UI 截图卷进来）
+            y0 = by0
+            y1 = by1
             # 若紧贴上方是被排除的重复图，把上边界卡在它下面，避免截到其边角内容
             exc_bottom = excluded_bottom_before(page, pi, by0)
             if exc_bottom is not None:
@@ -1922,24 +2023,20 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
                 min(page.rect.y1 - 16, y1),
             )
         else:
-            clip = fitz.Rect(
-                page.rect.x0 + 36,
-                max(page.rect.y0 + 16, y0),
-                page.rect.x1 - 36,
-                min(page.rect.y1 - 16, y1),
-            )
+            # 无图可截：跳过，避免把纯文字/选项 UI 当成资料图
+            continue
         if clip.height < 40 or clip.width < 40:
             continue
         qid = q["id"]
         out_path = img_root / f"{qid}.png"
         pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
         pix.save(str(out_path))
-        q["stemImage"] = f"/images/pdd-sx/{qid}.png?v=7"
+        q["stemImage"] = f"/images/pdd-sx/{qid}.png?v=8"
         q["needsImage"] = False
         attached += 1
 
-    # 兜底：正常流程仍没配上图的题，放宽搜索（关键词更短、页范围更宽、不卡答案边界），
-    # 直接拿该页面积最大的图整张贴上去，好过完全没有配图
+    # 兜底：正常流程仍没配上图的题，放宽搜索；
+    # 只在「命中页本身有大图」时救援，避免把邻页别的资料图错贴过来。
     rescued = 0
     for q in questions:
         if not q.get("needsImage") or q.get("stemImage"):
@@ -1963,26 +2060,24 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
                 break
         if pi is None:
             continue
+        page = doc[pi]
         best = None
-        for offset in (0, 1, -1):
-            ppi = pi + offset
-            if ppi < 0 or ppi >= doc.page_count:
+        for info in page.get_image_info(xrefs=True):
+            x0, by0, x1, by1 = info["bbox"]
+            area = (x1 - x0) * (by1 - by0)
+            if area < 60 * 60:
                 continue
-            page = doc[ppi]
-            for info in page.get_image_info(xrefs=True):
-                x0, by0, x1, by1 = info["bbox"]
-                area = (x1 - x0) * (by1 - by0)
-                if area < 60 * 60:
-                    continue
-                d = info.get("digest")
-                if d is not None and digest_first_page.get(d, ppi) != ppi:
-                    continue
-                if best is None or area > best[0]:
-                    best = (area, ppi, (x0, by0, x1, by1))
+            if is_option_ui_bbox((x0, by0, x1, by1)):
+                continue
+            d = info.get("digest")
+            if d is not None and digest_first_page.get(d, pi) != pi:
+                continue
+            if best is None or area > best[0]:
+                best = (area, (x0, by0, x1, by1))
+        # 命中页本身没图（源 PDF 漏图）→ 不强行借用邻页
         if best is None:
             continue
-        _, ppi, (x0, by0, x1, by1) = best
-        page = doc[ppi]
+        _, (x0, by0, x1, by1) = best
         clip = fitz.Rect(
             max(page.rect.x0 + 4, x0 - 8),
             max(page.rect.y0 + 4, by0 - 8),
@@ -1995,7 +2090,7 @@ def attach_pdd_math_images(questions: list[dict[str, Any]], path: Path) -> None:
         out_path = img_root / f"{qid}.png"
         pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
         pix.save(str(out_path))
-        q["stemImage"] = f"/images/pdd-sx/{qid}.png?v=7"
+        q["stemImage"] = f"/images/pdd-sx/{qid}.png?v=8"
         q["needsImage"] = False
         rescued += 1
 
