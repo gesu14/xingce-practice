@@ -759,8 +759,20 @@ def reclassify_question(q: dict[str, Any]) -> None:
             " ".join(o.get("text") or "" for o in q.get("options") or []),
         ]
     )
-    # Graphic cues first — more specific
-    if re.search(r"空缺图形|根据图形规律|上图第|哪一个图形|灰色正方形|？号的图形|找出不同|特殊的", blob):
+    source = q.get("source") or ""
+    # 言语题库里「特殊的 / 找出不同」是普通中文，不能据此改成图推
+    if "言语" in source or q.get("id", "").startswith("pdd-yy-"):
+        if re.search(r"空缺图形|根据图形规律|上图第|？号的图形", blob):
+            q["module"] = "图形推理"
+            return
+        q["module"] = "言语理解"
+        return
+    # Graphic cues — 仅用图推专用表述，避免「特殊的/不同于」误伤言语
+    if re.search(
+        r"空缺图形|根据图形规律|上图第|哪一个图形|灰色正方形|？号的图形|"
+        r"找出下列图形中不同于|从所给的四个选项中.*填入|问号处的图形",
+        blob,
+    ):
         q["module"] = "图形推理"
         return
     if re.search(r"根据下表|根据图表|下图是|材料分析|资产负债|营业收入|同比增速|流动资产|销售额|股票的涨跌", blob):
@@ -768,7 +780,7 @@ def reclassify_question(q: dict[str, Any]) -> None:
         q["patternTag"] = "资料计算"
         q["tipIds"] = ["tip-zl-zengzhang"]
         return
-    if re.search(r"意在说明|这段文字|主旨|填入|最恰当", blob) and q.get("module") == "图形推理":
+    if re.search(r"意在说明|这段文字|主旨|填入画横线部分|最恰当", blob) and q.get("module") == "图形推理":
         q["module"] = "言语理解"
 
 
@@ -1330,13 +1342,14 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
     else:
         print(f"  -> page answer anchors aligned: {min(len(page_answers), len(explained))}")
 
-    def images_in_y_range(
+    def images_starting_in(
         page: Any, y0: float, y1: float
     ) -> list[tuple[float, float, float, float]]:
+        """只收「起点落在区间内」的图，避免上一题大图下半截溢进来。"""
         out = []
         for info in page.get_image_info(xrefs=True):
             x0, by0, x1, by1 = info["bbox"]
-            if by1 < y0 - 8 or by0 > y1 + 8:
+            if by0 < y0 - 4 or by0 > y1 + 8:
                 continue
             if (x1 - x0) * (by1 - by0) < 50 * 50:
                 continue
@@ -1344,19 +1357,55 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
         out.sort(key=lambda b: b[1])
         return out
 
-    def clip_for_answer(idx: int) -> tuple[Any, Any] | None:
-        """返回 (page, clip_rect) 或 None。"""
+    def clip_for_answer(idx: int) -> tuple[Any, list[tuple[Any, Any]]] | None:
+        """返回 (primary_page, [(page, clip), ...])，跨页时多段再拼接。"""
         if idx >= len(page_answers):
             return None
         pi, ay, _ = page_answers[idx]
         page = doc[pi]
-        if idx > 0 and page_answers[idx - 1][0] == pi:
+        same_page_prev = bool(idx > 0 and page_answers[idx - 1][0] == pi)
+        if same_page_prev:
             y0 = page_answers[idx - 1][1] + 4
         else:
             y0 = page.rect.y0 + 30
-        imgs = images_in_y_range(page, y0, ay - 2)
-        # 图在上一页底部（本题题干跨页）
-        if not imgs and pi > explained_start:
+
+        parts: list[tuple[Any, Any]] = []
+        # 上一页：上一题答案之后到页尾的图（本题题干跨页时在这里）
+        if idx > 0 and page_answers[idx - 1][0] == pi - 1:
+            ppi, pay, _ = page_answers[idx - 1]
+            prev = doc[ppi]
+            prev_imgs = images_starting_in(prev, pay + 4, prev.rect.y1 - 12)
+            if prev_imgs:
+                x0 = min(b[0] for b in prev_imgs) - 6
+                by0 = min(b[1] for b in prev_imgs) - 6
+                x1 = max(b[2] for b in prev_imgs) + 6
+                by1 = max(b[3] for b in prev_imgs) + 6
+                clip = fitz.Rect(
+                    max(prev.rect.x0 + 16, x0),
+                    max(prev.rect.y0 + 10, by0),
+                    min(prev.rect.x1 - 16, x1),
+                    min(prev.rect.y1 - 10, by1),
+                )
+                if clip.height >= 40 and clip.width >= 40:
+                    parts.append((prev, clip))
+
+        imgs = images_starting_in(page, y0, ay - 2)
+        if imgs:
+            x0 = min(b[0] for b in imgs) - 6
+            by0 = min(b[1] for b in imgs) - 6
+            x1 = max(b[2] for b in imgs) + 6
+            by1 = max(b[3] for b in imgs) + 6
+            clip = fitz.Rect(
+                max(page.rect.x0 + 16, x0),
+                max(page.rect.y0 + 10, by0),
+                min(page.rect.x1 - 16, x1),
+                min(page.rect.y1 - 10, by1),
+            )
+            if clip.height >= 40 and clip.width >= 40:
+                parts.append((page, clip))
+
+        # 仍没有：退回上一页底部（答案不在紧邻上一页时）
+        if not parts and pi > explained_start:
             prev = doc[pi - 1]
             prev_ans = None
             for w in prev.get_text("words"):
@@ -1365,42 +1414,53 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
                     if prev_ans is None or y > prev_ans:
                         prev_ans = y
             top = (prev_ans + 8) if prev_ans is not None else prev.rect.y0 + 40
-            prev_imgs = images_in_y_range(prev, top, prev.rect.y1 - 16)
+            prev_imgs = images_starting_in(prev, top, prev.rect.y1 - 12)
             if prev_imgs:
-                page = prev
-                imgs = prev_imgs
-        # 图在下一页顶部（答案在本页、图却落到下页——少见）
-        if not imgs and pi + 1 < doc.page_count:
-            nxt = doc[pi + 1]
-            nxt_ans = None
-            for w in nxt.get_text("words"):
-                if re.match(r"(?:正确答案|答案|答)\s*[：:;；]?[A-E]?", w[4]):
-                    nxt_ans = float(w[1])
-                    break
-            y1 = (nxt_ans - 4) if nxt_ans is not None else nxt.rect.y1 - 40
-            nxt_imgs = images_in_y_range(nxt, nxt.rect.y0 + 10, y1)
-            if nxt_imgs:
-                page = nxt
-                imgs = nxt_imgs
-        if not imgs:
+                x0 = min(b[0] for b in prev_imgs) - 6
+                by0 = min(b[1] for b in prev_imgs) - 6
+                x1 = max(b[2] for b in prev_imgs) + 6
+                by1 = max(b[3] for b in prev_imgs) + 6
+                clip = fitz.Rect(
+                    max(prev.rect.x0 + 16, x0),
+                    max(prev.rect.y0 + 10, by0),
+                    min(prev.rect.x1 - 16, x1),
+                    min(prev.rect.y1 - 10, by1),
+                )
+                if clip.height >= 40 and clip.width >= 40:
+                    parts.append((prev, clip))
+
+        if not parts:
             return None
-        x0 = min(b[0] for b in imgs) - 6
-        by0 = min(b[1] for b in imgs) - 6
-        x1 = max(b[2] for b in imgs) + 6
-        by1 = max(b[3] for b in imgs) + 6
-        clip = fitz.Rect(
-            max(page.rect.x0 + 16, x0),
-            max(page.rect.y0 + 10, by0),
-            min(page.rect.x1 - 16, x1),
-            min(page.rect.y1 - 10, by1),
-        )
-        if clip.height < 40 or clip.width < 40:
-            return None
-        return page, clip
+        return page, parts
+
+    def save_clips(qid: str, parts: list[tuple[Any, Any]]) -> str | None:
+        """单页直接存；跨页竖向拼接。"""
+        from PIL import Image
+        import io
+
+        pixmaps = []
+        for page, clip in parts:
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
+            pixmaps.append(pix)
+        out_path = img_root / f"{qid}.png"
+        if len(pixmaps) == 1:
+            pixmaps[0].save(str(out_path))
+        else:
+            images = []
+            for pix in pixmaps:
+                images.append(Image.open(io.BytesIO(pix.tobytes("png"))))
+            width = max(im.width for im in images)
+            height = sum(im.height for im in images) + 8 * (len(images) - 1)
+            canvas = Image.new("RGB", (width, height), (255, 255, 255))
+            y = 0
+            for im in images:
+                canvas.paste(im, ((width - im.width) // 2, y))
+                y += im.height + 8
+            canvas.save(out_path)
+        return f"/images/pdd-tx/{qid}.png?v=9"
 
     questions: list[dict[str, Any]] = []
     attached = 0
-    n = len(explained)
     for i, exp in enumerate(explained):
         seq = i + 1
         qid = f"pdd-tx-{seq:03d}"
@@ -1417,8 +1477,6 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
             labels = ["一", "二", "三", "四", "五"]
             options = [{"key": k, "text": f"上图第{labels[j]}项"} for j, k in enumerate(keys)]
         else:
-            # 确保选项键覆盖到答案字母
-            have = {o["key"] for o in options}
             keys = ["A", "B", "C", "D"] + (["E"] if answer == "E" else [])
             labels = ["一", "二", "三", "四", "五"]
             fixed = []
@@ -1433,12 +1491,10 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
         stem_image = None
         got = clip_for_answer(i)
         if got is not None:
-            page, clip = got
-            out_path = img_root / f"{qid}.png"
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
-            pix.save(str(out_path))
-            stem_image = f"/images/pdd-tx/{qid}.png?v=8"
-            attached += 1
+            _, parts = got
+            stem_image = save_clips(qid, parts)
+            if stem_image:
+                attached += 1
 
         q: dict[str, Any] = {
             "id": qid,

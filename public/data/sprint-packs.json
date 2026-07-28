@@ -32,8 +32,7 @@
     "questionIds": [
       "beisen-041",
       "beisen-052",
-      "beisen-057",
-      "beisen-060"
+      "beisen-057"
     ],
     "mustRemember": [
       "先看元素是否相同",
@@ -179,12 +178,12 @@
       "tip-zl-zengzhang"
     ],
     "questionIds": [
+      "beisen-060",
       "beisen-061",
       "beisen-062",
       "beisen-064",
       "beisen-066",
-      "beisen-067",
-      "beisen-071"
+      "beisen-067"
     ],
     "mustRemember": [
       "先看清单位、时间和问法",
@@ -201,12 +200,12 @@
       "tip-zl-zengzhang"
     ],
     "questionIds": [
+      "beisen-071",
       "beisen-072",
       "beisen-073",
       "beisen-074",
       "beisen-075",
-      "beisen-076",
-      "beisen-077"
+      "beisen-076"
     ],
     "mustRemember": [
       "先看清单位、时间和问法",
@@ -223,12 +222,12 @@
       "tip-zl-zengzhang"
     ],
     "questionIds": [
+      "beisen-077",
       "beisen-078",
       "beisen-079",
       "beisen-080",
       "beisen-081",
-      "beisen-082",
-      "beisen-083"
+      "beisen-082"
     ],
     "mustRemember": [
       "先看清单位、时间和问法",
@@ -245,12 +244,12 @@
       "tip-zl-zengzhang"
     ],
     "questionIds": [
+      "beisen-083",
       "beisen-084",
       "beisen-085",
       "beisen-086",
       "beisen-087",
-      "beisen-088",
-      "beisen-089"
+      "beisen-088"
     ],
     "mustRemember": [
       "先看清单位、时间和问法",
@@ -267,12 +266,12 @@
       "tip-zl-zengzhang"
     ],
     "questionIds": [
+      "beisen-089",
       "beisen-090",
       "beisen-091",
       "beisen-092",
       "beisen-093",
-      "beisen-094",
-      "beisen-095"
+      "beisen-094"
     ],
     "mustRemember": [
       "先看清单位、时间和问法",
@@ -284,11 +283,12 @@
     "id": "sprint-14",
     "title": "资料分析·资料计算（6）",
     "module": "资料分析",
-    "estMinutes": 10,
+    "estMinutes": 12,
     "tipIds": [
       "tip-zl-zengzhang"
     ],
     "questionIds": [
+      "beisen-095",
       "beisen-096",
       "beisen-097",
       "beisen-098",
