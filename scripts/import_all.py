@@ -1343,7 +1343,7 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
         print(f"  -> page answer anchors aligned: {min(len(page_answers), len(explained))}")
 
     def images_starting_in(
-        page: Any, y0: float, y1: float
+        page: Any, y0: float, y1: float, *, min_area: float = 35 * 35
     ) -> list[tuple[float, float, float, float]]:
         """只收「起点落在区间内」的图，避免上一题大图下半截溢进来。"""
         out = []
@@ -1351,11 +1351,56 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
             x0, by0, x1, by1 = info["bbox"]
             if by0 < y0 - 4 or by0 > y1 + 8:
                 continue
-            if (x1 - x0) * (by1 - by0) < 50 * 50:
+            if (x1 - x0) * (by1 - by0) < min_area:
                 continue
             out.append((x0, by0, x1, by1))
         out.sort(key=lambda b: b[1])
         return out
+
+    def first_question_y(page: Any, y0: float) -> float | None:
+        """上一题答案之后，下一题题号（如 23. / 146.）的 y。"""
+        best = None
+        for w in page.get_text("words"):
+            y = float(w[1])
+            if y < y0 - 2:
+                continue
+            if re.match(r"^\d{1,3}[\.、．]", w[4]):
+                if best is None or y < best:
+                    best = y
+        return best
+
+    def content_band_clip(
+        page: Any, y0: float, y1: float, *, pad: float = 8
+    ) -> Any | None:
+        """截取答案锚点之间的整段内容（全宽），避免只裁到图块漏题干/小图。"""
+        top = max(page.rect.y0 + 8, y0 - pad)
+        bot = min(page.rect.y1 - 8, y1 + pad)
+        if bot - top < 36:
+            return None
+        clip = fitz.Rect(page.rect.x0 + 40, top, page.rect.x1 - 40, bot)
+        if clip.height < 36 or clip.width < 40:
+            return None
+        return clip
+
+    def tight_images_clip(
+        page: Any, y0: float, y1: float
+    ) -> Any | None:
+        imgs = images_starting_in(page, y0, y1)
+        if not imgs:
+            return None
+        x0 = min(b[0] for b in imgs) - 6
+        by0 = min(b[1] for b in imgs) - 6
+        x1 = max(b[2] for b in imgs) + 6
+        by1 = max(b[3] for b in imgs) + 6
+        clip = fitz.Rect(
+            max(page.rect.x0 + 16, x0),
+            max(page.rect.y0 + 10, by0),
+            min(page.rect.x1 - 16, x1),
+            min(page.rect.y1 - 10, by1),
+        )
+        if clip.height < 40 or clip.width < 40:
+            return None
+        return clip
 
     def clip_for_answer(idx: int) -> tuple[Any, list[tuple[Any, Any]]] | None:
         """返回 (primary_page, [(page, clip), ...])，跨页时多段再拼接。"""
@@ -1364,47 +1409,63 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
         pi, ay, _ = page_answers[idx]
         page = doc[pi]
         same_page_prev = bool(idx > 0 and page_answers[idx - 1][0] == pi)
-        if same_page_prev:
-            y0 = page_answers[idx - 1][1] + 4
-        else:
-            y0 = page.rect.y0 + 30
+        cross_page = bool(idx > 0 and page_answers[idx - 1][0] == pi - 1)
 
         parts: list[tuple[Any, Any]] = []
-        # 上一页：上一题答案之后到页尾的图（本题题干跨页时在这里）
-        if idx > 0 and page_answers[idx - 1][0] == pi - 1:
+
+        if cross_page:
             ppi, pay, _ = page_answers[idx - 1]
             prev = doc[ppi]
-            prev_imgs = images_starting_in(prev, pay + 4, prev.rect.y1 - 12)
-            if prev_imgs:
-                x0 = min(b[0] for b in prev_imgs) - 6
-                by0 = min(b[1] for b in prev_imgs) - 6
-                x1 = max(b[2] for b in prev_imgs) + 6
-                by1 = max(b[3] for b in prev_imgs) + 6
-                clip = fitz.Rect(
-                    max(prev.rect.x0 + 16, x0),
-                    max(prev.rect.y0 + 10, by0),
-                    min(prev.rect.x1 - 16, x1),
-                    min(prev.rect.y1 - 10, by1),
-                )
-                if clip.height >= 40 and clip.width >= 40:
-                    parts.append((prev, clip))
-
-        imgs = images_starting_in(page, y0, ay - 2)
-        if imgs:
-            x0 = min(b[0] for b in imgs) - 6
-            by0 = min(b[1] for b in imgs) - 6
-            x1 = max(b[2] for b in imgs) + 6
-            by1 = max(b[3] for b in imgs) + 6
-            clip = fitz.Rect(
-                max(page.rect.x0 + 16, x0),
-                max(page.rect.y0 + 10, by0),
-                min(page.rect.x1 - 16, x1),
-                min(page.rect.y1 - 10, by1),
+            # 从「题号 / 首张小题干图」开始，截到页尾（含题干文字+小图）
+            qy = first_question_y(prev, pay + 4)
+            imgs = images_starting_in(prev, pay + 4, prev.rect.y1 - 8, min_area=25 * 25)
+            starts: list[float] = []
+            if qy is not None:
+                starts.append(qy)
+            if imgs:
+                starts.append(min(b[1] for b in imgs))
+            # 不要从 pay+20 起：会把上一题长解析带进来。只从本题题号/首图起。
+            start_y = min(starts) if starts else pay + 24
+            if imgs and qy is not None and min(b[1] for b in imgs) < qy:
+                start_y = min(b[1] for b in imgs) - 4
+            prev_clip = content_band_clip(prev, start_y, prev.rect.y1 - 16, pad=4)
+            if prev_clip is not None:
+                parts.append((prev, prev_clip))
+            # 本页：从首张选项图到本答案前（含 ABCD 文字，去掉页眉空白）
+            cur_imgs = images_starting_in(
+                page, page.rect.y0 + 28, ay - 2, min_area=25 * 25
             )
-            if clip.height >= 40 and clip.width >= 40:
+            if cur_imgs:
+                cur_top = min(b[1] for b in cur_imgs) - 4
+            else:
+                cur_top = page.rect.y0 + 28
+            cur_clip = content_band_clip(page, cur_top, ay - 4, pad=2)
+            if cur_clip is not None:
+                parts.append((page, cur_clip))
+        elif same_page_prev:
+            y0 = page_answers[idx - 1][1] + 4
+            # 同页：尽量从本题题号起，避免带上上一题解析长文
+            qy = first_question_y(page, y0)
+            start_y = qy if qy is not None else y0
+            imgs = images_starting_in(page, start_y, ay - 2, min_area=25 * 25)
+            if imgs and (qy is None or min(b[1] for b in imgs) < (qy or 1e9)):
+                start_y = min(start_y, min(b[1] for b in imgs) - 4)
+            # 同页用收紧图块裁切，防止一图两题；若无图则退回整段
+            clip = tight_images_clip(page, start_y, ay - 2)
+            if clip is None:
+                clip = content_band_clip(page, start_y, ay - 4, pad=2)
+            if clip is not None:
+                parts.append((page, clip))
+        else:
+            # 本页第一题
+            y0 = page.rect.y0 + 30
+            clip = tight_images_clip(page, y0, ay - 2)
+            if clip is None:
+                clip = content_band_clip(page, y0, ay - 4, pad=2)
+            if clip is not None:
                 parts.append((page, clip))
 
-        # 仍没有：退回上一页底部（答案不在紧邻上一页时）
+        # 仍没有：退回上一页底部
         if not parts and pi > explained_start:
             prev = doc[pi - 1]
             prev_ans = None
@@ -1414,50 +1475,54 @@ def build_pdd_graphic_questions() -> list[dict[str, Any]]:
                     if prev_ans is None or y > prev_ans:
                         prev_ans = y
             top = (prev_ans + 8) if prev_ans is not None else prev.rect.y0 + 40
-            prev_imgs = images_starting_in(prev, top, prev.rect.y1 - 12)
-            if prev_imgs:
-                x0 = min(b[0] for b in prev_imgs) - 6
-                by0 = min(b[1] for b in prev_imgs) - 6
-                x1 = max(b[2] for b in prev_imgs) + 6
-                by1 = max(b[3] for b in prev_imgs) + 6
-                clip = fitz.Rect(
-                    max(prev.rect.x0 + 16, x0),
-                    max(prev.rect.y0 + 10, by0),
-                    min(prev.rect.x1 - 16, x1),
-                    min(prev.rect.y1 - 10, by1),
-                )
-                if clip.height >= 40 and clip.width >= 40:
-                    parts.append((prev, clip))
+            clip = content_band_clip(prev, top, prev.rect.y1 - 16, pad=4)
+            if clip is None:
+                clip = tight_images_clip(prev, top, prev.rect.y1 - 12)
+            if clip is not None:
+                parts.append((prev, clip))
 
         if not parts:
             return None
         return page, parts
 
     def save_clips(qid: str, parts: list[tuple[Any, Any]]) -> str | None:
-        """单页直接存；跨页竖向拼接。"""
-        from PIL import Image
+        """单页直接存；跨页竖向拼接，并裁掉大块白边。"""
+        from PIL import Image, ImageOps
         import io
 
-        pixmaps = []
+        def trim_white(im: Image.Image, pad: int = 8) -> Image.Image:
+            gray = im.convert("L")
+            # 近白当背景
+            bw = gray.point(lambda p: 0 if p < 245 else 255)
+            inverted = ImageOps.invert(bw)
+            bbox = inverted.getbbox()
+            if not bbox:
+                return im
+            left, top, right, bottom = bbox
+            left = max(0, left - pad)
+            top = max(0, top - pad)
+            right = min(im.width, right + pad)
+            bottom = min(im.height, bottom + pad)
+            return im.crop((left, top, right, bottom))
+
+        images = []
         for page, clip in parts:
             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip, alpha=False)
-            pixmaps.append(pix)
+            im = Image.open(io.BytesIO(pix.tobytes("png")))
+            images.append(trim_white(im))
         out_path = img_root / f"{qid}.png"
-        if len(pixmaps) == 1:
-            pixmaps[0].save(str(out_path))
+        if len(images) == 1:
+            images[0].save(out_path)
         else:
-            images = []
-            for pix in pixmaps:
-                images.append(Image.open(io.BytesIO(pix.tobytes("png"))))
             width = max(im.width for im in images)
-            height = sum(im.height for im in images) + 8 * (len(images) - 1)
+            height = sum(im.height for im in images) + 12 * (len(images) - 1)
             canvas = Image.new("RGB", (width, height), (255, 255, 255))
             y = 0
             for im in images:
                 canvas.paste(im, ((width - im.width) // 2, y))
-                y += im.height + 8
+                y += im.height + 12
             canvas.save(out_path)
-        return f"/images/pdd-tx/{qid}.png?v=9"
+        return f"/images/pdd-tx/{qid}.png?v=10"
 
     questions: list[dict[str, Any]] = []
     attached = 0
